@@ -1,0 +1,36 @@
+=== LEAKAGE AUDIT REPORT v2 ===
+
+--- Feature lineage ---
+  momentum_20d: {'category': 'trend', 'lookback': 20, 'lag': 1, 'dependencies': ['Close'], 'leakage_safe': True}
+  realized_vol_20d: {'category': 'volatility', 'lookback': 20, 'lag': 1, 'dependencies': ['Close'], 'leakage_safe': True}
+  zscore_10d: {'category': 'mean_reversion', 'lookback': 10, 'lag': 1, 'dependencies': ['Close'], 'leakage_safe': True}
+  atr_14: {'category': 'volatility', 'lookback': 14, 'lag': 1, 'dependencies': ['High', 'Low', 'Close'], 'leakage_safe': True}
+  volume_spike: {'category': 'microstructure_proxy', 'lookback': 20, 'lag': 1, 'dependencies': ['Volume'], 'leakage_safe': True}
+  gap_return: {'category': 'microstructure_proxy', 'lookback': 1, 'lag': 1, 'dependencies': ['Open', 'Close'], 'leakage_safe': True}
+  rolling_beta: {'category': 'cross_sectional', 'lookback': 60, 'lag': 1, 'dependencies': ['Close'], 'leakage_safe': True}
+
+--- Dependency graph ---
+  momentum_20d <- ['Close']
+  realized_vol_20d <- ['Close']
+  zscore_10d <- ['Close']
+  atr_14 <- ['High', 'Low', 'Close']
+  volume_spike <- ['Volume']
+  gap_return <- ['Open', 'Close']
+  rolling_beta <- ['Close']
+
+--- Feature leakage scores ---
+  momentum_20d: 0.000
+  realized_vol_20d: 0.000
+  zscore_10d: 0.551
+  atr_14: 0.000
+  volume_spike: 0.000
+  gap_return: 0.023
+  rolling_beta: 0.000
+
+--- SMA 7/30 (score=0.02) ---
+  [OK] SMA 7/30: Execution lag OK (Open t+1)
+  [OK] feature_store: Registered 7 causal features
+
+--- Buy & Hold (score=0.02) ---
+  [OK] Buy & Hold: Execution lag OK (Open t+1)
+  [OK] feature_store: Registered 7 causal features

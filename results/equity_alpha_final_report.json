@@ -1,0 +1,269 @@
+{
+  "universe": "sp500",
+  "n_tickers": 77,
+  "survivorship_warning": "Current S&P 500 membership applied to historical windows \u2014 survivorship bias present; delisted names excluded.",
+  "classification_counts": {
+    "LIKELY_NOISE": 13,
+    "HIGH_LEAKAGE_RISK": 4
+  },
+  "true_edge_candidates": [],
+  "verdict": "NO structurally independent cross-sectional alpha confirmed",
+  "signals": [
+    {
+      "feature": "liq_volume_zscore",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": 0.0026008686296205793,
+        "survives_costs": 0.0016008686296205793,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "liq_dollar_volume_zscore",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": 0.002445665525419236,
+        "survives_costs": 0.001445665525419236,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "liq_failed_breakout",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": -0.002263589010515751,
+        "survives_costs": -0.003263589010515751,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "liq_gap_extension",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": -0.0003878536415870071,
+        "survives_costs": -0.0013878536415870071,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "liq_extension_5d",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": -0.0012695153516867298,
+        "survives_costs": -0.00226951535168673,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "liq_extension_10d",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": -0.0017686736945003553,
+        "survives_costs": -0.0027686736945003554,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "liq_reversal_after_extreme",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": -0.0011764036774378397,
+        "survives_costs": -0.0021764036774378397,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "breadth_pct_above_sma50",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "weak IC after all neutralizations"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": true,
+        "stable_across_regimes": false,
+        "tail_concentrated": NaN,
+        "survives_costs": -0.002235777779772775,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "breadth_pct_above_sma200",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "weak IC after all neutralizations"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": true,
+        "stable_across_regimes": false,
+        "tail_concentrated": NaN,
+        "survives_costs": -0.00951356107645502,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "breadth_new_highs_lows",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "weak IC after all neutralizations"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": true,
+        "stable_across_regimes": false,
+        "tail_concentrated": NaN,
+        "survives_costs": -0.004488709057153349,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "breadth_cross_dispersion",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": NaN,
+        "survives_costs": -0.0005328151588934503,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "breadth_narrow_leadership",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "|raw IC| < 0.02"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": false,
+        "tail_concentrated": NaN,
+        "survives_costs": 0.0004496533093502138,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "breadth_sector_participation",
+      "classification": "LIKELY_NOISE",
+      "reasons": [
+        "weak IC after all neutralizations"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": true,
+        "stable_across_regimes": false,
+        "tail_concentrated": NaN,
+        "survives_costs": -0.005359529230371606,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "earn_post_gap_continuation",
+      "classification": "HIGH_LEAKAGE_RISK",
+      "reasons": [
+        "earnings/calendar or proxy timestamps unreliable"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": true,
+        "tail_concentrated": 0.009550418254361434,
+        "survives_costs": 0.0016480784708493871,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "earn_abnormal_volume",
+      "classification": "HIGH_LEAKAGE_RISK",
+      "reasons": [
+        "earnings/calendar or proxy timestamps unreliable"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": true,
+        "tail_concentrated": -0.014100037924748763,
+        "survives_costs": -0.008308240053051206,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "earn_drift_surprise_5d",
+      "classification": "HIGH_LEAKAGE_RISK",
+      "reasons": [
+        "earnings/calendar or proxy timestamps unreliable"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": true,
+        "tail_concentrated": -0.0006046248721056462,
+        "survives_costs": -0.007674184885155605,
+        "mechanism_plausible": false
+      }
+    },
+    {
+      "feature": "earn_gap_size",
+      "classification": "HIGH_LEAKAGE_RISK",
+      "reasons": [
+        "earnings/calendar or proxy timestamps unreliable"
+      ],
+      "questions": {
+        "independent_alpha_survives": false,
+        "economically_meaningful": false,
+        "stable_across_regimes": true,
+        "tail_concentrated": 0.009550418254361434,
+        "survives_costs": 0.0016480784708493871,
+        "mechanism_plausible": false
+      }
+    }
+  ],
+  "philosophy": "Falsification over Sharpe optimization."
+}

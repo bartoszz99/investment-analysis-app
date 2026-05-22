@@ -1,0 +1,108 @@
+{
+  "ticker": "PKO.WA",
+  "display_ticker": "PKO",
+  "market_region": "POLAND",
+  "asset_type": "Stock",
+  "idea_type": "momentum",
+  "horizon": "short",
+  "decision": "BUY",
+  "final_score": 0.651,
+  "breakdown": {
+    "fundamental": 0.617,
+    "technical": 0.721,
+    "structural": 0.644
+  },
+  "fundamental": {
+    "score_fundamental": 0.23452499999999998,
+    "summary": "Fundamenty s\u0105 mieszane lub przeci\u0119tne.",
+    "detail": "Wzrost przychod\u00f3w: 0% Mar\u017ca zysku: 37% Trend zysk\u00f3w: 2% C/Z 12 \u2014 w typowym zakresie",
+    "metrics": {
+      "pe": 11.55064,
+      "revenue_growth": 0.001,
+      "margin": 0.3682,
+      "debt_to_equity": null,
+      "earnings_trend": 0.021
+    }
+  },
+  "technical": {
+    "score_technical": 0.44244936563738013,
+    "trend": "uptrend",
+    "vol_regime": "normal",
+    "relative_strength_3m": null,
+    "mom_3m": 0.12152471231108919,
+    "summary": "Zachowanie ceny wspiera pomys\u0142 \u2014 trend i momentum si\u0119 zgadzaj\u0105."
+  },
+  "structural": {
+    "score_structural": 0.2875,
+    "classification": "ACCEPTABLE",
+    "regime_stability": 0.7,
+    "liquidity": {
+      "liquidity_risk": "LOW",
+      "avg_daily_volume": 2659307.433333333,
+      "avg_turnover_pln": 245858508.97750053,
+      "missing_volume_days_60d": 0,
+      "liquidity_stability": 0.66,
+      "liquidity_score": 0.4,
+      "summary": "Ryzyko p\u0142ynno\u015bci: NISKIE. \u015ar. dzienny wolumen ~2,659,307 akcji; stabilno\u015b\u0107 obrotu 66%."
+    },
+    "speculation": {
+      "speculation_risk": "LOW",
+      "volatility_20d": 0.017252585568826764,
+      "volume_vs_avg": 0.2441205592113056,
+      "return_20d": -0.0005993762188644114,
+      "speculation_score": 0.25,
+      "summary": "Ryzyko spekulacji: NISKIE. Brak skrajnego wzorca spekulacji kr\u00f3tkoterminowej."
+    },
+    "narrative": {
+      "narrative_dependence": "LOW",
+      "narrative_score": 0.2,
+      "summary": "Zachowanie ceny nie jest wyra\u017anie oderwane od fundament\u00f3w."
+    },
+    "ownership_flags": [
+      "state-linked bank",
+      "policy-sensitive",
+      "cyclical / commodity or rates sensitivity"
+    ],
+    "summary": "Ryzyko p\u0142ynno\u015bci: NISKIE. \u015ar. dzienny wolumen ~2,659,307 akcji; stabilno\u015b\u0107 obrotu 66%. Ryzyko spekulacji: NISKIE. Brak skrajnego wzorca spekulacji kr\u00f3tkoterminowej. Zachowanie ceny nie jest wyra\u017anie oderwane od fundament\u00f3w. Flagi w\u0142a\u015bcicielskie: bank powi\u0105zany z pa\u0144stwem; wra\u017cliwo\u015b\u0107 na polityk\u0119; cykliczno\u015b\u0107 / stopy / surowce",
+    "market": "POLAND"
+  },
+  "explanation": {
+    "headline": "Rozumowanie mo\u017ce si\u0119 broni\u0107 \u2014 sprawd\u017a p\u0142ynno\u015b\u0107 i ryzyko narracji na GPW.",
+    "market_region": "POLAND",
+    "fundamental_blurb": "Fundamenty s\u0105 mieszane lub przeci\u0119tne.",
+    "technical_blurb": "Zachowanie ceny wspiera pomys\u0142 \u2014 trend i momentum si\u0119 zgadzaj\u0105.",
+    "structural_blurb": "Ryzyko p\u0142ynno\u015bci: NISKIE. \u015ar. dzienny wolumen ~2,659,307 akcji; stabilno\u015b\u0107 obrotu 66%. Ryzyko spekulacji: NISKIE. Brak skrajnego wzorca spekulacji kr\u00f3tkoterminowej. Zachowanie ceny nie jest wyra\u017anie oderwane od fundament\u00f3w. Flagi w\u0142a\u015bcicielskie: bank powi\u0105zany z pa\u0144stwem; wra\u017cliwo\u015b\u0107 na polityk\u0119; cykliczno\u015b\u0107 / stopy / surowce",
+    "counterparty": "Kto jest po drugiej stronie? Cz\u0119sto lokalny detal i traderzy tematyczni na GPW.",
+    "likely_driver": "Co zwykle to nap\u0119dza? Historie i przep\u0142ywy \u2014 na GPW cena bywa przed fundamentami.",
+    "what_is_driving_this": "Trend wzrostowy na GPW \u2014 sprawd\u017a, czy p\u0142ynno\u015b\u0107 wspiera tez\u0119 momentum.",
+    "key_risks": [
+      "bank powi\u0105zany z pa\u0144stwem",
+      "wra\u017cliwo\u015b\u0107 na polityk\u0119",
+      "cykliczno\u015b\u0107 / stopy / surowce"
+    ],
+    "structural_class": "ACCEPTABLE",
+    "gpw_warnings": [],
+    "gpw_diagnostics": {
+      "liquidity_risk": "LOW",
+      "speculation_risk": "LOW",
+      "narrative_dependence": "LOW",
+      "ownership_flags": [
+        "state-linked bank",
+        "policy-sensitive",
+        "cyclical / commodity or rates sensitivity"
+      ]
+    },
+    "gpw_structural_risks": [
+      "Udzia\u0142 pa\u0144stwa lub wra\u017cliwo\u015b\u0107 na polityk\u0119",
+      "Niski free float \u2014 cena mo\u017ce skoczy\u0107 przy ma\u0142ym wolumenie",
+      "Spekulacja i rajdy narracyjne nap\u0119dzane detalem",
+      "Ekspozycja na surowce / stopy procentowe",
+      "Nag\u0142\u00f3wki polityczne i regulacyjne",
+      "state-linked bank",
+      "policy-sensitive",
+      "cyclical / commodity or rates sensitivity"
+    ]
+  },
+  "as_of": "2026-05-21T13:53:37.409478+00:00",
+  "price_at_analysis": 99.26000213623048
+}

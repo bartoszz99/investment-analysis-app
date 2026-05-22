@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "question": "US market structure vs own model?",
+    "alpha_net_market": 0.1261771767577445,
+    "alpha_net_market_sector": -0.03557497441536944,
+    "alpha_net_full_factors": 0.05029730538081477,
+    "residual_sharpe_market_neutral": 1.091052817897848,
+    "residual_sharpe_sector_neutral": -0.3751334524239615,
+    "residual_sharpe_full_neutral": 1.0737473184573987,
+    "residual_drawdown_market_neutral_pct": 9.894782154565359,
+    "residual_drawdown_sector_neutral_pct": 13.924716527062683,
+    "residual_drawdown_full_neutral_pct": 3.32520881774966,
+    "mean_momentum_beta_20d": 0.652400006492397,
+    "verdict_own_model": false,
+    "verdict_structure_driven": false,
+    "interpretation": "own_model=True: meaningful alpha after SPY+sector factors; structure_driven=True: returns largely explained by US beta/sector/momentum factors"
+  },
+  "market_neutral": {
+    "alpha_daily": 0.000500703082372002,
+    "alpha_annualized": 0.1261771767577445,
+    "r_squared": 0.39967012726979967,
+    "n_obs": 250,
+    "residual_vol_annual": 0.1154156494334734,
+    "residual_sharpe": 1.091052817897848,
+    "residual_drawdown_pct": 9.894782154565359,
+    "cumulative_residual_return": -0.006590501994413689,
+    "label": "R_p ~ R_SPY"
+  },
+  "market_neutral_betas": {
+    "R_SPY": 0.7770937753016796
+  },
+  "sector_neutral": {
+    "alpha_daily": -0.00014117053339432318,
+    "alpha_annualized": -0.03557497441536944,
+    "r_squared": 0.5963197532431082,
+    "n_obs": 250,
+    "residual_vol_annual": 0.0946429942318467,
+    "residual_sharpe": -0.3751334524239615,
+    "residual_drawdown_pct": 13.924716527062683,
+    "cumulative_residual_return": -0.004427804999863172,
+    "label": "R_p ~ R_SPY + XLK + XLF + XLE"
+  },
+  "sector_neutral_betas": {
+    "R_SPY": 0.1964875298109574,
+    "R_XLK": 0.3917999609824624,
+    "R_XLF": 0.014131590488159176,
+    "R_XLE": 0.2987742445407451
+  },
+  "momentum_neutral": {
+    "alpha_daily": 0.0014303150883181455,
+    "alpha_annualized": -2.1762068130070618e-16,
+    "r_squared": 0.300583169750375,
+    "n_obs": 229,
+    "residual_vol_annual": 0.13006252081797728,
+    "residual_sharpe": 2.765220552117867,
+    "residual_drawdown_pct": 4.890196388325275,
+    "cumulative_residual_return": -0.007669800575915042,
+    "label": "R_p ~ R_momentum_factor",
+    "rolling_20d_beta_mean": 0.652400006492397
+  },
+  "momentum_neutral_betas": {
+    "R_momentum_factor": 0.686516466839433
+  },
+  "full_neutral": {
+    "alpha_daily": 0.00019959248166989988,
+    "alpha_annualized": 0.05029730538081477,
+    "r_squared": 0.9096732545754291,
+    "n_obs": 229,
+    "residual_vol_annual": 0.04674038753935569,
+    "residual_sharpe": 1.0737473184573987,
+    "residual_drawdown_pct": 3.32520881774966,
+    "cumulative_residual_return": -0.0009925888746336042,
+    "label": "R_p ~ R_SPY + sectors + momentum"
+  },
+  "full_neutral_betas": {
+    "R_SPY": 0.309745239418692,
+    "R_XLK": 0.2799320171902461,
+    "R_XLF": 0.23022070195030592,
+    "R_XLE": 0.251166307172775,
+    "R_momentum_factor": 0.6829117744562004
+  }
+}

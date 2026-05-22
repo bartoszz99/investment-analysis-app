@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-05-19T19:39:19.311973+00:00",
+  "anti_leakage_note": "All features use lag>=1 before rolling; no full-sample stats",
+  "nodes": {
+    "momentum_20d": {
+      "feature_name": "momentum_20d",
+      "source_columns": [
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 20,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(20)",
+        "trend"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311921+00:00",
+      "parents": []
+    },
+    "realized_vol_20d": {
+      "feature_name": "realized_vol_20d",
+      "source_columns": [
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 20,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(20)",
+        "volatility"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311938+00:00",
+      "parents": []
+    },
+    "zscore_10d": {
+      "feature_name": "zscore_10d",
+      "source_columns": [
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 10,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(10)",
+        "mean_reversion"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311943+00:00",
+      "parents": []
+    },
+    "atr_14": {
+      "feature_name": "atr_14",
+      "source_columns": [
+        "High",
+        "Low",
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 14,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(14)",
+        "volatility"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311947+00:00",
+      "parents": []
+    },
+    "volume_spike": {
+      "feature_name": "volume_spike",
+      "source_columns": [
+        "Volume"
+      ],
+      "lag": 1,
+      "lookback": 20,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(20)",
+        "microstructure_proxy"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311949+00:00",
+      "parents": []
+    },
+    "gap_return": {
+      "feature_name": "gap_return",
+      "source_columns": [
+        "Open",
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 1,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(1)",
+        "microstructure_proxy"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311952+00:00",
+      "parents": []
+    },
+    "rolling_beta": {
+      "feature_name": "rolling_beta",
+      "source_columns": [
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 60,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling(60)",
+        "cross_sectional"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311954+00:00",
+      "parents": []
+    },
+    "SMA_7": {
+      "feature_name": "SMA_7",
+      "source_columns": [
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 7,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling_mean",
+        "shift_before_roll"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311960+00:00",
+      "parents": [
+        "Close"
+      ]
+    },
+    "SMA_30": {
+      "feature_name": "SMA_30",
+      "source_columns": [
+        "Close"
+      ],
+      "lag": 1,
+      "lookback": 30,
+      "transformation_chain": [
+        "lag(1)",
+        "rolling_mean",
+        "shift_before_roll"
+      ],
+      "leakage_risk": "low",
+      "created_at": "2026-05-19T19:39:19.311964+00:00",
+      "parents": [
+        "Close"
+      ]
+    }
+  },
+  "dag_edges": [
+    {
+      "from": "Close",
+      "to": "momentum_20d"
+    },
+    {
+      "from": "Close",
+      "to": "realized_vol_20d"
+    },
+    {
+      "from": "Close",
+      "to": "zscore_10d"
+    },
+    {
+      "from": "High",
+      "to": "atr_14"
+    },
+    {
+      "from": "Low",
+      "to": "atr_14"
+    },
+    {
+      "from": "Close",
+      "to": "atr_14"
+    },
+    {
+      "from": "Volume",
+      "to": "volume_spike"
+    },
+    {
+      "from": "Open",
+      "to": "gap_return"
+    },
+    {
+      "from": "Close",
+      "to": "gap_return"
+    },
+    {
+      "from": "Close",
+      "to": "rolling_beta"
+    },
+    {
+      "from": "Close",
+      "to": "SMA_7"
+    },
+    {
+      "from": "Close",
+      "to": "SMA_7"
+    },
+    {
+      "from": "Close",
+      "to": "SMA_30"
+    },
+    {
+      "from": "Close",
+      "to": "SMA_30"
+    }
+  ]
+}

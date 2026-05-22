@@ -1,0 +1,747 @@
+{
+  "hypotheses": {
+    "A": {
+      "mechanism": "Institutions rebalance slowly after earnings surprises.",
+      "counterparty": "Retail / fast money on headline; institutions on schedule.",
+      "forced_flow": "Mandate rebalance, risk limits, quarterly reporting windows.",
+      "arb_friction": "Position limits, uncertainty dispersion, staggered disclosure.",
+      "cost_survival": "Effect must exceed spread + short horizon drift noise.",
+      "structural_basis": "CONDITIONAL \u2014 valid only with reliable event timestamps.",
+      "leakage_risk": "HIGH \u2014 yfinance earnings_dates not exchange-official.",
+      "timestamp_audit": {
+        "AAPL": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MSFT": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "AMZN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "NVDA": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "META": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "GOOGL": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "GOOG": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "TSLA": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "AVGO": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "COST": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "NFLX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "AMD": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PEP": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ADBE": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CSCO": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "TMUS": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CMCSA": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "INTC": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "TXN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "QCOM": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "AMGN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "HON": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "INTU": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "AMAT": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ISRG": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "BKNG": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "VRTX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ADP": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "SBUX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "GILD": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ADI": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "REGN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PANW": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MU": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "LRCX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MDLZ": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "KLAC": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "SNPS": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CDNS": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MELI": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ASML": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PYPL": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CRWD": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MAR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ORLY": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ABNB": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "FTNT": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CHTR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MNST": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ADSK": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CTAS": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "WDAY": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PCAR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "NXPI": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MRVL": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PAYX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "AZN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CPRT": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ROST": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "KDP": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "EA": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "LULU": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "DASH": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CSX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "FAST": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "VRSK": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "EXC": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "BKR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "DXCM": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "BIIB": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "IDXX": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "XEL": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "KHC": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "GEHC": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ZS": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ON": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CDW": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "FANG": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "DLTR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "TTWO": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MCHP": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ODFL": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CTSH": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "WBD": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "TEAM": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "DDOG": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "ARM": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "SMCI": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "COIN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "MSTR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PDD": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "JD": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "BIDU": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "LCID": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "RIVN": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "SNOW": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "PLTR": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "APP": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "CEG": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        },
+        "GFS": {
+          "n_events": 0,
+          "source": "proxy_gap_volume",
+          "reliable": false
+        }
+      },
+      "coverage": {
+        "AAPL": 10.053191489361701,
+        "MSFT": 8.377659574468085,
+        "AMZN": 8.712765957446809,
+        "NVDA": 6.367021276595745,
+        "META": 9.71808510638298,
+        "GOOGL": 9.047872340425531,
+        "GOOG": 8.377659574468085,
+        "TSLA": 8.712765957446809,
+        "AVGO": 9.047872340425531,
+        "COST": 6.702127659574468,
+        "NFLX": 9.382978723404255,
+        "AMD": 8.712765957446809,
+        "PEP": 6.367021276595745,
+        "ADBE": 9.047872340425531,
+        "CSCO": 7.037234042553191,
+        "TMUS": 8.042553191489361,
+        "CMCSA": 6.031914893617021,
+        "INTC": 8.712765957446809,
+        "TXN": 7.707446808510638,
+        "QCOM": 6.702127659574468,
+        "AMGN": 8.042553191489361,
+        "HON": 6.367021276595745,
+        "INTU": 6.031914893617021,
+        "AMAT": 7.707446808510638,
+        "ISRG": 8.042553191489361,
+        "BKNG": 8.712765957446809,
+        "VRTX": 7.372340425531915,
+        "ADP": 7.707446808510638,
+        "SBUX": 8.377659574468085,
+        "GILD": 5.696808510638298,
+        "ADI": 8.042553191489361,
+        "REGN": 5.696808510638298,
+        "PANW": 8.377659574468085,
+        "MU": 9.382978723404255,
+        "LRCX": 6.702127659574468,
+        "MDLZ": 7.372340425531915,
+        "KLAC": 8.042553191489361,
+        "SNPS": 7.372340425531915,
+        "CDNS": 6.702127659574468,
+        "MELI": 8.712765957446809,
+        "ASML": 9.382978723404255,
+        "PYPL": 7.372340425531915,
+        "CRWD": 6.367021276595745,
+        "MAR": 6.367021276595745,
+        "ORLY": 4.3563829787234045,
+        "ABNB": 8.042553191489361,
+        "FTNT": 7.707446808510638,
+        "CHTR": 7.372340425531915,
+        "MNST": 7.037234042553191,
+        "ADSK": 7.372340425531915,
+        "CTAS": 5.696808510638298,
+        "WDAY": 10.388297872340425,
+        "PCAR": 7.037234042553191,
+        "NXPI": 7.707446808510638,
+        "MRVL": 9.71808510638298,
+        "PAYX": 7.372340425531915,
+        "AZN": 6.702127659574468,
+        "CPRT": 5.361702127659575,
+        "ROST": 7.372340425531915,
+        "KDP": 6.367021276595745,
+        "EA": 6.031914893617021,
+        "LULU": 10.053191489361701,
+        "DASH": 6.031914893617021,
+        "CSX": 6.702127659574468,
+        "FAST": 7.037234042553191,
+        "VRSK": 7.037234042553191,
+        "EXC": 6.367021276595745,
+        "BKR": 7.372340425531915,
+        "DXCM": 6.702127659574468,
+        "BIIB": 5.026595744680851,
+        "IDXX": 5.696808510638298,
+        "XEL": 4.691489361702128,
+        "KHC": 5.026595744680851,
+        "GEHC": 6.031914893617021,
+        "ZS": 6.702127659574468,
+        "ON": 9.047872340425531,
+        "CDW": 4.3563829787234045,
+        "FANG": 5.026595744680851,
+        "DLTR": 7.707446808510638,
+        "TTWO": 8.377659574468085,
+        "MCHP": 10.72340425531915,
+        "ODFL": 8.042553191489361,
+        "CTSH": 5.361702127659575,
+        "WBD": 8.042553191489361,
+        "TEAM": 9.382978723404255,
+        "DDOG": 10.388297872340425,
+        "ARM": 7.372340425531915,
+        "SMCI": 9.71808510638298,
+        "COIN": 8.042553191489361,
+        "MSTR": 8.377659574468085,
+        "PDD": 9.71808510638298,
+        "JD": 10.053191489361701,
+        "BIDU": 9.382978723404255,
+        "LCID": 7.372340425531915,
+        "RIVN": 8.377659574468085,
+        "SNOW": 8.712765957446809,
+        "PLTR": 10.053191489361701,
+        "APP": 6.702127659574468,
+        "CEG": 9.382978723404255,
+        "GFS": 8.377659574468085
+      },
+      "proxy_fallback_used": {
+        "AAPL": true,
+        "MSFT": true,
+        "AMZN": true,
+        "NVDA": true,
+        "META": true,
+        "GOOGL": true,
+        "GOOG": true,
+        "TSLA": true,
+        "AVGO": true,
+        "COST": true,
+        "NFLX": true,
+        "AMD": true,
+        "PEP": true,
+        "ADBE": true,
+        "CSCO": true,
+        "TMUS": true,
+        "CMCSA": true,
+        "INTC": true,
+        "TXN": true,
+        "QCOM": true,
+        "AMGN": true,
+        "HON": true,
+        "INTU": true,
+        "AMAT": true,
+        "ISRG": true,
+        "BKNG": true,
+        "VRTX": true,
+        "ADP": true,
+        "SBUX": true,
+        "GILD": true,
+        "ADI": true,
+        "REGN": true,
+        "PANW": true,
+        "MU": true,
+        "LRCX": true,
+        "MDLZ": true,
+        "KLAC": true,
+        "SNPS": true,
+        "CDNS": true,
+        "MELI": true,
+        "ASML": true,
+        "PYPL": true,
+        "CRWD": true,
+        "MAR": true,
+        "ORLY": true,
+        "ABNB": true,
+        "FTNT": true,
+        "CHTR": true,
+        "MNST": true,
+        "ADSK": true,
+        "CTAS": true,
+        "WDAY": true,
+        "PCAR": true,
+        "NXPI": true,
+        "MRVL": true,
+        "PAYX": true,
+        "AZN": true,
+        "CPRT": true,
+        "ROST": true,
+        "KDP": true,
+        "EA": true,
+        "LULU": true,
+        "DASH": true,
+        "CSX": true,
+        "FAST": true,
+        "VRSK": true,
+        "EXC": true,
+        "BKR": true,
+        "DXCM": true,
+        "BIIB": true,
+        "IDXX": true,
+        "XEL": true,
+        "KHC": true,
+        "GEHC": true,
+        "ZS": true,
+        "ON": true,
+        "CDW": true,
+        "FANG": true,
+        "DLTR": true,
+        "TTWO": true,
+        "MCHP": true,
+        "ODFL": true,
+        "CTSH": true,
+        "WBD": true,
+        "TEAM": true,
+        "DDOG": true,
+        "ARM": true,
+        "SMCI": true,
+        "COIN": true,
+        "MSTR": true,
+        "PDD": true,
+        "JD": true,
+        "BIDU": true,
+        "LCID": true,
+        "RIVN": true,
+        "SNOW": true,
+        "PLTR": true,
+        "APP": true,
+        "CEG": true,
+        "GFS": true
+      },
+      "hypothesis": "A_post_earnings_drift"
+    },
+    "B": {
+      "mechanism": "Index/sector rises while fewer stocks participate \u2014 fragile rally.",
+      "counterparty": "Passive index buyers vs weak single-stock sponsors.",
+      "forced_flow": "Index inclusion flows, ETF creation without stock-level demand.",
+      "arb_friction": "Sector basket hedging imperfect; breadth not directly tradable.",
+      "cost_survival": "Slow-moving; 5\u201320d horizon may absorb costs if real.",
+      "structural_basis": "YES \u2014 participation divergence is observable market structure.",
+      "leakage_risk": "LOW \u2014 features use lagged component prices only."
+    },
+    "C": {
+      "mechanism": "Crowded moves exhaust liquidity; short-term mean reversion.",
+      "counterparty": "Late momentum chasers vs liquidity providers.",
+      "forced_flow": "Deleveraging, margin calls, vol-targeting reductions.",
+      "arb_friction": "Inventory risk, gap risk, asymmetric funding.",
+      "cost_survival": "Requires high turnover; 5d horizon sensitive to costs.",
+      "structural_basis": "YES \u2014 microstructure stress; test if survives neutralization.",
+      "leakage_risk": "LOW \u2014 standard OHLCV with shift(1)."
+    }
+  },
+  "falsification": {
+    "signals_tested": 14,
+    "potential_independent_count": 0,
+    "failed_or_structural_count": 14,
+    "true_alpha_claim": false,
+    "verdict": "NO independent cross-sectional alpha after neutralization",
+    "surviving_features": []
+  },
+  "philosophy": "Objective is falsification, not alpha manufacturing. If all hypotheses fail after neutralization, that is a valid outcome."
+}

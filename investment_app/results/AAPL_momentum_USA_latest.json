@@ -1,0 +1,62 @@
+{
+  "ticker": "AAPL",
+  "display_ticker": "AAPL",
+  "market_region": "USA",
+  "asset_type": "Stock",
+  "idea_type": "momentum",
+  "horizon": "medium",
+  "decision": "IGNORE",
+  "final_score": 0.384,
+  "breakdown": {
+    "fundamental": 0.637,
+    "technical": 0.641,
+    "structural": 0.0
+  },
+  "fundamental": {
+    "score_fundamental": 0.274712012,
+    "summary": "Fundamenty biznesu wygl\u0105daj\u0105 wspieraj\u0105co.",
+    "detail": "Wzrost przychod\u00f3w: 17% Mar\u017ca zysku: 27% Trend zysk\u00f3w: 22% C/Z 37 \u2014 w typowym zakresie",
+    "metrics": {
+      "pe": 36.671516,
+      "revenue_growth": 0.166,
+      "margin": 0.27152002,
+      "debt_to_equity": 79.548,
+      "earnings_trend": 0.218
+    }
+  },
+  "technical": {
+    "score_technical": 0.282383493764546,
+    "trend": "uptrend",
+    "vol_regime": "low",
+    "relative_strength_3m": 0.05593010077252747,
+    "mom_3m": 0.13200465251284688,
+    "summary": "Zachowanie ceny wspiera pomys\u0142 \u2014 trend i momentum si\u0119 zgadzaj\u0105."
+  },
+  "structural": {
+    "score_structural": -1.0,
+    "classification": "TRUE_SIGNAL",
+    "ic_raw": -0.1260049429661457,
+    "ic_residual": -0.16547242344575874,
+    "regime_stability": 0.85,
+    "spy_correlation": 0.6068197882465334,
+    "drivers": "Cz\u0119\u015b\u0107 struktury zostaje po neutralizacji rynku \u2014 to nie gwarancja alfy.",
+    "summary": "Cz\u0119\u015b\u0107 struktury zostaje po neutralizacji rynku \u2014 to nie gwarancja alfy."
+  },
+  "explanation": {
+    "headline": "S\u0142aba lub g\u0142\u00f3wnie ekspozycja rynkowa \u2014 niski priorytet.",
+    "market_region": "USA",
+    "fundamental_blurb": "Fundamenty biznesu wygl\u0105daj\u0105 wspieraj\u0105co.",
+    "technical_blurb": "Zachowanie ceny wspiera pomys\u0142 \u2014 trend i momentum si\u0119 zgadzaj\u0105.",
+    "structural_blurb": "Cz\u0119\u015b\u0107 struktury zostaje po neutralizacji rynku \u2014 to nie gwarancja alfy.",
+    "counterparty": "Kto jest po drugiej stronie? Cz\u0119sto fundusze trendu, przep\u0142ywy ETF i CTA.",
+    "likely_driver": "Co zwykle to nap\u0119dza? Ruch szerokiego rynku i rotacja sektorowa \u2014 nie ukryta przewaga.",
+    "what_is_driving_this": "Udzia\u0142 w trendzie \u2014 klasyczny setup momentum, cz\u0119sto zat\u0142oczony w large cap.",
+    "key_risks": [
+      "Standardowe ryzyko rynku \u2014 makro, wyniki, p\u0142ynno\u015b\u0107."
+    ],
+    "structural_class": "TRUE_SIGNAL",
+    "gpw_warnings": []
+  },
+  "as_of": "2026-05-21T13:53:10.413629+00:00",
+  "price_at_analysis": 302.25
+}

@@ -1,0 +1,1580 @@
+{
+  "hypotheses": {
+    "SPY": {
+      "A": {
+        "hypothesis": "A_trend_fragility",
+        "mechanism": "Rally on narrowing participation \u2192 fragile trend",
+        "evaluations": [
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "SPY",
+            "horizon": 1,
+            "ic_spearman": 0.1473810339407124,
+            "pearson": 0.15440396927610012,
+            "quintile_spread": 0.0016701020535689003,
+            "quantile_means": {
+              "1": 0.0026322397636138807,
+              "2": 0.001519161160809652,
+              "3": -0.0005483123329065476,
+              "4": 0.0026489280284045687,
+              "5": 0.004302341817182781
+            },
+            "hit_ratio": 0.6122448979591837,
+            "n_obs": 98
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "SPY",
+            "horizon": 5,
+            "ic_spearman": 0.0627925653551681,
+            "pearson": 0.1833997443249332,
+            "quintile_spread": 0.004017278687950092,
+            "quantile_means": {
+              "1": 0.013323339907868381,
+              "2": 0.009691361375116486,
+              "3": 0.0035585912554721346,
+              "4": 0.007970730099069456,
+              "5": 0.017340618595818473
+            },
+            "hit_ratio": 0.7938144329896907,
+            "n_obs": 97
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "SPY",
+            "horizon": 10,
+            "ic_spearman": -0.13191496730087562,
+            "pearson": -0.046533380388620475,
+            "quintile_spread": -0.003929432991722829,
+            "quantile_means": {
+              "1": 0.017686442072555097,
+              "2": 0.01703807769248259,
+              "3": 0.007044331838041019,
+              "4": 0.004175075129083392,
+              "5": 0.013757009080832269
+            },
+            "hit_ratio": 0.7473684210526316,
+            "n_obs": 95
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "SPY",
+            "horizon": 20,
+            "ic_spearman": -0.10940263756705655,
+            "pearson": -0.03255752875275075,
+            "quintile_spread": -0.004636490180994622,
+            "quantile_means": {
+              "1": 0.026925931593708305,
+              "2": 0.022826767408698496,
+              "3": 0.0015839627488264951,
+              "4": 0.017134246977449134,
+              "5": 0.022289441412713683
+            },
+            "hit_ratio": 0.7934782608695652,
+            "n_obs": 92
+          }
+        ],
+        "conditional_fwd_20d_rally_weak_breadth": 0.0182924095168647
+      },
+      "B": {
+        "hypothesis": "B_breadth_thrust_continuation",
+        "mechanism": "Broad participation surge \u2192 trend continuation",
+        "evaluations": [
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "SPY",
+            "horizon": 1,
+            "ic_spearman": 0.007487050159459143,
+            "pearson": 0.030954279877090735,
+            "quintile_spread": 0.0005666181557584086,
+            "quantile_means": {
+              "1": 0.0009929222192753022,
+              "2": 0.0006089917391589922,
+              "3": -0.00026629156336033363,
+              "4": 0.0007313300257897875,
+              "5": 0.0015595403750337108
+            },
+            "hit_ratio": 0.40421052631578946,
+            "n_obs": 475
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "SPY",
+            "horizon": 5,
+            "ic_spearman": -0.0848405423680229,
+            "pearson": -0.037234251740022026,
+            "quintile_spread": -0.005507593002729382,
+            "quantile_means": {
+              "1": 0.006904475794969627,
+              "2": 0.002715965837134077,
+              "3": 0.004165402669719354,
+              "4": 0.003259979051614713,
+              "5": 0.001396882792240245
+            },
+            "hit_ratio": 0.3481953290870488,
+            "n_obs": 471
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "SPY",
+            "horizon": 10,
+            "ic_spearman": -0.03640535934671496,
+            "pearson": 0.0029867228498807134,
+            "quintile_spread": -0.0009621256452071241,
+            "quantile_means": {
+              "1": 0.006404578437452845,
+              "2": 0.0077082477877048975,
+              "3": 0.0071729717352677766,
+              "4": 0.009177666889837047,
+              "5": 0.005442452792245721
+            },
+            "hit_ratio": 0.38626609442060084,
+            "n_obs": 466
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "SPY",
+            "horizon": 20,
+            "ic_spearman": -0.06725745597490852,
+            "pearson": -0.012673761291203662,
+            "quintile_spread": -0.0031357068903384404,
+            "quantile_means": {
+              "1": 0.02039895297255068,
+              "2": 0.014933412454350394,
+              "3": 0.005803532256132466,
+              "4": 0.010398215776614005,
+              "5": 0.01726324608221224
+            },
+            "hit_ratio": 0.3815789473684211,
+            "n_obs": 456
+          }
+        ],
+        "conditional_fwd_20d_top_thrust": 0.016771274770605835
+      },
+      "C": {
+        "hypothesis": "C_dispersion_reversal",
+        "mechanism": "Leadership concentration + weak breadth \u2192 mean reversion",
+        "evaluations": [
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "SPY",
+            "horizon": 1,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.00666718350945994,
+            "quantile_means": {
+              "1": -0.00577283927061728,
+              "2": -0.007110664115665055,
+              "3": 0.017537522037111192,
+              "4": 0.0043733125943764325,
+              "5": 0.0008943442388426592
+            },
+            "hit_ratio": 0.5357142857142857,
+            "n_obs": 28
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "SPY",
+            "horizon": 5,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0135742095156721,
+            "quantile_means": {
+              "1": -0.014570805092234554,
+              "2": -0.030475022234602633,
+              "3": 0.04247518151042099,
+              "4": 0.02399472802593263,
+              "5": -0.0009965955765624535
+            },
+            "hit_ratio": 0.5,
+            "n_obs": 28
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "SPY",
+            "horizon": 10,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.01576815182415629,
+            "quantile_means": {
+              "1": -0.016055790921155888,
+              "2": -0.03656886404239727,
+              "3": 0.0396190237642274,
+              "4": 0.027361275446531597,
+              "5": -0.0002876390969995997
+            },
+            "hit_ratio": 0.5714285714285714,
+            "n_obs": 28
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "SPY",
+            "horizon": 20,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.00222023258484305,
+            "quantile_means": {
+              "1": -0.017436607090369722,
+              "2": -0.05266752397110501,
+              "3": 0.01763349227968995,
+              "4": 0.02731034124392373,
+              "5": -0.015216374505526672
+            },
+            "hit_ratio": 0.39285714285714285,
+            "n_obs": 28
+          }
+        ],
+        "conditional_fwd_5d": 0.004608757643085497
+      }
+    },
+    "QQQ": {
+      "A": {
+        "hypothesis": "A_trend_fragility",
+        "mechanism": "Rally on narrowing participation \u2192 fragile trend",
+        "evaluations": [
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "QQQ",
+            "horizon": 1,
+            "ic_spearman": 0.12164284047877075,
+            "pearson": 0.10889317664087614,
+            "quintile_spread": -0.0004576293752131034,
+            "quantile_means": {
+              "1": 0.004097736418424401,
+              "2": 0.0010611317962322287,
+              "3": -0.0005848226016526702,
+              "4": 0.005428038362869009,
+              "5": 0.003640107043211298
+            },
+            "hit_ratio": 0.5922330097087378,
+            "n_obs": 103
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "QQQ",
+            "horizon": 5,
+            "ic_spearman": 0.011757282530447865,
+            "pearson": 0.05237207219351558,
+            "quintile_spread": -0.0049058549138024845,
+            "quantile_means": {
+              "1": 0.018126761538314686,
+              "2": 0.014123583238533893,
+              "3": -0.00043787666323101825,
+              "4": 0.013675780264799625,
+              "5": 0.013220906624512202
+            },
+            "hit_ratio": 0.7326732673267327,
+            "n_obs": 101
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "QQQ",
+            "horizon": 10,
+            "ic_spearman": -0.24767426886651253,
+            "pearson": -0.124367002208956,
+            "quintile_spread": -0.016053057262966793,
+            "quantile_means": {
+              "1": 0.023470260303796293,
+              "2": 0.025688066472944648,
+              "3": 0.010247076590263868,
+              "4": 0.007508576773631212,
+              "5": 0.007417203040829501
+            },
+            "hit_ratio": 0.7422680412371134,
+            "n_obs": 97
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "QQQ",
+            "horizon": 20,
+            "ic_spearman": 0.014849697919912294,
+            "pearson": -0.054966420178584295,
+            "quintile_spread": -0.00994712272874921,
+            "quantile_means": {
+              "1": 0.03685065901914617,
+              "2": 0.02487888571523548,
+              "3": 0.010452973244109265,
+              "4": 0.03147070429954767,
+              "5": 0.026903536290396962
+            },
+            "hit_ratio": 0.8617021276595744,
+            "n_obs": 94
+          }
+        ],
+        "conditional_fwd_20d_rally_weak_breadth": 0.02627793020804432
+      },
+      "B": {
+        "hypothesis": "B_breadth_thrust_continuation",
+        "mechanism": "Broad participation surge \u2192 trend continuation",
+        "evaluations": [
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "QQQ",
+            "horizon": 1,
+            "ic_spearman": -0.005208203096656051,
+            "pearson": 0.02000708691666676,
+            "quintile_spread": 0.0010074684070553697,
+            "quantile_means": {
+              "1": 0.0010707692630493812,
+              "2": 0.0017079321273314487,
+              "3": -0.0009470088018923093,
+              "4": 0.0006391644471874838,
+              "5": 0.002078237670104751
+            },
+            "hit_ratio": 0.3936842105263158,
+            "n_obs": 475
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "QQQ",
+            "horizon": 5,
+            "ic_spearman": -0.0036490938511377427,
+            "pearson": 0.012893378209105515,
+            "quintile_spread": -0.0010457486948509697,
+            "quantile_means": {
+              "1": 0.00415005257954693,
+              "2": 0.0028852544648052727,
+              "3": 0.007430011934213528,
+              "4": 0.005589610001288483,
+              "5": 0.0031043038846959603
+            },
+            "hit_ratio": 0.37579617834394907,
+            "n_obs": 471
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "QQQ",
+            "horizon": 10,
+            "ic_spearman": 0.02143788038067746,
+            "pearson": 0.05478783526213742,
+            "quintile_spread": 0.004558514987405163,
+            "quantile_means": {
+              "1": 0.005112604237575663,
+              "2": 0.008927760472820165,
+              "3": 0.007403676534494217,
+              "4": 0.013486071040975942,
+              "5": 0.009671119224980826
+            },
+            "hit_ratio": 0.37553648068669526,
+            "n_obs": 466
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "QQQ",
+            "horizon": 20,
+            "ic_spearman": -0.054524640214809295,
+            "pearson": 0.029415763030159314,
+            "quintile_spread": 0.0022910664511724584,
+            "quantile_means": {
+              "1": 0.023726769598907536,
+              "2": 0.0200406857597368,
+              "3": 0.004154112444061701,
+              "4": 0.011271409198129191,
+              "5": 0.026017836050079995
+            },
+            "hit_ratio": 0.3706140350877193,
+            "n_obs": 456
+          }
+        ],
+        "conditional_fwd_20d_top_thrust": 0.03417996882001824
+      },
+      "C": {
+        "hypothesis": "C_dispersion_reversal",
+        "mechanism": "Leadership concentration + weak breadth \u2192 mean reversion",
+        "evaluations": [
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "QQQ",
+            "horizon": 1,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.002387420222416669,
+            "quantile_means": {
+              "1": -0.00556263022967886,
+              "2": -0.014515345999339254,
+              "3": 0.02061062758298842,
+              "4": 0.004890369337148963,
+              "5": -0.0031752100072621908
+            },
+            "hit_ratio": 0.45454545454545453,
+            "n_obs": 33
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "QQQ",
+            "horizon": 5,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.01882326179763838,
+            "quantile_means": {
+              "1": -0.004726356933222891,
+              "2": -0.03395403340470835,
+              "3": 0.03707662136365332,
+              "4": 0.019265283711367247,
+              "5": 0.01409690486441549
+            },
+            "hit_ratio": 0.5757575757575758,
+            "n_obs": 33
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "QQQ",
+            "horizon": 10,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.010495742534214068,
+            "quantile_means": {
+              "1": 0.005509340995574842,
+              "2": -0.04996877296603471,
+              "3": 0.04617382613259464,
+              "4": 0.04810477984744662,
+              "5": 0.01600508352978891
+            },
+            "hit_ratio": 0.696969696969697,
+            "n_obs": 33
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "QQQ",
+            "horizon": 20,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.026783331675229696,
+            "quantile_means": {
+              "1": -0.011224166957297317,
+              "2": -0.0671612478406085,
+              "3": 0.04291253012593711,
+              "4": 0.03867504206521218,
+              "5": 0.015559164717932379
+            },
+            "hit_ratio": 0.5151515151515151,
+            "n_obs": 33
+          }
+        ],
+        "conditional_fwd_5d": 0.007181748087996206
+      }
+    },
+    "XLK": {
+      "A": {
+        "hypothesis": "A_trend_fragility",
+        "mechanism": "Rally on narrowing participation \u2192 fragile trend",
+        "evaluations": [
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLK",
+            "horizon": 1,
+            "ic_spearman": -0.07540312361582677,
+            "pearson": -0.10931659356240682,
+            "quintile_spread": -0.005742707314381108,
+            "quantile_means": {
+              "1": 0.003340202380015377,
+              "2": -0.0009504940179258098,
+              "3": 0.00195272866173396,
+              "4": -0.0001247686160000122,
+              "5": -0.0024025049343657304
+            },
+            "hit_ratio": 0.6296296296296297,
+            "n_obs": 81
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLK",
+            "horizon": 5,
+            "ic_spearman": -0.1578177929070303,
+            "pearson": -0.14340483344528396,
+            "quintile_spread": -0.022385815535064017,
+            "quantile_means": {
+              "1": 0.021730035039425,
+              "2": 0.0028944176356338197,
+              "3": 0.013894424748745197,
+              "4": 0.005893949906338104,
+              "5": -0.0006557804956390176
+            },
+            "hit_ratio": 0.5949367088607594,
+            "n_obs": 79
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLK",
+            "horizon": 10,
+            "ic_spearman": -0.030728887440576072,
+            "pearson": -0.07340324304816322,
+            "quintile_spread": -0.004195578499441861,
+            "quantile_means": {
+              "1": 0.019297162718445976,
+              "2": 0.0002207433728363887,
+              "3": 0.025181175224286947,
+              "4": 0.0071598492784131105,
+              "5": 0.015101584219004115
+            },
+            "hit_ratio": 0.6623376623376623,
+            "n_obs": 77
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLK",
+            "horizon": 20,
+            "ic_spearman": -0.054419328288999896,
+            "pearson": -0.09406126537347516,
+            "quintile_spread": -0.014898461715344265,
+            "quantile_means": {
+              "1": 0.030430573256090058,
+              "2": 0.018344333561354842,
+              "3": 0.03986153483994766,
+              "4": -8.115450226986454e-05,
+              "5": 0.015532111540745793
+            },
+            "hit_ratio": 0.6712328767123288,
+            "n_obs": 73
+          }
+        ],
+        "conditional_fwd_20d_rally_weak_breadth": 0.021137641114780028
+      },
+      "B": {
+        "hypothesis": "B_breadth_thrust_continuation",
+        "mechanism": "Broad participation surge \u2192 trend continuation",
+        "evaluations": [
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLK",
+            "horizon": 1,
+            "ic_spearman": -0.029990522138046212,
+            "pearson": -0.003907498934323186,
+            "quintile_spread": -0.0012229736145285114,
+            "quantile_means": {
+              "1": 0.0026171877087592488,
+              "2": -0.00040122849845303113,
+              "3": 0.0013661523877115203,
+              "4": 0.00030824738060083166,
+              "5": 0.0013942140942307373
+            },
+            "hit_ratio": 0.391578947368421,
+            "n_obs": 475
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLK",
+            "horizon": 5,
+            "ic_spearman": -0.04696187580710678,
+            "pearson": -0.03443664811648051,
+            "quintile_spread": 0.0020500095886265618,
+            "quantile_means": {
+              "1": 0.0018492055640653407,
+              "2": 0.010834119764484717,
+              "3": 0.008703719007880618,
+              "4": 0.001800536432528283,
+              "5": 0.0038992151526919027
+            },
+            "hit_ratio": 0.40552016985138006,
+            "n_obs": 471
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLK",
+            "horizon": 10,
+            "ic_spearman": -0.05124525277400372,
+            "pearson": -0.030895374029250064,
+            "quintile_spread": -0.0005284727777517869,
+            "quantile_means": {
+              "1": 0.005738178900409466,
+              "2": 0.02005963174837184,
+              "3": 0.012414712233484972,
+              "4": 0.008640997725694285,
+              "5": 0.005209706122657679
+            },
+            "hit_ratio": 0.38626609442060084,
+            "n_obs": 466
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLK",
+            "horizon": 20,
+            "ic_spearman": -0.0348958948775161,
+            "pearson": 0.0016447920874819038,
+            "quintile_spread": 0.0006413387462196815,
+            "quantile_means": {
+              "1": 0.024384717773720845,
+              "2": 0.017158478803728654,
+              "3": 0.019755261923692983,
+              "4": 0.011755588497946891,
+              "5": 0.025026056519940526
+            },
+            "hit_ratio": 0.40131578947368424,
+            "n_obs": 456
+          }
+        ],
+        "conditional_fwd_20d_top_thrust": 0.023075592139284926
+      },
+      "C": {
+        "hypothesis": "C_dispersion_reversal",
+        "mechanism": "Leadership concentration + weak breadth \u2192 mean reversion",
+        "evaluations": [
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLK",
+            "horizon": 1,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0007588325411362739,
+            "quantile_means": {
+              "1": 0.00634836048713778,
+              "2": -0.0076203833530411975,
+              "3": 0.0064299205774442925,
+              "4": 0.019474247350927065,
+              "5": 0.007107193028274054
+            },
+            "hit_ratio": 0.71875,
+            "n_obs": 32
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLK",
+            "horizon": 5,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0024784816618788376,
+            "quantile_means": {
+              "1": 0.015951619184893913,
+              "2": -0.016299192303807015,
+              "3": 0.0383831605183003,
+              "4": 0.007728194965313222,
+              "5": 0.01843010084677275
+            },
+            "hit_ratio": 0.5625,
+            "n_obs": 32
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLK",
+            "horizon": 10,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0051129154887999025,
+            "quantile_means": {
+              "1": 0.01678892378591022,
+              "2": -0.006362577425989446,
+              "3": -0.005897516304730843,
+              "4": 0.04899962112227194,
+              "5": 0.021901839274710122
+            },
+            "hit_ratio": 0.5625,
+            "n_obs": 32
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLK",
+            "horizon": 20,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.048771919438602804,
+            "quantile_means": {
+              "1": 0.019551637685319073,
+              "2": -0.09796128086312968,
+              "3": 0.011086873517463328,
+              "4": 0.08571083695355432,
+              "5": 0.06832355712392188
+            },
+            "hit_ratio": 0.53125,
+            "n_obs": 32
+          }
+        ],
+        "conditional_fwd_5d": 0.013110781853140803
+      }
+    },
+    "XLF": {
+      "A": {
+        "hypothesis": "A_trend_fragility",
+        "mechanism": "Rally on narrowing participation \u2192 fragile trend",
+        "evaluations": [
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLF",
+            "horizon": 1,
+            "ic_spearman": -0.08098035649068529,
+            "pearson": -0.023703797498071416,
+            "quintile_spread": -0.001990059993218089,
+            "quantile_means": {
+              "1": 0.0011710578255123868,
+              "2": 0.0013890324697465775,
+              "3": -0.0012017343426386593,
+              "4": 0.00348122460900556,
+              "5": -0.0008190021677057023
+            },
+            "hit_ratio": 0.5348837209302325,
+            "n_obs": 86
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLF",
+            "horizon": 5,
+            "ic_spearman": -0.10784203921280092,
+            "pearson": -0.15246568415508094,
+            "quintile_spread": -0.009184510572652798,
+            "quantile_means": {
+              "1": 0.006955940381999339,
+              "2": 0.0008844508287935019,
+              "3": 0.00018881536026805953,
+              "4": -0.0004050678220505526,
+              "5": -0.0022285701906534588
+            },
+            "hit_ratio": 0.46511627906976744,
+            "n_obs": 86
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLF",
+            "horizon": 10,
+            "ic_spearman": -0.14816739565520104,
+            "pearson": -0.2706135615426238,
+            "quintile_spread": -0.015473524057819418,
+            "quantile_means": {
+              "1": 0.000671679221023533,
+              "2": -0.00013422204871342547,
+              "3": 0.008924371368600602,
+              "4": -0.0044162960205589505,
+              "5": -0.014801844836795886
+            },
+            "hit_ratio": 0.43902439024390244,
+            "n_obs": 82
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLF",
+            "horizon": 20,
+            "ic_spearman": 0.06807716573281943,
+            "pearson": -0.0376955368921983,
+            "quintile_spread": -0.0002291175964094427,
+            "quantile_means": {
+              "1": -0.0032713205060752246,
+              "2": -0.010977190278605494,
+              "3": 0.011284790951747259,
+              "4": -0.0005024076354555485,
+              "5": -0.0035004381024846673
+            },
+            "hit_ratio": 0.4473684210526316,
+            "n_obs": 76
+          }
+        ],
+        "conditional_fwd_20d_rally_weak_breadth": -0.001418023737752373
+      },
+      "B": {
+        "hypothesis": "B_breadth_thrust_continuation",
+        "mechanism": "Broad participation surge \u2192 trend continuation",
+        "evaluations": [
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLF",
+            "horizon": 1,
+            "ic_spearman": -0.0139829974307858,
+            "pearson": -0.03933437211619444,
+            "quintile_spread": -0.0009306974179894393,
+            "quantile_means": {
+              "1": 0.0012512883310584779,
+              "2": 0.0006875707623814701,
+              "3": 0.00034443622710430844,
+              "4": 0.00031100452483625115,
+              "5": 0.0003205909130690386
+            },
+            "hit_ratio": 0.3894736842105263,
+            "n_obs": 475
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLF",
+            "horizon": 5,
+            "ic_spearman": 0.04644536988906518,
+            "pearson": 0.02098005947037182,
+            "quintile_spread": 0.0019826350329543462,
+            "quantile_means": {
+              "1": 0.0031792332988225575,
+              "2": 0.0016228303605994635,
+              "3": 0.005119460460901704,
+              "4": -0.0006237008536695571,
+              "5": 0.005161868331776904
+            },
+            "hit_ratio": 0.40764331210191085,
+            "n_obs": 471
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLF",
+            "horizon": 10,
+            "ic_spearman": 0.057066595649178264,
+            "pearson": 0.039654703516436234,
+            "quintile_spread": 0.0027106334734522458,
+            "quantile_means": {
+              "1": 0.007663907402161018,
+              "2": 0.0035847550635866544,
+              "3": 0.00743535554232202,
+              "4": -0.0004496951056492805,
+              "5": 0.010374540875613264
+            },
+            "hit_ratio": 0.4055793991416309,
+            "n_obs": 466
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLF",
+            "horizon": 20,
+            "ic_spearman": 0.018937668302782422,
+            "pearson": 0.00462150014231902,
+            "quintile_spread": -0.004761245654897408,
+            "quantile_means": {
+              "1": 0.01685917469974517,
+              "2": 0.007771437649607124,
+              "3": 0.004085656069437933,
+              "4": 0.013736341471612946,
+              "5": 0.012097929044847761
+            },
+            "hit_ratio": 0.4100877192982456,
+            "n_obs": 456
+          }
+        ],
+        "conditional_fwd_20d_top_thrust": 0.012923114501876876
+      },
+      "C": {
+        "hypothesis": "C_dispersion_reversal",
+        "mechanism": "Leadership concentration + weak breadth \u2192 mean reversion",
+        "evaluations": [
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLF",
+            "horizon": 1,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.0029470692097522348,
+            "quantile_means": {
+              "1": 0.0018407111536737101,
+              "2": 0.01108276777217948,
+              "3": 0.0007910112416148776,
+              "4": 0.0020432915273104315,
+              "5": -0.0011063580560785248
+            },
+            "hit_ratio": 0.6415094339622641,
+            "n_obs": 53
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLF",
+            "horizon": 5,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0007537535655662338,
+            "quantile_means": {
+              "1": -0.010245534368509935,
+              "2": 0.025007142627181955,
+              "3": 0.007942179762953527,
+              "4": -0.008245383921725058,
+              "5": -0.009491780802943701
+            },
+            "hit_ratio": 0.4716981132075472,
+            "n_obs": 53
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLF",
+            "horizon": 10,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0006543969556065989,
+            "quantile_means": {
+              "1": -0.018904395497100948,
+              "2": 0.043797644960246004,
+              "3": 0.006924983247988989,
+              "4": -0.013090964520315652,
+              "5": -0.01824999854149435
+            },
+            "hit_ratio": 0.4528301886792453,
+            "n_obs": 53
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLF",
+            "horizon": 20,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.00396821183074531,
+            "quantile_means": {
+              "1": 0.004729778358212624,
+              "2": 0.026399546766986103,
+              "3": 0.030984381525444395,
+              "4": -0.0388360453373347,
+              "5": 0.0007615665274673136
+            },
+            "hit_ratio": 0.4423076923076923,
+            "n_obs": 52
+          }
+        ],
+        "conditional_fwd_5d": 0.0007145490105861843
+      }
+    },
+    "XLE": {
+      "A": {
+        "hypothesis": "A_trend_fragility",
+        "mechanism": "Rally on narrowing participation \u2192 fragile trend",
+        "evaluations": [
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLE",
+            "horizon": 1,
+            "ic_spearman": 0.012048086166677446,
+            "pearson": 0.023463184650107882,
+            "quintile_spread": 0.005453488676983826,
+            "quantile_means": {
+              "1": -0.006250522224089944,
+              "2": 0.003801000294253054,
+              "3": -0.00042459846732754156,
+              "4": 0.004730806928053388,
+              "5": -0.0007970335471061185
+            },
+            "hit_ratio": 0.59,
+            "n_obs": 100
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLE",
+            "horizon": 5,
+            "ic_spearman": 0.05007640714216399,
+            "pearson": 0.0449421478525558,
+            "quintile_spread": 0.02156598911246152,
+            "quantile_means": {
+              "1": -0.020879722413977047,
+              "2": 0.009713891583465828,
+              "3": -0.001022176935008986,
+              "4": 0.006406324325307633,
+              "5": 0.0006862666984844723
+            },
+            "hit_ratio": 0.5050505050505051,
+            "n_obs": 99
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLE",
+            "horizon": 10,
+            "ic_spearman": -0.01332024116556341,
+            "pearson": -0.047760425820883544,
+            "quintile_spread": 0.011533682914373511,
+            "quantile_means": {
+              "1": -0.012614459164013953,
+              "2": 0.018202040070985786,
+              "3": 0.005041035633482677,
+              "4": 0.007654315484754411,
+              "5": -0.0010807762496404417
+            },
+            "hit_ratio": 0.5408163265306123,
+            "n_obs": 98
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "XLE",
+            "horizon": 20,
+            "ic_spearman": -0.08071377728211704,
+            "pearson": -0.036072076369771056,
+            "quintile_spread": 0.010432129049270655,
+            "quantile_means": {
+              "1": 0.005882080850875143,
+              "2": 0.029359000069477125,
+              "3": 0.0042406671728854265,
+              "4": 0.009605864187281423,
+              "5": 0.016314209900145798
+            },
+            "hit_ratio": 0.5918367346938775,
+            "n_obs": 98
+          }
+        ],
+        "conditional_fwd_20d_rally_weak_breadth": 0.01294970999343408
+      },
+      "B": {
+        "hypothesis": "B_breadth_thrust_continuation",
+        "mechanism": "Broad participation surge \u2192 trend continuation",
+        "evaluations": [
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLE",
+            "horizon": 1,
+            "ic_spearman": -0.003967460171582303,
+            "pearson": -0.011306128388781912,
+            "quintile_spread": -0.0016180469288283547,
+            "quantile_means": {
+              "1": 0.0013308689994478015,
+              "2": 0.0007853502561765238,
+              "3": -0.0004478555069808882,
+              "4": 0.0029251855459408735,
+              "5": -0.0002871779293805531
+            },
+            "hit_ratio": 0.3894736842105263,
+            "n_obs": 475
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLE",
+            "horizon": 5,
+            "ic_spearman": -0.09211799760679154,
+            "pearson": -0.07346496356129825,
+            "quintile_spread": -0.009225625197881438,
+            "quantile_means": {
+              "1": 0.006557374098725611,
+              "2": 0.005763334024438747,
+              "3": 0.002033715958639893,
+              "4": 0.00830165577829653,
+              "5": -0.0026682510991558263
+            },
+            "hit_ratio": 0.3609341825902335,
+            "n_obs": 471
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLE",
+            "horizon": 10,
+            "ic_spearman": -0.09667745461559916,
+            "pearson": -0.0698789978312433,
+            "quintile_spread": -0.008235362301919725,
+            "quantile_means": {
+              "1": 0.010845584107245936,
+              "2": 0.01158013258277256,
+              "3": 0.012800102931147762,
+              "4": 0.0004942212542294794,
+              "5": 0.002610221805326211
+            },
+            "hit_ratio": 0.34763948497854075,
+            "n_obs": 466
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "XLE",
+            "horizon": 20,
+            "ic_spearman": -0.15171277204881597,
+            "pearson": -0.11806734917422505,
+            "quintile_spread": -0.013297756376177246,
+            "quantile_means": {
+              "1": 0.017898891534238907,
+              "2": 0.02440308336800725,
+              "3": 0.029899877474961464,
+              "4": -0.002027752899376897,
+              "5": 0.00460113515806166
+            },
+            "hit_ratio": 0.35526315789473684,
+            "n_obs": 456
+          }
+        ],
+        "conditional_fwd_20d_top_thrust": 0.007208222618621822
+      },
+      "C": {
+        "hypothesis": "C_dispersion_reversal",
+        "mechanism": "Leadership concentration + weak breadth \u2192 mean reversion",
+        "evaluations": [
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLE",
+            "horizon": 1,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.0063760386599095815,
+            "quantile_means": {
+              "1": 0.0010712081863181733,
+              "2": 0.004369362859570088,
+              "3": 0.0162321367490613,
+              "4": 0.0009040530911355593,
+              "5": 0.007447246846227755
+            },
+            "hit_ratio": 0.6551724137931034,
+            "n_obs": 29
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLE",
+            "horizon": 5,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.039148244616443596,
+            "quantile_means": {
+              "1": 0.0033387927516002613,
+              "2": 0.0289076874646228,
+              "3": 0.027748681411357314,
+              "4": -0.003239950459574925,
+              "5": 0.04248703736804386
+            },
+            "hit_ratio": 0.7241379310344828,
+            "n_obs": 29
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLE",
+            "horizon": 10,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": 0.017787612274848076,
+            "quantile_means": {
+              "1": 0.005637788497462752,
+              "2": 0.06852038457662282,
+              "3": 0.046532537910995986,
+              "4": 0.020956824498481776,
+              "5": 0.02342540077231083
+            },
+            "hit_ratio": 0.7777777777777778,
+            "n_obs": 27
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "XLE",
+            "horizon": 20,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.024155919682591898,
+            "quantile_means": {
+              "1": 0.05507653487529127,
+              "2": -0.010838887191623492,
+              "3": 0.013110878853985897,
+              "4": 0.06711127154861232,
+              "5": 0.030920615192699376
+            },
+            "hit_ratio": 0.72,
+            "n_obs": 25
+          }
+        ],
+        "conditional_fwd_5d": 0.019576027924308226
+      }
+    },
+    "IWM": {
+      "A": {
+        "hypothesis": "A_trend_fragility",
+        "mechanism": "Rally on narrowing participation \u2192 fragile trend",
+        "evaluations": [
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "IWM",
+            "horizon": 1,
+            "ic_spearman": 0.055320751367960656,
+            "pearson": 0.06664435913183037,
+            "quintile_spread": 0.0028464033657412302,
+            "quantile_means": {
+              "1": 0.0035361157750463724,
+              "2": 0.0011839938019528114,
+              "3": 0.0014625309598842626,
+              "4": -0.0024619744517785543,
+              "5": 0.006382519140787603
+            },
+            "hit_ratio": 0.5833333333333334,
+            "n_obs": 96
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "IWM",
+            "horizon": 5,
+            "ic_spearman": 0.007377024621570389,
+            "pearson": 0.08201664214028796,
+            "quintile_spread": 0.0017349414037794997,
+            "quantile_means": {
+              "1": 0.015686135105734734,
+              "2": 0.003966999982134795,
+              "3": 0.00040754145881919567,
+              "4": -0.0005054393533492819,
+              "5": 0.017421076509514234
+            },
+            "hit_ratio": 0.6666666666666666,
+            "n_obs": 96
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "IWM",
+            "horizon": 10,
+            "ic_spearman": -0.010348644153096394,
+            "pearson": 0.044671265035349725,
+            "quintile_spread": -0.0001120321827055952,
+            "quantile_means": {
+              "1": 0.01838745326642613,
+              "2": 0.003306823210763871,
+              "3": 0.009573337004158066,
+              "4": 0.0011502842508136798,
+              "5": 0.018275421083720534
+            },
+            "hit_ratio": 0.6774193548387096,
+            "n_obs": 93
+          },
+          {
+            "signal": "hypothesis_a_fragility",
+            "target": "IWM",
+            "horizon": 20,
+            "ic_spearman": -0.13223836538690928,
+            "pearson": -0.1943140944380122,
+            "quintile_spread": -0.029330125812113417,
+            "quantile_means": {
+              "1": 0.02733491399941801,
+              "2": 0.004450302105836281,
+              "3": 0.014645580055827181,
+              "4": 0.0030921645597357626,
+              "5": -0.0019952118126954077
+            },
+            "hit_ratio": 0.5747126436781609,
+            "n_obs": 87
+          }
+        ],
+        "conditional_fwd_20d_rally_weak_breadth": 0.00957829234051487
+      },
+      "B": {
+        "hypothesis": "B_breadth_thrust_continuation",
+        "mechanism": "Broad participation surge \u2192 trend continuation",
+        "evaluations": [
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "IWM",
+            "horizon": 1,
+            "ic_spearman": 0.015998597079312442,
+            "pearson": 0.06298049082804788,
+            "quintile_spread": 0.0021708404076615398,
+            "quantile_means": {
+              "1": -0.0010009760548909726,
+              "2": 0.0013256163141571614,
+              "3": 0.0008838414201548937,
+              "4": 0.0015891755650402433,
+              "5": 0.0011698643527705672
+            },
+            "hit_ratio": 0.3936842105263158,
+            "n_obs": 475
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "IWM",
+            "horizon": 5,
+            "ic_spearman": 0.015211761322721534,
+            "pearson": 0.04972541398069844,
+            "quintile_spread": 0.006702462812640411,
+            "quantile_means": {
+              "1": -0.0010906036053711337,
+              "2": 0.007398051552133849,
+              "3": 0.004477239851113437,
+              "4": 0.004213960557087562,
+              "5": 0.0056118592072692776
+            },
+            "hit_ratio": 0.3885350318471338,
+            "n_obs": 471
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "IWM",
+            "horizon": 10,
+            "ic_spearman": -0.03161131976727132,
+            "pearson": -0.009453703827806591,
+            "quintile_spread": 0.0031027204801232647,
+            "quantile_means": {
+              "1": 0.004958243142119322,
+              "2": 0.014040555853649404,
+              "3": 0.010805233504624163,
+              "4": 0.0045049366439066695,
+              "5": 0.008060963622242586
+            },
+            "hit_ratio": 0.3648068669527897,
+            "n_obs": 466
+          },
+          {
+            "signal": "hypothesis_b_thrust",
+            "target": "IWM",
+            "horizon": 20,
+            "ic_spearman": -0.06298122459867088,
+            "pearson": -0.03920634244746303,
+            "quintile_spread": -0.00818547854431805,
+            "quantile_means": {
+              "1": 0.013950475994890273,
+              "2": 0.01934824244574973,
+              "3": 0.021878807888148957,
+              "4": 0.01383920062401544,
+              "5": 0.005764997450572223
+            },
+            "hit_ratio": 0.4166666666666667,
+            "n_obs": 456
+          }
+        ],
+        "conditional_fwd_20d_top_thrust": 0.013934775306286413
+      },
+      "C": {
+        "hypothesis": "C_dispersion_reversal",
+        "mechanism": "Leadership concentration + weak breadth \u2192 mean reversion",
+        "evaluations": [
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "IWM",
+            "horizon": 1,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.0005067416985262887,
+            "quantile_means": {
+              "1": 0.005273919906984652,
+              "2": -0.00601021658450925,
+              "3": 0.006251806035844809,
+              "4": 0.005537591449229884,
+              "5": 0.004767178208458363
+            },
+            "hit_ratio": 0.6896551724137931,
+            "n_obs": 29
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "IWM",
+            "horizon": 5,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.007867989577764078,
+            "quantile_means": {
+              "1": 0.006532832310135776,
+              "2": -0.0029893486873376154,
+              "3": 0.01745436600503778,
+              "4": 0.020132172118646263,
+              "5": -0.0013351572676283026
+            },
+            "hit_ratio": 0.6551724137931034,
+            "n_obs": 29
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "IWM",
+            "horizon": 10,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.021363324353006162,
+            "quantile_means": {
+              "1": 0.014614473117101309,
+              "2": -0.00234152060885782,
+              "3": 0.01409082155424204,
+              "4": 0.04605912112102739,
+              "5": -0.006748851235904851
+            },
+            "hit_ratio": 0.6896551724137931,
+            "n_obs": 29
+          },
+          {
+            "signal": "hypothesis_c_reversal",
+            "target": "IWM",
+            "horizon": 20,
+            "ic_spearman": NaN,
+            "pearson": NaN,
+            "quintile_spread": -0.009796801569327735,
+            "quantile_means": {
+              "1": 0.015303108224378192,
+              "2": -0.07365347033342663,
+              "3": 0.0045391755008937105,
+              "4": 0.06887843443150783,
+              "5": 0.0055063066550504565
+            },
+            "hit_ratio": 0.5517241379310345,
+            "n_obs": 29
+          }
+        ],
+        "conditional_fwd_5d": 0.007631545547175367
+      }
+    }
+  },
+  "etfs": {
+    "SPY": {
+      "universe_source": "yfinance_holdings",
+      "n_components": 10
+    },
+    "QQQ": {
+      "universe_source": "yfinance_holdings",
+      "n_components": 10
+    },
+    "XLK": {
+      "universe_source": "yfinance_holdings",
+      "n_components": 10
+    },
+    "XLF": {
+      "universe_source": "yfinance_holdings",
+      "n_components": 10
+    },
+    "XLE": {
+      "universe_source": "yfinance_holdings",
+      "n_components": 10
+    },
+    "IWM": {
+      "universe_source": "yfinance_holdings",
+      "n_components": 10
+    }
+  },
+  "philosophy_notes": {
+    "A_other_side": "Late index buyers without broad participation",
+    "B_other_side": "Underweight allocators forced to chase breadth",
+    "C_other_side": "Concentrated leadership holders vs broad market",
+    "cost_persistence": "Requires edge > daily ETF friction (~2-5bps)"
+  },
+  "top_neutral_ic": [
+    {
+      "signal": "pct_above_sma50",
+      "target": "SPY",
+      "horizon": 20,
+      "ic_spearman": 0.02250529962256646,
+      "pearson": -0.025173890165608365,
+      "quintile_spread": -0.004834790332209073,
+      "quantile_means": {
+        "1": 0.019738938527600208,
+        "2": 0.004209343035174033,
+        "3": 0.01380039772479188,
+        "4": 0.02338489499294736,
+        "5": 0.014904148195391135
+      },
+      "hit_ratio": 0.6728538283062645,
+      "n_obs": 431,
+      "ic_neutral": 0.4203489407156845
+    },
+    {
+      "signal": "pct_above_sma50",
+      "target": "QQQ",
+      "horizon": 20,
+      "ic_spearman": 0.06435319384837333,
+      "pearson": -0.05240834187302168,
+      "quintile_spread": -0.010546615804708791,
+      "quantile_means": {
+        "1": 0.03565044037904072,
+        "2": -0.0017251552056146405,
+        "3": 0.018664483516573113,
+        "4": 0.02332676977125678,
+        "5": 0.02510382457433193
+      },
+      "hit_ratio": 0.6566125290023201,
+      "n_obs": 431,
+      "ic_neutral": 0.2808253723526534
+    },
+    {
+      "signal": "pct_above_sma50",
+      "target": "XLE",
+      "horizon": 10,
+      "ic_spearman": -0.3213393846413923,
+      "pearson": -0.31648991467421567,
+      "quintile_spread": -0.022219630731881816,
+      "quantile_means": {
+        "1": 0.031033907963583976,
+        "2": 0.021549226436064214,
+        "3": -0.005543549817431418,
+        "4": -0.013471568494614922,
+        "5": 0.00881427723170216
+      },
+      "hit_ratio": 0.5668934240362812,
+      "n_obs": 441,
+      "ic_neutral": -0.25517957855767853
+    },
+    {
+      "signal": "pct_above_sma50",
+      "target": "SPY",
+      "horizon": 10,
+      "ic_spearman": 0.03349925375541041,
+      "pearson": 0.025090499996093973,
+      "quintile_spread": 0.002528869400419933,
+      "quantile_means": {
+        "1": 0.008244373767954099,
+        "2": 0.004298736611676463,
+        "3": 0.005653934354046986,
+        "4": 0.012877182333872169,
+        "5": 0.010773243168374032
+      },
+      "hit_ratio": 0.6235827664399093,
+      "n_obs": 441,
+      "ic_neutral": 0.24698247233510823
+    },
+    {
+      "signal": "pct_above_sma50",
+      "target": "XLE",
+      "horizon": 20,
+      "ic_spearman": -0.24209975385080898,
+      "pearson": -0.22622931436781082,
+      "quintile_spread": -0.011426449384637313,
+      "quantile_means": {
+        "1": 0.034527008319803015,
+        "2": 0.03698095004326894,
+        "3": -0.005985068150890782,
+        "4": -0.005465073904877395,
+        "5": 0.023100558935165702
+      },
+      "hit_ratio": 0.5893271461716937,
+      "n_obs": 431,
+      "ic_neutral": -0.24271637245463232
+    },
+    {
+      "signal": "pct_above_sma20",
+      "target": "XLE",
+      "horizon": 20,
+      "ic_spearman": -0.242165337099643,
+      "pearson": -0.2383158930714573,
+      "quintile_spread": -0.018994698003637334,
+      "quantile_means": {
+        "1": 0.03975204621355952,
+        "2": 0.023044382813145407,
+        "3": 0.007891740563641182,
+        "4": -0.016617384184157247,
+        "5": 0.02075734820992219
+      },
+      "hit_ratio": 0.527114967462039,
+      "n_obs": 461,
+      "ic_neutral": -0.176021570359351
+    },
+    {
+      "signal": "pct_above_sma50",
+      "target": "QQQ",
+      "horizon": 10,
+      "ic_spearman": 0.05507794762163469,
+      "pearson": 0.02240508407352154,
+      "quintile_spread": 0.005827204323562721,
+      "quantile_means": {
+        "1": 0.012096651601195944,
+        "2": 0.003919465724104676,
+        "3": 0.010261204969705116,
+        "4": 0.012237363917107134,
+        "5": 0.017923855924758664
+      },
+      "hit_ratio": 0.5986394557823129,
+      "n_obs": 441,
+      "ic_neutral": 0.16100203114421124
+    },
+    {
+      "signal": "breadth_divergence",
+      "target": "XLK",
+      "horizon": 10,
+      "ic_spearman": -0.06712773797476639,
+      "pearson": -0.07112404780832882,
+      "quintile_spread": -0.013398042744757086,
+      "quantile_means": {
+        "1": 0.015398367577106805,
+        "2": 0.005611186411679752,
+        "3": 0.016741774606688343,
+        "4": 0.011728752905692679,
+        "5": 0.002000324832349718
+      },
+      "hit_ratio": 0.39913232104121477,
+      "n_obs": 461,
+      "ic_neutral": -0.14413821472645
+    },
+    {
+      "signal": "pct_positive_5d_return",
+      "target": "XLE",
+      "horizon": 20,
+      "ic_spearman": -0.20887316197690445,
+      "pearson": -0.18288916907337943,
+      "quintile_spread": -0.026376721158520768,
+      "quantile_means": {
+        "1": 0.0339129319088441,
+        "2": 0.017243505390377615,
+        "3": 0.01137449020287797,
+        "4": 0.005266415331612976,
+        "5": 0.007536210750323329
+      },
+      "hit_ratio": 0.5347368421052632,
+      "n_obs": 475,
+      "ic_neutral": -0.14307929839983208
+    },
+    {
+      "signal": "breadth_thrust",
+      "target": "XLK",
+      "horizon": 20,
+      "ic_spearman": -0.0348958948775161,
+      "pearson": 0.0016447920874819038,
+      "quintile_spread": 0.0006413387462196815,
+      "quantile_means": {
+        "1": 0.024384717773720845,
+        "2": 0.017158478803728654,
+        "3": 0.019755261923692983,
+        "4": 0.011755588497946891,
+        "5": 0.025026056519940526
+      },
+      "hit_ratio": 0.40131578947368424,
+      "n_obs": 456,
+      "ic_neutral": -0.1384240279667023
+    }
+  ]
+}

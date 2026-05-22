@@ -1,0 +1,73 @@
+{
+  "edge_quality": "momentum_overlay_tech_bull",
+  "fragility_score": 0.17785365397997108,
+  "persistent_across_subperiods": true,
+  "subperiod_verdict": "persistent",
+  "bootstrap_survival_rate": 0.996,
+  "prob_negative_sharpe": 0.004,
+  "prob_underperform_spy": 0.248,
+  "left_tail_loss_95": 0.11506349665895337,
+  "tech_concentration": true,
+  "concentration_verdict": "tech_concentration",
+  "likely_overfit": false,
+  "market_regime_dependency": {
+    "sharpe_vix_high": 0.0,
+    "sharpe_vix_low": 2.062808523223072,
+    "sharpe_spy_bullish": 2.098793424652466,
+    "sharpe_spy_bearish": 2.0780147372341675,
+    "sharpe_rates_rising": 0.0,
+    "sharpe_rates_falling": 2.062808523223072,
+    "sharpe_tech_leading": 2.611898878360078,
+    "sharpe_tech_lagging": 1.730866043175354,
+    "regime_dependency_score": 2.611898878360078,
+    "works_only_low_vol": true,
+    "works_only_bull": false,
+    "works_only_tech_leadership": false
+  },
+  "residual_alpha_sector_neutral": -0.03557497441536944,
+  "production_candidate": false,
+  "narrative": "Returns look like momentum overlay on tech bull market (QQQ/XLK dominated). PnL concentrated in QQQ/XLK.",
+  "subperiod_summary": {
+    "verdict": "persistent",
+    "pct_windows_sharpe_positive": 1.0,
+    "dominant_half_pnl_share": 0.8147536078738008,
+    "first_half_sharpe": 1.0118600916697036,
+    "second_half_sharpe": 3.3673651273033918
+  },
+  "bootstrap_summary": {
+    "block_size": 5,
+    "n_samples": 1000,
+    "cagr_mean": 0.3766111565534878,
+    "cagr_p5": 0.11506349665895337,
+    "cagr_p95": 0.6921780867761378,
+    "sharpe_mean": 2.195451699736493,
+    "sharpe_p5": 0.7659386758232312,
+    "prob_negative_sharpe": 0.004,
+    "prob_underperform_spy": 0.248,
+    "left_tail_loss_95": 0.11506349665895337,
+    "bootstrap_survival_rate": 0.996
+  },
+  "concentration": {
+    "qqq_pnl_share": 0.49980484126720837,
+    "xlk_pnl_share": 0.5001951587327912,
+    "others_pnl_share": 3.79477147554091e-16,
+    "concentration_ratio_top2": 0.9999999999999996,
+    "herfindahl_index": 0.45618972958688275,
+    "pct_days_single_etf_gt_80pct_pnl": 0.5737051792828686,
+    "verdict": "tech_concentration"
+  },
+  "regime_dependency": {
+    "sharpe_vix_high": 0.0,
+    "sharpe_vix_low": 2.062808523223072,
+    "sharpe_spy_bullish": 2.098793424652466,
+    "sharpe_spy_bearish": 2.0780147372341675,
+    "sharpe_rates_rising": 0.0,
+    "sharpe_rates_falling": 2.062808523223072,
+    "sharpe_tech_leading": 2.611898878360078,
+    "sharpe_tech_lagging": 1.730866043175354,
+    "regime_dependency_score": 2.611898878360078,
+    "works_only_low_vol": true,
+    "works_only_bull": false,
+    "works_only_tech_leadership": false
+  }
+}

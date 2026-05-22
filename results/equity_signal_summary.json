@@ -1,0 +1,22 @@
+{
+  "universe": "nasdaq100",
+  "n_tickers": 100,
+  "period": "3y",
+  "n_days": 752,
+  "dropped_tickers": [],
+  "falsification": {
+    "signals_tested": 14,
+    "potential_independent_count": 0,
+    "failed_or_structural_count": 14,
+    "true_alpha_claim": false,
+    "verdict": "NO independent cross-sectional alpha after neutralization",
+    "surviving_features": []
+  },
+  "anti_leakage": [
+    "rolling features use shift(1)",
+    "forward returns future-only",
+    "sector neutralization cross-sectional same-day demean",
+    "beta/momentum neutralization trailing OLS only",
+    "no global z-score or full-sample normalization"
+  ]
+}

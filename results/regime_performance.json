@@ -1,0 +1,56 @@
+{
+  "vol_proxy": "SPY realized vol 20d (lagged close), expanding 70th pct",
+  "high_volatility": {
+    "regime": "high_volatility",
+    "n_days": 108,
+    "sharpe": 2.1913161968590065,
+    "mean_daily_return": 0.0013786334940707962,
+    "annualized_turnover": 40.833333333333336,
+    "mean_daily_turnover": 0.16203703703703703
+  },
+  "low_volatility": {
+    "regime": "low_volatility",
+    "n_days": 143,
+    "sharpe": 1.9519503326568801,
+    "mean_daily_return": 0.0011025098107930605,
+    "annualized_turnover": 25.55244755244755,
+    "mean_daily_turnover": 0.10139860139860139
+  },
+  "high_volatility_spy": {
+    "regime": "high_volatility",
+    "n_days": 108,
+    "sharpe": 2.2634303819673685,
+    "mean_daily_return": 0.0011840091540184763,
+    "annualized_turnover": 0.0,
+    "mean_daily_turnover": 0.0
+  },
+  "low_volatility_spy": {
+    "regime": "low_volatility",
+    "n_days": 143,
+    "sharpe": 1.6311947551145949,
+    "mean_daily_return": 0.0007331735765507267,
+    "annualized_turnover": 0.0,
+    "mean_daily_turnover": 0.0
+  },
+  "stability": {
+    "split_sample_50_50": {
+      "spearman": 0.3714285714285715,
+      "n_assets": 6,
+      "split": "50/50",
+      "period_1": [
+        "2025-06-20",
+        "2025-12-02"
+      ],
+      "period_2": [
+        "2025-12-03",
+        "2026-05-19"
+      ]
+    }
+  },
+  "summary": {
+    "alpha_vs_spy_excess_return": 0.0903337259725907,
+    "beta_full_sample": 0.7770937753016806,
+    "likely_momentum_beta": false,
+    "rank_stability_50_50": 0.3714285714285715
+  }
+}

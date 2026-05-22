@@ -1,0 +1,13 @@
+metric,value
+total_return_strategy,0.34215312557072464
+total_return_spy,0.25181939959813393
+excess_return_vs_spy,0.0903337259725907
+sharpe_strategy,2.062808523223072
+sharpe_spy,1.925752262511738
+sharpe_active,0.6234855624361818
+mean_beta_60d,0.7778097132419014
+mean_correlation_60d,0.6107994425612823
+mean_tracking_error_60d_ann,0.1119676640768112
+information_ratio_proxy,0.6234855624361818
+cagr_strategy,0.34531654610663165
+cagr_spy,0.2540706707123144

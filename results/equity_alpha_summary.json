@@ -1,0 +1,13 @@
+{
+  "universe": "sp500",
+  "n_tickers": 77,
+  "n_features": 17,
+  "period": "3y",
+  "dropped": [],
+  "survivorship_warning": "Current S&P 500 membership applied to historical windows \u2014 survivorship bias present; delisted names excluded.",
+  "verdict": "NO structurally independent cross-sectional alpha confirmed",
+  "classification_counts": {
+    "LIKELY_NOISE": 13,
+    "HIGH_LEAKAGE_RISK": 4
+  }
+}

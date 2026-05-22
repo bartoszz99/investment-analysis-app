@@ -1,0 +1,101 @@
+{
+  "verdict": {
+    "true_alpha_exists": "NO",
+    "dominant_driver": "sector",
+    "system_type": "overlay system",
+    "overfit_risk": "low",
+    "investable": "no",
+    "confidence": 75,
+    "metrics": {
+      "alpha_market_annual": 0.1261771767577445,
+      "alpha_sector_neutral_annual": -0.03557497441536944,
+      "residual_sharpe_sector_neutral": -0.3751334524239615,
+      "bootstrap_survival_rate": 0.996,
+      "fragility_score": 0.17785365397997108,
+      "tech_concentration": true,
+      "production_candidate": false
+    },
+    "surviving_signal_count": 1,
+    "true_edge_survivors": 0,
+    "research_hypotheses_for_further_study": [
+      {
+        "hypothesis": "passive_flow_narrow_rally_tail_asymmetry",
+        "type": "STRUCTURAL_RESEARCH",
+        "note": "Negative skew after narrow rallies \u2014 not tradable alpha, worth structural study"
+      }
+    ],
+    "honest_conclusion": "NO independent residual alpha after sector + momentum neutralization. Dominant return driver: sector exposure (not a standalone edge). Sector-neutral alpha: -3.6%. Performance is effectively a QQQ/XLK momentum overlay during favorable bull regime. Do NOT optimize further \u2014 pivot to structural market research (breadth/passive flow tails)."
+  },
+  "classification_summary": {
+    "TRUE_EDGE": 38,
+    "NOISE": 8,
+    "STRUCTURAL_EXPOSURE": 2
+  },
+  "pruning_summary": {
+    "total_signals": 48,
+    "pruned": 47,
+    "kept": 1
+  },
+  "surviving_hypotheses": [
+    {
+      "signal": "passive_flow_narrow_rally_fragility",
+      "target": "SPY/QQQ/XLK",
+      "source_module": "passive_flow",
+      "classification": "STRUCTURAL_EXPOSURE",
+      "ic_raw_20d": -0.0053789839071707035,
+      "ic_neutral_20d": NaN,
+      "leakage_risk": "MEDIUM",
+      "reason": "Event study: MIXED \u2014 NEEDS LONGER SAMPLE \u2014 structural tail asymmetry, not tradable alpha",
+      "tech_concentration": NaN,
+      "production_candidate": NaN,
+      "pruned": false,
+      "kept": true,
+      "prune_reasons": ""
+    }
+  ],
+  "edge_decomposition": [
+    {
+      "component": "total_return",
+      "value": 0.3421531255707246,
+      "fraction_of_total": 1.0,
+      "annualized_alpha_equiv": 0.3421531255707246,
+      "notes": "Momentum ETF rotation system (~1y sample)"
+    },
+    {
+      "component": "spy_beta_exposure",
+      "value": 0.2518193995981339,
+      "fraction_of_total": 0.7359845074572662,
+      "annualized_alpha_equiv": 0.1261771767577445,
+      "notes": "Beta ~0.78, R\u00b2 market 0.40"
+    },
+    {
+      "component": "sector_tilt_increment",
+      "value": 0.029590553847499153,
+      "fraction_of_total": 0.19664962597330848,
+      "annualized_alpha_equiv": -0.16175215117311395,
+      "notes": "XLK/XLF/XLE factor exposure after SPY removed"
+    },
+    {
+      "component": "momentum_tilt",
+      "value": 0.014586376316433948,
+      "fraction_of_total": 0.08073604935137838,
+      "annualized_alpha_equiv": 0.08587227979618421,
+      "notes": "Mean momentum beta 0.65"
+    },
+    {
+      "component": "residual_alpha",
+      "value": -0.03557497441536944,
+      "fraction_of_total": 0.40368024675689185,
+      "annualized_alpha_equiv": -0.03557497441536944,
+      "notes": "Sector-neutral OLS intercept \u2014 KEY metric for true edge"
+    },
+    {
+      "component": "tech_concentration_pnl",
+      "value": 0.9999999999999997,
+      "fraction_of_total": 0.9999999999999997,
+      "annualized_alpha_equiv": NaN,
+      "notes": "QQQ+XLK share of absolute PnL"
+    }
+  ],
+  "methodology": "Consolidation reads prior research outputs. Pruning: neutral IC<0.05, HIGH leakage, sector-alpha<=0, production_candidate=false. No optimization performed."
+}

@@ -1,0 +1,18 @@
+feature,category,classification,kept,reasons,ic_raw_5d,ic_sector_5d,ic_beta_5d,ic_momentum_5d
+liq_volume_zscore,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,0.007588191529093173,0.001245732779484144,0.009122716824014589,0.013290591446786388
+liq_dollar_volume_zscore,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,0.0037810955102503493,-0.0009186854000531663,0.005913463956911263,0.014808151336210027
+liq_failed_breakout,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,-0.004065729122508614,0.010358601881756855,-0.00608835935618011,0.013364123074978347
+liq_gap_extension,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,-0.00197376056897567,-0.002263866138106898,-0.001270240679432257,0.009347844697314847
+liq_extension_5d,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,-0.010687145973448444,-0.009847936022575336,-0.004667245580107765,-0.006298007049545035
+liq_extension_10d,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,-0.016957604412345784,-0.00916925877887584,-0.013193812269212988,-0.0005075538137186672
+liq_reversal_after_extreme,C_liquidity,LIKELY_NOISE,False,|raw IC| < 0.02,0.003820771661619189,0.004030158519598749,0.004590435862931835,0.015397162993606418
+breadth_pct_above_sma50,B_breadth,LIKELY_NOISE,False,weak IC after all neutralizations,-0.08968879542789092,,,
+breadth_pct_above_sma200,B_breadth,LIKELY_NOISE,False,weak IC after all neutralizations,-0.1754963414661204,,,
+breadth_new_highs_lows,B_breadth,LIKELY_NOISE,False,weak IC after all neutralizations,-0.06664861663112655,,,
+breadth_cross_dispersion,B_breadth,LIKELY_NOISE,False,|raw IC| < 0.02,-0.0021607165907567114,,,
+breadth_narrow_leadership,B_breadth,LIKELY_NOISE,False,|raw IC| < 0.02,0.006754650534963404,,,
+breadth_sector_participation,B_breadth,LIKELY_NOISE,False,weak IC after all neutralizations,-0.06356258613449171,,,
+earn_post_gap_continuation,A_post_earnings,HIGH_LEAKAGE_RISK,False,earnings/calendar or proxy timestamps unreliable,,,,
+earn_abnormal_volume,A_post_earnings,HIGH_LEAKAGE_RISK,False,earnings/calendar or proxy timestamps unreliable,,,,
+earn_drift_surprise_5d,A_post_earnings,HIGH_LEAKAGE_RISK,False,earnings/calendar or proxy timestamps unreliable,,,,
+earn_gap_size,A_post_earnings,HIGH_LEAKAGE_RISK,False,earnings/calendar or proxy timestamps unreliable,,,,

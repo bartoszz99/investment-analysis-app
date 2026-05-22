@@ -1,0 +1,140 @@
+{
+  "beta_decomposition": {
+    "alpha_daily": 0.000500703082372002,
+    "alpha_annualized": 0.1261771767577445,
+    "beta": 0.7770937753016796,
+    "r_squared": 0.39967012726979967,
+    "n_obs": 250,
+    "residual_vol_annual": 0.1154156494334734
+  },
+  "edge_stability": {
+    "rolling_windows": {
+      "3m": {
+        "mean_rolling_sharpe": 1.5389151141575987,
+        "std_rolling_sharpe": 1.3722197382977503,
+        "pct_months_sharpe_positive": 0.925764192139738,
+        "n_positive_clusters": 8,
+        "latest_rolling_sharpe": 4.427845364118753
+      },
+      "6m": {
+        "mean_rolling_sharpe": 1.2440328835089407,
+        "std_rolling_sharpe": 0.6032541721329631,
+        "pct_months_sharpe_positive": 0.9952153110047847,
+        "n_positive_clusters": 2,
+        "latest_rolling_sharpe": 2.9774824848686774
+      },
+      "12m": {
+        "mean_rolling_sharpe": 1.1574691718815489,
+        "std_rolling_sharpe": 0.4280432465218635,
+        "pct_months_sharpe_positive": 1.0,
+        "n_positive_clusters": 1,
+        "latest_rolling_sharpe": 2.0669465585217464
+      }
+    },
+    "edge_verdict": "persistent",
+    "interpretation": "persistent: rolling Sharpe > 0 most of the time with moderate variance; clustered: edge concentrated in episodic windows; weak_or_absent: edge not stable"
+  },
+  "narrative": {
+    "question": "strategy vs market beta + momentum rotation?",
+    "beta_explains_return": false,
+    "estimated_annual_alpha": 0.1261771767577445,
+    "has_material_alpha": true,
+    "rotation_adds_vs_absolute_momentum": "True",
+    "edge_stability_verdict": "persistent",
+    "top_return_contributor": "XLK"
+  },
+  "pnl_attribution_summary": [
+    {
+      "ticker": "SPY",
+      "pnl_usd": 0.0,
+      "contribution_to_return": 0.0,
+      "contribution_to_return_pct": 0.0,
+      "avg_weight": 0.037848605577689244,
+      "asset_vol_annual": 0.12142761566393688,
+      "corr_to_portfolio": 0.6321946909535067,
+      "contribution_to_volatility": 0.019466063799503455,
+      "linked_return_proxy": 0.012909084452560782
+    },
+    {
+      "ticker": "QQQ",
+      "pnl_usd": 67081.54113374818,
+      "contribution_to_return": 1.9605707538650587,
+      "contribution_to_return_pct": 196.0570753865059,
+      "avg_weight": 0.15737051792828685,
+      "asset_vol_annual": 0.16102582070705168,
+      "corr_to_portfolio": 0.6341645878853738,
+      "contribution_to_volatility": 0.10766655804151076,
+      "linked_return_proxy": 0.037660372733889336
+    },
+    {
+      "ticker": "IWM",
+      "pnl_usd": 2.9103830456733704e-11,
+      "contribution_to_return": 8.50608347013852e-16,
+      "contribution_to_return_pct": 8.50608347013852e-14,
+      "avg_weight": 0.2051792828685259,
+      "asset_vol_annual": 0.19338757154474345,
+      "corr_to_portfolio": 0.6450171237406465,
+      "contribution_to_volatility": 0.171472017840891,
+      "linked_return_proxy": 0.05371771128766212
+    },
+    {
+      "ticker": "XLK",
+      "pnl_usd": 67133.92777541482,
+      "contribution_to_return": 1.9621018414907896,
+      "contribution_to_return_pct": 196.21018414907897,
+      "avg_weight": 0.23107569721115537,
+      "asset_vol_annual": 0.20593088441318097,
+      "corr_to_portfolio": 0.6480902278097032,
+      "contribution_to_volatility": 0.20661943833201743,
+      "linked_return_proxy": 0.160510038236634
+    },
+    {
+      "ticker": "XLF",
+      "pnl_usd": 2.1827872842550278e-11,
+      "contribution_to_return": 6.37956260260389e-16,
+      "contribution_to_return_pct": 6.379562602603889e-14,
+      "avg_weight": 0.06772908366533864,
+      "asset_vol_annual": 0.14610540944293327,
+      "corr_to_portfolio": 0.36719180806821583,
+      "contribution_to_volatility": 0.02434413939254367,
+      "linked_return_proxy": 0.005111533009347635
+    },
+    {
+      "ticker": "XLE",
+      "pnl_usd": 0.0,
+      "contribution_to_return": 0.0,
+      "contribution_to_return_pct": 0.0,
+      "avg_weight": 0.21314741035856574,
+      "asset_vol_annual": 0.20188897190932456,
+      "corr_to_portfolio": 0.34605856942748703,
+      "contribution_to_volatility": 0.09977051454081032,
+      "linked_return_proxy": 0.05195772227017592
+    }
+  ],
+  "model_breakdown": [
+    {
+      "model": "full_system",
+      "sharpe": 2.062808523223072,
+      "turnover_annual": 32.12749003984064,
+      "max_drawdown_pct": 6.70778188449378,
+      "return_pct": 34.215312557072465,
+      "trades": 521
+    },
+    {
+      "model": "momentum_only",
+      "sharpe": 1.9494230627254874,
+      "turnover_annual": 34.63745019920319,
+      "max_drawdown_pct": 10.751580541180333,
+      "return_pct": 37.83852957474403,
+      "trades": 465
+    },
+    {
+      "model": "cross_sectional_only",
+      "sharpe": 2.062808523223072,
+      "turnover_annual": 32.12749003984064,
+      "max_drawdown_pct": 6.70778188449378,
+      "return_pct": 34.215312557072465,
+      "trades": 521
+    }
+  ]
+}

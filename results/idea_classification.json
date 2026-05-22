@@ -1,0 +1,3396 @@
+{
+  "summary": {
+    "n_evaluations": 60,
+    "tickers": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "XLK",
+      "XLF",
+      "XLE",
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "JPM",
+      "UNH",
+      "XOM"
+    ],
+    "ideas": [
+      "momentum",
+      "breakout",
+      "mean_reversion",
+      "earnings_reaction"
+    ],
+    "period": "2y",
+    "verdict_counts": {
+      "noise": 42,
+      "weak_monitor": 18
+    },
+    "philosophy": "System classifies investment hypothesis coherence, not alpha. MARKET_EXPOSURE = idea is mostly beta/sector/momentum. NOISE = no structural support."
+  },
+  "evaluations": [
+    {
+      "ticker": "SPY",
+      "idea": "momentum",
+      "idea_score": 0.014138036997275533,
+      "directional_score": -0.014138036997275533,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.25287321000908153,
+        "structural": -0.5
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 27.846853,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.25287321000908153,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.035288986905240405,
+        "mom_3m": 0.07204506404795419,
+        "mom_6m": 0.09819157067541973,
+        "vol_20d": 0.006740140352555017
+      },
+      "structural": {
+        "score_structural": -0.5,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.06103723816532564,
+        "ic_5d": -0.17201319922214742,
+        "ic_20d": -0.47072255420193193,
+        "ic_mean": -0.23459099719646834,
+        "residual_ic_mean": -0.05695413288703671,
+        "regime_ic": {
+          "bull": -0.06215293019794352,
+          "bear": -0.2750905279207166,
+          "high_vol": -0.22293327362292883,
+          "low_vol": -0.09442771486565887
+        },
+        "spy_corr_last": 0.9999999999999976,
+        "volume_z_last": 0.7547169657831485,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "SPY",
+      "idea": "breakout",
+      "idea_score": 0.08954093081619705,
+      "directional_score": 0.08954093081619705,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.09846976938732349,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 27.846853,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.09846976938732349,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.035288986905240405,
+        "mom_3m": 0.07204506404795419,
+        "mom_6m": 0.09819157067541973,
+        "vol_20d": 0.006740140352555017
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.1002430167466544,
+        "ic_5d": -0.13612238479653022,
+        "ic_20d": -0.15453926061007595,
+        "ic_mean": -0.13030155405108687,
+        "residual_ic_mean": 0.028408852271576284,
+        "regime_ic": {
+          "bull": -0.04686114606907902,
+          "bear": 0.04741847567996095,
+          "high_vol": -0.12777065551277067,
+          "low_vol": -0.04305550170350646
+        },
+        "spy_corr_last": 0.9999999999999976,
+        "volume_z_last": 0.7547169657831485,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "SPY",
+      "idea": "mean_reversion",
+      "idea_score": 0.12152520745485507,
+      "directional_score": 0.12152520745485507,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.20508402484951688,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 27.846853,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.20508402484951688,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.035288986905240405,
+        "mom_3m": 0.07204506404795419,
+        "mom_6m": 0.09819157067541973,
+        "vol_20d": 0.006740140352555017
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.05904647932844752,
+        "ic_5d": 0.03571434169937129,
+        "ic_20d": 0.012189792135534464,
+        "ic_mean": 0.03565020438778442,
+        "residual_ic_mean": -0.009653157243081287,
+        "regime_ic": {
+          "bull": -0.08181849680758242,
+          "bear": -0.03807890222984562,
+          "high_vol": 0.0071919772109525415,
+          "low_vol": -0.053682448176467536
+        },
+        "spy_corr_last": 0.9999999999999976,
+        "volume_z_last": 0.7547169657831485,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "SPY",
+      "idea": "earnings_reaction",
+      "idea_score": 0.16664997561220418,
+      "directional_score": 0.16664997561220418,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.35549991870734726,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 27.846853,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.35549991870734726,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.035288986905240405,
+        "mom_3m": 0.07204506404795419,
+        "mom_6m": 0.09819157067541973,
+        "vol_20d": 0.006740140352555017
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.03760783305720797,
+        "ic_5d": 0.011786306288281307,
+        "ic_20d": -0.0004970257073226125,
+        "ic_mean": 0.016299037879388887,
+        "residual_ic_mean": 0.026133695638395595,
+        "regime_ic": {
+          "bull": -0.008178474794323171,
+          "bear": -0.06148275204878978,
+          "high_vol": 0.03736415387269277,
+          "low_vol": -0.05189725785890585
+        },
+        "spy_corr_last": 0.9999999999999976,
+        "volume_z_last": 0.7547169657831485,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "QQQ",
+      "idea": "momentum",
+      "idea_score": 0.04144892457324095,
+      "directional_score": -0.04144892457324095,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.3819476274750674,
+        "structural": -0.7201107093858705
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 34.788456,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.3819476274750674,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.08463342526809692,
+        "mom_3m": 0.15950183016563302,
+        "mom_6m": 0.15514171602925786,
+        "vol_20d": 0.011010113480580853
+      },
+      "structural": {
+        "score_structural": -0.7201107093858705,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": -0.053899963938326384,
+        "ic_5d": -0.13636451196877802,
+        "ic_20d": -0.44005895974194337,
+        "ic_mean": -0.21010781188301594,
+        "residual_ic_mean": -0.10801660640788058,
+        "regime_ic": {
+          "bull": -0.02921021240143765,
+          "bear": -0.27005908137983603,
+          "high_vol": -0.19654052843708017,
+          "low_vol": -0.012157136370920356
+        },
+        "spy_corr_last": 0.9607888875378845,
+        "volume_z_last": 1.1416368975080389,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "QQQ",
+      "idea": "breakout",
+      "idea_score": 0.11370003270838691,
+      "directional_score": 0.11370003270838691,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.17900010902795638,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 34.788456,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.17900010902795638,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.08463342526809692,
+        "mom_3m": 0.15950183016563302,
+        "mom_6m": 0.15514171602925786,
+        "vol_20d": 0.011010113480580853
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.05812321972351695,
+        "ic_5d": -0.07141231400578053,
+        "ic_20d": -0.040687997833705546,
+        "ic_mean": -0.056741177187667684,
+        "residual_ic_mean": 0.0430186547914334,
+        "regime_ic": {
+          "bull": 0.018584987929453605,
+          "bear": 0.13440317142085395,
+          "high_vol": -0.03069693183054106,
+          "low_vol": -0.018298782018534587
+        },
+        "spy_corr_last": 0.9607888875378845,
+        "volume_z_last": 1.1416368975080389,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "QQQ",
+      "idea": "mean_reversion",
+      "idea_score": 0.14101212134660807,
+      "directional_score": 0.14101212134660807,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.2700404044886936,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 34.788456,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.2700404044886936,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.08463342526809692,
+        "mom_3m": 0.15950183016563302,
+        "mom_6m": 0.15514171602925786,
+        "vol_20d": 0.011010113480580853
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.050425616477843486,
+        "ic_5d": 0.025107519356843338,
+        "ic_20d": -0.01996425971438593,
+        "ic_mean": 0.018522958706766963,
+        "residual_ic_mean": -0.017170011447075126,
+        "regime_ic": {
+          "bull": -0.062426849336519825,
+          "bear": -0.08473413379073755,
+          "high_vol": -0.019865820624833906,
+          "low_vol": -0.03934766581434514
+        },
+        "spy_corr_last": 0.9607888875378845,
+        "volume_z_last": 1.1416368975080389,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "QQQ",
+      "idea": "earnings_reaction",
+      "idea_score": 0.22427565410821454,
+      "directional_score": 0.22427565410821454,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.5475855136940485,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 34.788456,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.5475855136940485,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.08463342526809692,
+        "mom_3m": 0.15950183016563302,
+        "mom_6m": 0.15514171602925786,
+        "vol_20d": 0.011010113480580853
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.05896455100207931,
+        "ic_5d": 0.018744523687408282,
+        "ic_20d": -0.020686074545121027,
+        "ic_mean": 0.019007666714788856,
+        "residual_ic_mean": 0.033499113986412955,
+        "regime_ic": {
+          "bull": -0.004154710194001972,
+          "bear": -0.040060987230798546,
+          "high_vol": 0.041731743819030345,
+          "low_vol": -0.037939239420158345
+        },
+        "spy_corr_last": 0.9607888875378845,
+        "volume_z_last": 1.1416368975080389,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "IWM",
+      "idea": "momentum",
+      "idea_score": 0.3905050151599849,
+      "directional_score": 0.3905050151599849,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.20320049696290604,
+        "structural": 0.8984828869037104
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 19.257828,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.20320049696290604,
+        "sma_aligned_bull": true,
+        "mom_1m": -0.01568417525793042,
+        "mom_3m": 0.03596962338669396,
+        "mom_6m": 0.155477194743195,
+        "vol_20d": 0.011388970526818398
+      },
+      "structural": {
+        "score_structural": 0.8984828869037104,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": -0.04492743724581124,
+        "ic_5d": -0.16555998932812452,
+        "ic_20d": -0.3161040956450761,
+        "ic_mean": -0.17553050740633727,
+        "residual_ic_mean": 0.13477243303555655,
+        "regime_ic": {
+          "bull": -0.09211065146841789,
+          "bear": -0.04631217838765008,
+          "high_vol": -0.15658755038065386,
+          "low_vol": -0.14544495486352227
+        },
+        "spy_corr_last": 0.8989409496690304,
+        "volume_z_last": 0.951595843466954,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "IWM",
+      "idea": "breakout",
+      "idea_score": 0.1445209252235622,
+      "directional_score": -0.1445209252235622,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": -0.18173641741187402,
+        "structural": -0.5
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 19.257828,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": -0.18173641741187402,
+        "sma_aligned_bull": true,
+        "mom_1m": -0.01568417525793042,
+        "mom_3m": 0.03596962338669396,
+        "mom_6m": 0.155477194743195,
+        "vol_20d": 0.011388970526818398
+      },
+      "structural": {
+        "score_structural": -0.5,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.037563705325255756,
+        "ic_5d": -0.1408118384568265,
+        "ic_20d": -0.17814065056184575,
+        "ic_mean": -0.118838731447976,
+        "residual_ic_mean": -0.021911552465469015,
+        "regime_ic": {
+          "bull": -0.03455570904734399,
+          "bear": -0.001867769540448623,
+          "high_vol": -0.1560574245751593,
+          "low_vol": -0.01349218267561268
+        },
+        "spy_corr_last": 0.8989409496690304,
+        "volume_z_last": 0.951595843466954,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "IWM",
+      "idea": "mean_reversion",
+      "idea_score": 0.15434578222927547,
+      "directional_score": 0.15434578222927547,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.31448594076425157,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 19.257828,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.31448594076425157,
+        "sma_aligned_bull": true,
+        "mom_1m": -0.01568417525793042,
+        "mom_3m": 0.03596962338669396,
+        "mom_6m": 0.155477194743195,
+        "vol_20d": 0.011388970526818398
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.036963448083088025,
+        "ic_5d": 0.09970641421125413,
+        "ic_20d": 0.15908174958499233,
+        "ic_mean": 0.09858387062644484,
+        "residual_ic_mean": -0.04230438761770966,
+        "regime_ic": {
+          "bull": -0.06289993341724051,
+          "bear": -0.028625881456070132,
+          "high_vol": 0.041662742611509214,
+          "low_vol": -0.04292593679341353
+        },
+        "spy_corr_last": 0.8989409496690304,
+        "volume_z_last": 0.951595843466954,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "IWM",
+      "idea": "earnings_reaction",
+      "idea_score": 0.19634460350164668,
+      "directional_score": 0.19634460350164668,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.4544820116721556,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 19.257828,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.4544820116721556,
+        "sma_aligned_bull": true,
+        "mom_1m": -0.01568417525793042,
+        "mom_3m": 0.03596962338669396,
+        "mom_6m": 0.155477194743195,
+        "vol_20d": 0.011388970526818398
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.0677475772859141,
+        "ic_5d": -0.012534556294564835,
+        "ic_20d": -0.027492116595766985,
+        "ic_mean": -0.03592475005874864,
+        "residual_ic_mean": -0.024656644420541284,
+        "regime_ic": {
+          "bull": -0.047373355886574424,
+          "bear": 0.10623213264722699,
+          "high_vol": 0.06013828214966734,
+          "low_vol": -0.09038438303674678
+        },
+        "spy_corr_last": 0.8989409496690304,
+        "volume_z_last": 0.951595843466954,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLK",
+      "idea": "momentum",
+      "idea_score": 0.20671276709469344,
+      "directional_score": 0.20671276709469344,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.48904255698231147,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 38.81625,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.48904255698231147,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.1208592664960979,
+        "mom_3m": 0.2309659001584048,
+        "mom_6m": 0.2057504323449686,
+        "vol_20d": 0.016170430520784384
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.048593046927030245,
+        "ic_5d": -0.09500064050516113,
+        "ic_20d": -0.32559243464558685,
+        "ic_mean": -0.15639537402592607,
+        "residual_ic_mean": -0.06719499211945314,
+        "regime_ic": {
+          "bull": 0.022160721190044967,
+          "bear": -0.25991995425957687,
+          "high_vol": -0.1638356471115092,
+          "low_vol": 0.03723425564873671
+        },
+        "spy_corr_last": 0.8956163870738233,
+        "volume_z_last": 1.4381414257401888,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLK",
+      "idea": "breakout",
+      "idea_score": 0.12301367619549423,
+      "directional_score": 0.12301367619549423,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.21004558731831413,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 38.81625,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.21004558731831413,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.1208592664960979,
+        "mom_3m": 0.2309659001584048,
+        "mom_6m": 0.2057504323449686,
+        "vol_20d": 0.016170430520784384
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.05532896657193961,
+        "ic_5d": -0.04439294375781732,
+        "ic_20d": 0.03840085589972122,
+        "ic_mean": -0.02044035147667857,
+        "residual_ic_mean": 0.0858032886011484,
+        "regime_ic": {
+          "bull": 0.03957342875487277,
+          "bear": 0.14754098628712095,
+          "high_vol": -0.002452665302052234,
+          "low_vol": 0.039184923337069695
+        },
+        "spy_corr_last": 0.8956163870738233,
+        "volume_z_last": 1.4381414257401888,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLK",
+      "idea": "mean_reversion",
+      "idea_score": 0.15496697072075039,
+      "directional_score": 0.15496697072075039,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.31655656906916796,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 38.81625,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.31655656906916796,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.1208592664960979,
+        "mom_3m": 0.2309659001584048,
+        "mom_6m": 0.2057504323449686,
+        "vol_20d": 0.016170430520784384
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.037808129733318194,
+        "ic_5d": -0.009150090415913203,
+        "ic_20d": -0.07686442177235572,
+        "ic_mean": -0.016068794151650245,
+        "residual_ic_mean": -0.03992981330326691,
+        "regime_ic": {
+          "bull": -0.09934480704724287,
+          "bear": -0.0958643034114732,
+          "high_vol": -0.029818778585381997,
+          "low_vol": -0.14276048614381628
+        },
+        "spy_corr_last": 0.8956163870738233,
+        "volume_z_last": 1.4381414257401888,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLK",
+      "idea": "earnings_reaction",
+      "idea_score": 0.2740759499560895,
+      "directional_score": 0.2740759499560895,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.7135864998536318,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "growth",
+        "pe": 38.81625,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.7135864998536318,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.1208592664960979,
+        "mom_3m": 0.2309659001584048,
+        "mom_6m": 0.2057504323449686,
+        "vol_20d": 0.016170430520784384
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.07151715858081585,
+        "ic_5d": 0.013382148259910619,
+        "ic_20d": 0.005898358679606223,
+        "ic_mean": 0.030265888506777566,
+        "residual_ic_mean": 0.013178662191453956,
+        "regime_ic": {
+          "bull": -0.030131736067081343,
+          "bear": 0.005831903945111492,
+          "high_vol": 0.037791215400323555,
+          "low_vol": -0.0625669754585646
+        },
+        "spy_corr_last": 0.8956163870738233,
+        "volume_z_last": 1.4381414257401888,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLF",
+      "idea": "momentum",
+      "idea_score": 0.10926242587026096,
+      "directional_score": -0.10926242587026096,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": -0.06420808623420321,
+        "structural": -0.5
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 16.660372,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": -0.06420808623420321,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.029070920823542568,
+        "mom_3m": -0.02333772004972423,
+        "mom_6m": -0.017308154190582514,
+        "vol_20d": 0.006768484456590795
+      },
+      "structural": {
+        "score_structural": -0.5,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.056982372777929204,
+        "ic_5d": -0.142000475803834,
+        "ic_20d": -0.31400372986115055,
+        "ic_mean": -0.1709955261476379,
+        "residual_ic_mean": -0.07703681563349896,
+        "regime_ic": {
+          "bull": -0.056326741029942014,
+          "bear": -0.24352963598246616,
+          "high_vol": -0.07594491715181372,
+          "low_vol": -0.17025499439132522
+        },
+        "spy_corr_last": 0.6493289271694949,
+        "volume_z_last": 0.376548669969691,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLF",
+      "idea": "breakout",
+      "idea_score": 0.01028716273213208,
+      "directional_score": -0.01028716273213208,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": -0.23429054244044029,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 16.660372,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": -0.23429054244044029,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.029070920823542568,
+        "mom_3m": -0.02333772004972423,
+        "mom_6m": -0.017308154190582514,
+        "vol_20d": 0.006768484456590795
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.06658528587604215,
+        "ic_5d": -0.07733404085321466,
+        "ic_20d": -0.1699691978024672,
+        "ic_mean": -0.10462950817724133,
+        "residual_ic_mean": 0.03685172542567103,
+        "regime_ic": {
+          "bull": 0.01776064473007528,
+          "bear": -0.0703653586054726,
+          "high_vol": -0.07053851193108758,
+          "low_vol": -0.036168455495327524
+        },
+        "spy_corr_last": 0.6493289271694949,
+        "volume_z_last": 0.376548669969691,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLF",
+      "idea": "mean_reversion",
+      "idea_score": 0.05504216205331851,
+      "directional_score": 0.05504216205331851,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": -0.01652612648893831,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 16.660372,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": -0.01652612648893831,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.029070920823542568,
+        "mom_3m": -0.02333772004972423,
+        "mom_6m": -0.017308154190582514,
+        "vol_20d": 0.006768484456590795
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.061344857810702806,
+        "ic_5d": 0.07308001948280979,
+        "ic_20d": 0.16620083476189687,
+        "ic_mean": 0.10020857068513649,
+        "residual_ic_mean": -0.027629968721128842,
+        "regime_ic": {
+          "bull": -0.032900642893366645,
+          "bear": 0.139241471316943,
+          "high_vol": 0.0766370303372201,
+          "low_vol": 0.043116291341087236
+        },
+        "spy_corr_last": 0.6493289271694949,
+        "volume_z_last": 0.376548669969691,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLF",
+      "idea": "earnings_reaction",
+      "idea_score": 0.0730273824378364,
+      "directional_score": 0.0730273824378364,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.04342460812612131,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 16.660372,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.04342460812612131,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.029070920823542568,
+        "mom_3m": -0.02333772004972423,
+        "mom_6m": -0.017308154190582514,
+        "vol_20d": 0.006768484456590795
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.013920067678965448,
+        "ic_5d": -0.036444422987815805,
+        "ic_20d": -0.022231478976719395,
+        "ic_mean": -0.024198656547833552,
+        "residual_ic_mean": 0.003308224391035834,
+        "regime_ic": {
+          "bull": -0.04379942943415688,
+          "bear": -0.10329909091052586,
+          "high_vol": 0.014411002154425407,
+          "low_vol": -0.08268835920010882
+        },
+        "spy_corr_last": 0.6493289271694949,
+        "volume_z_last": 0.376548669969691,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLE",
+      "idea": "momentum",
+      "idea_score": 0.21560703653463306,
+      "directional_score": 0.21560703653463306,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.5186901217821103,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 21.741804,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.5186901217821103,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.11294718095463718,
+        "mom_3m": 0.12614923174975923,
+        "mom_6m": 0.35223477442436746,
+        "vol_20d": 0.01598451001519767
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.007009300044383798,
+        "ic_5d": 0.006312587708272534,
+        "ic_20d": -0.00188457291016469,
+        "ic_mean": -0.0008604284154253182,
+        "residual_ic_mean": -0.01678864010822755,
+        "regime_ic": {
+          "bull": 0.15077876005004065,
+          "bear": -0.4884696016771488,
+          "high_vol": -0.18550156739811913,
+          "low_vol": 0.2601456920036323
+        },
+        "spy_corr_last": -0.4886702971304163,
+        "volume_z_last": -0.5963316972476553,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLE",
+      "idea": "breakout",
+      "idea_score": 0.06560703653463307,
+      "directional_score": 0.06560703653463307,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.5186901217821103,
+        "structural": -0.5
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 21.741804,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.5186901217821103,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.11294718095463718,
+        "mom_3m": 0.12614923174975923,
+        "mom_6m": 0.35223477442436746,
+        "vol_20d": 0.01598451001519767
+      },
+      "structural": {
+        "score_structural": -0.5,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.10027257886584741,
+        "ic_5d": -0.22389187988222117,
+        "ic_20d": -0.20944030948800382,
+        "ic_mean": -0.1778682560786908,
+        "residual_ic_mean": -0.0881818132346721,
+        "regime_ic": {
+          "bull": -0.1674235530818173,
+          "bear": -0.38570118305888845,
+          "high_vol": -0.3581730673076838,
+          "low_vol": -0.05916105687469842
+        },
+        "spy_corr_last": -0.4886702971304163,
+        "volume_z_last": -0.5963316972476553,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLE",
+      "idea": "mean_reversion",
+      "idea_score": 0.37969606315019055,
+      "directional_score": 0.37969606315019055,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.24252875098474824,
+        "structural": 0.8231247928492204
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 21.741804,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.24252875098474824,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.11294718095463718,
+        "mom_3m": 0.12614923174975923,
+        "mom_6m": 0.35223477442436746,
+        "vol_20d": 0.01598451001519767
+      },
+      "structural": {
+        "score_structural": 0.8231247928492204,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": 0.08613220601368468,
+        "ic_5d": 0.2252563277142969,
+        "ic_20d": 0.19655455756448267,
+        "ic_mean": 0.16931436376415476,
+        "residual_ic_mean": 0.12346871892738305,
+        "regime_ic": {
+          "bull": 0.1320758056491399,
+          "bear": 0.5169048980369735,
+          "high_vol": 0.43946775825333695,
+          "low_vol": 0.003795748584053121
+        },
+        "spy_corr_last": -0.4886702971304163,
+        "volume_z_last": -0.5963316972476553,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XLE",
+      "idea": "earnings_reaction",
+      "idea_score": 0.03844598656364824,
+      "directional_score": 0.03844598656364824,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.15,
+        "technical": 0.27558330889098515,
+        "structural": -0.34743002034549103
+      },
+      "fundamental": {
+        "score_fundamental": 0.15,
+        "quality_trend": "unknown",
+        "sector": "unknown",
+        "style_proxy": "blend",
+        "pe": 21.741804,
+        "revenue_growth": null,
+        "margin_proxy": null
+      },
+      "technical": {
+        "score_technical": 0.27558330889098515,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.11294718095463718,
+        "mom_3m": 0.12614923174975923,
+        "mom_6m": 0.35223477442436746,
+        "vol_20d": 0.01598451001519767
+      },
+      "structural": {
+        "score_structural": -0.34743002034549103,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.03492093103244738,
+        "ic_5d": -0.0009512640543876423,
+        "ic_20d": -0.12047131406863593,
+        "ic_mean": -0.052114503051823656,
+        "residual_ic_mean": -0.02255625278401795,
+        "regime_ic": {
+          "bull": 0.0387381580824297,
+          "bear": 0.07131694301505621,
+          "high_vol": 0.06228291427532413,
+          "low_vol": 0.007609751093926994
+        },
+        "spy_corr_last": -0.4886702971304163,
+        "volume_z_last": -0.5963316972476553,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AAPL",
+      "idea": "momentum",
+      "idea_score": 0.008864082088875291,
+      "directional_score": 0.008864082088875291,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3321866866666666,
+        "technical": 0.36823664457912214,
+        "structural": -0.7816052865050934
+      },
+      "fundamental": {
+        "score_fundamental": 0.3321866866666666,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 36.636364,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.27152002
+      },
+      "technical": {
+        "score_technical": 0.36823664457912214,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09593653296664328,
+        "mom_3m": 0.13200465251284688,
+        "mom_6m": 0.09953919160939728,
+        "vol_20d": 0.01297995190725381
+      },
+      "structural": {
+        "score_structural": -0.7816052865050934,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": -0.052819745479644735,
+        "ic_5d": -0.1260049429661457,
+        "ic_20d": -0.28344462171045454,
+        "ic_mean": -0.15408977005208166,
+        "residual_ic_mean": -0.11724079297576401,
+        "regime_ic": {
+          "bull": -0.10194900776289026,
+          "bear": -0.3459881837240328,
+          "high_vol": -0.05725929243170623,
+          "low_vol": -0.23884775118850488
+        },
+        "spy_corr_last": 0.6068215957209724,
+        "volume_z_last": -0.3746293763355108,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AAPL",
+      "idea": "breakout",
+      "idea_score": 0.001224773619157904,
+      "directional_score": 0.001224773619157904,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3321866866666666,
+        "technical": 0.33466212585634564,
+        "structural": -0.7734951293480415
+      },
+      "fundamental": {
+        "score_fundamental": 0.3321866866666666,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 36.636364,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.27152002
+      },
+      "technical": {
+        "score_technical": 0.33466212585634564,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09593653296664328,
+        "mom_3m": 0.13200465251284688,
+        "mom_6m": 0.09953919160939728,
+        "vol_20d": 0.01297995190725381
+      },
+      "structural": {
+        "score_structural": -0.7734951293480415,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": -0.035443313750873166,
+        "ic_5d": -0.09354378571332493,
+        "ic_20d": -0.11205172593761153,
+        "ic_mean": -0.08034627513393654,
+        "residual_ic_mean": -0.11602426940220623,
+        "regime_ic": {
+          "bull": -0.050756400556249096,
+          "bear": -0.23056984943777392,
+          "high_vol": -0.07852143093779591,
+          "low_vol": -0.155643140922653
+        },
+        "spy_corr_last": 0.6068215957209724,
+        "volume_z_last": -0.3746293763355108,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AAPL",
+      "idea": "mean_reversion",
+      "idea_score": 0.4424621271857488,
+      "directional_score": 0.4424621271857488,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3321866866666666,
+        "technical": 0.10949455295017368,
+        "structural": 0.9224636221134335
+      },
+      "fundamental": {
+        "score_fundamental": 0.3321866866666666,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 36.636364,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.27152002
+      },
+      "technical": {
+        "score_technical": 0.10949455295017368,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09593653296664328,
+        "mom_3m": 0.13200465251284688,
+        "mom_6m": 0.09953919160939728,
+        "vol_20d": 0.01297995190725381
+      },
+      "structural": {
+        "score_structural": 0.9224636221134335,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": 0.05787980101501559,
+        "ic_5d": 0.13676327826267085,
+        "ic_20d": 0.18402067733943842,
+        "ic_mean": 0.12622125220570826,
+        "residual_ic_mean": 0.138369543317015,
+        "regime_ic": {
+          "bull": 0.08032844694776022,
+          "bear": 0.3187726319801791,
+          "high_vol": 0.19442022667829117,
+          "low_vol": 0.13667505837621652
+        },
+        "spy_corr_last": 0.6068215957209724,
+        "volume_z_last": -0.3746293763355108,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AAPL",
+      "idea": "earnings_reaction",
+      "idea_score": 0.2762586569614111,
+      "directional_score": 0.2762586569614111,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3321866866666666,
+        "technical": 0.47794660764914815,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.3321866866666666,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 36.636364,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.27152002
+      },
+      "technical": {
+        "score_technical": 0.47794660764914815,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09593653296664328,
+        "mom_3m": 0.13200465251284688,
+        "mom_6m": 0.09953919160939728,
+        "vol_20d": 0.01297995190725381
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.021427111574485912,
+        "ic_5d": -0.0039486437906422955,
+        "ic_20d": -0.07569454756684516,
+        "ic_mean": -0.01940535992766718,
+        "residual_ic_mean": -0.050257646325267726,
+        "regime_ic": {
+          "bull": 0.03231806249719697,
+          "bear": -0.19008957499523532,
+          "high_vol": 0.0030034174246697963,
+          "low_vol": -0.05231840496697151
+        },
+        "spy_corr_last": 0.6068215957209724,
+        "volume_z_last": -0.3746293763355108,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "MSFT",
+      "idea": "momentum",
+      "idea_score": 0.15631494560667059,
+      "directional_score": 0.15631494560667059,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.46541998,
+        "technical": -0.09951015464443141,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.46541998,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "blend",
+        "pe": 25.092966,
+        "revenue_growth": 0.183,
+        "margin_proxy": 0.39341998
+      },
+      "technical": {
+        "score_technical": -0.09951015464443141,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.001554748929837202,
+        "mom_3m": 0.046978883020977635,
+        "mom_6m": -0.1784158897678082,
+        "vol_20d": 0.018484890034810113
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.0010044586401508856,
+        "ic_5d": 0.013613864962248723,
+        "ic_20d": -0.01672572098281514,
+        "ic_mean": -0.0013721048869057677,
+        "residual_ic_mean": 0.07824118747438852,
+        "regime_ic": {
+          "bull": 0.11060359839179967,
+          "bear": 0.025576519916142557,
+          "high_vol": -0.036159874608150476,
+          "low_vol": 0.1673538406068052
+        },
+        "spy_corr_last": 0.39263182014365694,
+        "volume_z_last": -0.17848965429607627,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "MSFT",
+      "idea": "breakout",
+      "idea_score": 0.07038683222271938,
+      "directional_score": 0.07038683222271938,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.46541998,
+        "technical": -0.3859371992576021,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.46541998,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "blend",
+        "pe": 25.092966,
+        "revenue_growth": 0.183,
+        "margin_proxy": 0.39341998
+      },
+      "technical": {
+        "score_technical": -0.3859371992576021,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.001554748929837202,
+        "mom_3m": 0.046978883020977635,
+        "mom_6m": -0.1784158897678082,
+        "vol_20d": 0.018484890034810113
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.015010621603420343,
+        "ic_5d": -0.02898237200311887,
+        "ic_20d": 0.021499755158277435,
+        "ic_mean": -0.0074977461494205935,
+        "residual_ic_mean": -0.0049834551354884975,
+        "regime_ic": {
+          "bull": 0.0069371337410504405,
+          "bear": 0.08703786400192469,
+          "high_vol": -0.11155786749885169,
+          "low_vol": 0.08269750550019275
+        },
+        "spy_corr_last": 0.39263182014365694,
+        "volume_z_last": -0.17848965429607627,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "MSFT",
+      "idea": "mean_reversion",
+      "idea_score": 0.1560345510709873,
+      "directional_score": 0.1560345510709873,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.46541998,
+        "technical": -0.10044480309670906,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.46541998,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "blend",
+        "pe": 25.092966,
+        "revenue_growth": 0.183,
+        "margin_proxy": 0.39341998
+      },
+      "technical": {
+        "score_technical": -0.10044480309670906,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.001554748929837202,
+        "mom_3m": 0.046978883020977635,
+        "mom_6m": -0.1784158897678082,
+        "vol_20d": 0.018484890034810113
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.024169076091229116,
+        "ic_5d": 0.04299643375004899,
+        "ic_20d": -0.029123339737982656,
+        "ic_mean": 0.012680723367765148,
+        "residual_ic_mean": 0.03889586017253211,
+        "regime_ic": {
+          "bull": 0.011655657787115465,
+          "bear": -0.11118734514960929,
+          "high_vol": 0.0714432907981295,
+          "low_vol": -0.023218816497722894
+        },
+        "spy_corr_last": 0.39263182014365694,
+        "volume_z_last": -0.17848965429607627,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "MSFT",
+      "idea": "earnings_reaction",
+      "idea_score": 0.18247553216529444,
+      "directional_score": 0.18247553216529444,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.46541998,
+        "technical": -0.012308199449018564,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.46541998,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "blend",
+        "pe": 25.092966,
+        "revenue_growth": 0.183,
+        "margin_proxy": 0.39341998
+      },
+      "technical": {
+        "score_technical": -0.012308199449018564,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.001554748929837202,
+        "mom_3m": 0.046978883020977635,
+        "mom_6m": -0.1784158897678082,
+        "vol_20d": 0.018484890034810113
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.027624665830655277,
+        "ic_5d": 0.007314524555903867,
+        "ic_20d": -0.0072955337566932505,
+        "ic_mean": 0.009214552209955297,
+        "residual_ic_mean": -0.020555789999938127,
+        "regime_ic": {
+          "bull": -0.04737125595723705,
+          "bear": 0.057975986277873065,
+          "high_vol": -0.027461548144660095,
+          "low_vol": -0.01555729252710456
+        },
+        "spy_corr_last": 0.39263182014365694,
+        "volume_z_last": -0.17848965429607627,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "NVDA",
+      "idea": "momentum",
+      "idea_score": 0.18761812385515034,
+      "directional_score": 0.18761812385515034,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.5333333333333333,
+        "technical": 0.41428263507272334,
+        "structural": -0.5
+      },
+      "fundamental": {
+        "score_fundamental": 0.5333333333333333,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 45.60612,
+        "revenue_growth": 0.732,
+        "margin_proxy": 0.55603004
+      },
+      "technical": {
+        "score_technical": 0.41428263507272334,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09180443074279787,
+        "mom_3m": 0.1736458694400993,
+        "mom_6m": 0.16019476452966108,
+        "vol_20d": 0.028233240460303972
+      },
+      "structural": {
+        "score_structural": -0.5,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.09516878471693682,
+        "ic_5d": -0.19780051490835962,
+        "ic_20d": -0.3421113654914731,
+        "ic_mean": -0.21169355503892318,
+        "residual_ic_mean": -0.08655466068760072,
+        "regime_ic": {
+          "bull": -0.1312729841534709,
+          "bear": -0.3294453973699256,
+          "high_vol": -0.2557635467980296,
+          "low_vol": -0.09111926446236845
+        },
+        "spy_corr_last": 0.6833234475640372,
+        "volume_z_last": -0.46295847044028754,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "NVDA",
+      "idea": "breakout",
+      "idea_score": 0.1835839723636126,
+      "directional_score": 0.1835839723636126,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.5333333333333333,
+        "technical": -0.09916453656573587,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.5333333333333333,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 45.60612,
+        "revenue_growth": 0.732,
+        "margin_proxy": 0.55603004
+      },
+      "technical": {
+        "score_technical": -0.09916453656573587,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09180443074279787,
+        "mom_3m": 0.1736458694400993,
+        "mom_6m": 0.16019476452966108,
+        "vol_20d": 0.028233240460303972
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.09064072318378902,
+        "ic_5d": -0.059825596927086666,
+        "ic_20d": 0.07472956392845367,
+        "ic_mean": -0.02524558539414067,
+        "residual_ic_mean": 0.008407510398262976,
+        "regime_ic": {
+          "bull": -0.025998241787276048,
+          "bear": 0.34670072147418945,
+          "high_vol": -0.04191516539575918,
+          "low_vol": 0.027098765897301855
+        },
+        "spy_corr_last": 0.6833234475640372,
+        "volume_z_last": -0.46295847044028754,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "NVDA",
+      "idea": "mean_reversion",
+      "idea_score": 0.27927472948736765,
+      "directional_score": 0.27927472948736765,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.5333333333333333,
+        "technical": 0.21980465384678105,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.5333333333333333,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 45.60612,
+        "revenue_growth": 0.732,
+        "margin_proxy": 0.55603004
+      },
+      "technical": {
+        "score_technical": 0.21980465384678105,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09180443074279787,
+        "mom_3m": 0.1736458694400993,
+        "mom_6m": 0.16019476452966108,
+        "vol_20d": 0.028233240460303972
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.09924911120622637,
+        "ic_5d": 0.09788006874968509,
+        "ic_20d": -0.033295423233897926,
+        "ic_mean": 0.054611252240671176,
+        "residual_ic_mean": 0.0750774437789362,
+        "regime_ic": {
+          "bull": 0.060128926661617836,
+          "bear": -0.20205831903945107,
+          "high_vol": 0.10774165574924587,
+          "low_vol": -0.043826422296139395
+        },
+        "spy_corr_last": 0.6833234475640372,
+        "volume_z_last": -0.46295847044028754,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "NVDA",
+      "idea": "earnings_reaction",
+      "idea_score": 0.37651029468746455,
+      "directional_score": 0.37651029468746455,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.5333333333333333,
+        "technical": 0.5439232045137707,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.5333333333333333,
+        "quality_trend": "improving",
+        "sector": "Technology",
+        "style_proxy": "growth",
+        "pe": 45.60612,
+        "revenue_growth": 0.732,
+        "margin_proxy": 0.55603004
+      },
+      "technical": {
+        "score_technical": 0.5439232045137707,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.09180443074279787,
+        "mom_3m": 0.1736458694400993,
+        "mom_6m": 0.16019476452966108,
+        "vol_20d": 0.028233240460303972
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.0963577053503385,
+        "ic_5d": -0.05108053044425415,
+        "ic_20d": -0.02453354705147579,
+        "ic_mean": 0.00691454261820285,
+        "residual_ic_mean": -0.026665773297201652,
+        "regime_ic": {
+          "bull": -0.10102055065847035,
+          "bear": -0.039146178768820275,
+          "high_vol": -0.08295157327415391,
+          "low_vol": -0.08519845447887976
+        },
+        "spy_corr_last": 0.6833234475640372,
+        "volume_z_last": -0.46295847044028754,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AMZN",
+      "idea": "momentum",
+      "idea_score": 0.12328798236040706,
+      "directional_score": -0.12328798236040706,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.18290666666666666,
+        "technical": 0.34516450324308756,
+        "structural": -1.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.18290666666666666,
+        "quality_trend": "improving",
+        "sector": "Consumer Cyclical",
+        "style_proxy": "growth",
+        "pe": 32.318295,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.12224
+      },
+      "technical": {
+        "score_technical": 0.34516450324308756,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.0445464701666336,
+        "mom_3m": 0.26637045187818575,
+        "mom_6m": 0.10503214299739327,
+        "vol_20d": 0.014319607080937815
+      },
+      "structural": {
+        "score_structural": -1.0,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": -0.07857202299462011,
+        "ic_5d": -0.22225962515519007,
+        "ic_20d": -0.4575242691960174,
+        "ic_mean": -0.2527853057819425,
+        "residual_ic_mean": -0.1718015520114039,
+        "regime_ic": {
+          "bull": -0.18904648528384307,
+          "bear": -0.3297503335239184,
+          "high_vol": -0.08749664128974476,
+          "low_vol": -0.361370586507131
+        },
+        "spy_corr_last": 0.7058810534525818,
+        "volume_z_last": -0.3148148046338135,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AMZN",
+      "idea": "breakout",
+      "idea_score": 0.21052243272251167,
+      "directional_score": 0.21052243272251167,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.18290666666666666,
+        "technical": -0.11012461860882639,
+        "structural": 0.5679905054616431
+      },
+      "fundamental": {
+        "score_fundamental": 0.18290666666666666,
+        "quality_trend": "improving",
+        "sector": "Consumer Cyclical",
+        "style_proxy": "growth",
+        "pe": 32.318295,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.12224
+      },
+      "technical": {
+        "score_technical": -0.11012461860882639,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.0445464701666336,
+        "mom_3m": 0.26637045187818575,
+        "mom_6m": 0.10503214299739327,
+        "vol_20d": 0.014319607080937815
+      },
+      "structural": {
+        "score_structural": 0.5679905054616431,
+        "structural_class": "TRUE_SIGNAL",
+        "ic_1d": 0.009374487644187808,
+        "ic_5d": -0.02352567236271279,
+        "ic_20d": -0.13894010903615045,
+        "ic_mean": -0.05103043125155848,
+        "residual_ic_mean": 0.08519857581924646,
+        "regime_ic": {
+          "bull": 0.01392593849647786,
+          "bear": 0.2170001905850962,
+          "high_vol": 0.012195777589917276,
+          "low_vol": 0.029403579278674315
+        },
+        "spy_corr_last": 0.7058810534525818,
+        "volume_z_last": -0.3148148046338135,
+        "reasons": [
+          "residual IC above threshold"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AMZN",
+      "idea": "mean_reversion",
+      "idea_score": 0.21331942131295295,
+      "directional_score": 0.21331942131295295,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.18290666666666666,
+        "technical": 0.4671891821542876,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.18290666666666666,
+        "quality_trend": "improving",
+        "sector": "Consumer Cyclical",
+        "style_proxy": "growth",
+        "pe": 32.318295,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.12224
+      },
+      "technical": {
+        "score_technical": 0.4671891821542876,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.0445464701666336,
+        "mom_3m": 0.26637045187818575,
+        "mom_6m": 0.10503214299739327,
+        "vol_20d": 0.014319607080937815
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.036195744271975264,
+        "ic_5d": 0.09069057603054546,
+        "ic_20d": 0.10222707964634503,
+        "ic_mean": 0.07637113331628859,
+        "residual_ic_mean": -0.02917617217488001,
+        "regime_ic": {
+          "bull": 0.05666584319437651,
+          "bear": -0.12140270630836666,
+          "high_vol": 0.048592701723631504,
+          "low_vol": 0.09898683052280924
+        },
+        "spy_corr_last": 0.7058810534525818,
+        "volume_z_last": -0.3148148046338135,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "AMZN",
+      "idea": "earnings_reaction",
+      "idea_score": 0.24230174742828697,
+      "directional_score": 0.24230174742828697,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.18290666666666666,
+        "technical": 0.5637969358720677,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.18290666666666666,
+        "quality_trend": "improving",
+        "sector": "Consumer Cyclical",
+        "style_proxy": "growth",
+        "pe": 32.318295,
+        "revenue_growth": 0.166,
+        "margin_proxy": 0.12224
+      },
+      "technical": {
+        "score_technical": 0.5637969358720677,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.0445464701666336,
+        "mom_3m": 0.26637045187818575,
+        "mom_6m": 0.10503214299739327,
+        "vol_20d": 0.014319607080937815
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.009224577491265288,
+        "ic_5d": 0.037090534816594384,
+        "ic_20d": -0.004899502974292678,
+        "ic_mean": 0.013805203111189,
+        "residual_ic_mean": 0.05448542908128334,
+        "regime_ic": {
+          "bull": 0.03913173321717724,
+          "bear": 0.048446731465599385,
+          "high_vol": 0.05060306122924718,
+          "low_vol": 0.020781686511703597
+        },
+        "spy_corr_last": 0.7058810534525818,
+        "volume_z_last": -0.3148148046338135,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "GOOGL",
+      "idea": "momentum",
+      "idea_score": 0.3699642969481155,
+      "directional_score": 0.3699642969481155,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.47452333333333335,
+        "technical": 0.6005165453826071,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.47452333333333335,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 29.687786,
+        "revenue_growth": 0.218,
+        "margin_proxy": 0.37919
+      },
+      "technical": {
+        "score_technical": 0.6005165453826071,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.14889451791553254,
+        "mom_3m": 0.2789137706675795,
+        "mom_6m": 0.40438711945619255,
+        "vol_20d": 0.02684079974069656
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.04540157715624682,
+        "ic_5d": -0.0897619825031327,
+        "ic_20d": -0.13208106173367615,
+        "ic_mean": -0.0890815404643519,
+        "residual_ic_mean": -0.012866273744686416,
+        "regime_ic": {
+          "bull": -0.10812986149670382,
+          "bear": -0.009948542024013721,
+          "high_vol": 0.01578369905956113,
+          "low_vol": -0.17644122910100954
+        },
+        "spy_corr_last": 0.6964031707112793,
+        "volume_z_last": 0.9278666220657641,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "GOOGL",
+      "idea": "breakout",
+      "idea_score": 0.2807884489335697,
+      "directional_score": 0.2807884489335697,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.47452333333333335,
+        "technical": 0.3032637186674545,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.47452333333333335,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 29.687786,
+        "revenue_growth": 0.218,
+        "margin_proxy": 0.37919
+      },
+      "technical": {
+        "score_technical": 0.3032637186674545,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.14889451791553254,
+        "mom_3m": 0.2789137706675795,
+        "mom_6m": 0.40438711945619255,
+        "vol_20d": 0.02684079974069656
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.010330303425779747,
+        "ic_5d": 0.07108375564584804,
+        "ic_20d": 0.1499098884498655,
+        "ic_mean": 0.07710798250716443,
+        "residual_ic_mean": 0.05923306071108694,
+        "regime_ic": {
+          "bull": 0.11905185706791094,
+          "bear": -0.1342964971691665,
+          "high_vol": 0.0526330218953912,
+          "low_vol": 0.03612582189256954
+        },
+        "spy_corr_last": 0.6964031707112793,
+        "volume_z_last": 0.9278666220657641,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "GOOGL",
+      "idea": "mean_reversion",
+      "idea_score": 0.3342169385990055,
+      "directional_score": 0.3342169385990055,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.47452333333333335,
+        "technical": 0.48135868421890704,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.47452333333333335,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 29.687786,
+        "revenue_growth": 0.218,
+        "margin_proxy": 0.37919
+      },
+      "technical": {
+        "score_technical": 0.48135868421890704,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.14889451791553254,
+        "mom_3m": 0.2789137706675795,
+        "mom_6m": 0.40438711945619255,
+        "vol_20d": 0.02684079974069656
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.017380613376892236,
+        "ic_5d": -0.034711088965899486,
+        "ic_20d": -0.15400487838255175,
+        "ic_mean": -0.05711178465718633,
+        "residual_ic_mean": -0.0596606251056625,
+        "regime_ic": {
+          "bull": -0.06382510228530809,
+          "bear": 0.19672193634457782,
+          "high_vol": -0.029876590407899705,
+          "low_vol": 0.0036675304949464805
+        },
+        "spy_corr_last": 0.6964031707112793,
+        "volume_z_last": 0.9278666220657641,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "GOOGL",
+      "idea": "earnings_reaction",
+      "idea_score": 0.3796377220231165,
+      "directional_score": 0.3796377220231165,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.47452333333333335,
+        "technical": 0.6327612956326105,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.47452333333333335,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 29.687786,
+        "revenue_growth": 0.218,
+        "margin_proxy": 0.37919
+      },
+      "technical": {
+        "score_technical": 0.6327612956326105,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.14889451791553254,
+        "mom_3m": 0.2789137706675795,
+        "mom_6m": 0.40438711945619255,
+        "vol_20d": 0.02684079974069656
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.013189259418694364,
+        "ic_5d": -0.02718361315564262,
+        "ic_20d": 0.0009481922764476202,
+        "ic_mean": -0.013141560099296455,
+        "residual_ic_mean": 0.00585860556662731,
+        "regime_ic": {
+          "bull": -0.04121996294824679,
+          "bear": -0.007661520869068038,
+          "high_vol": -0.033419895658984844,
+          "low_vol": -0.02927761435450822
+        },
+        "spy_corr_last": 0.6964031707112793,
+        "volume_z_last": 0.9278666220657641,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "META",
+      "idea": "momentum",
+      "idea_score": 0.12002574773305837,
+      "directional_score": 0.12002574773305837,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.49903666666666663,
+        "technical": -0.265296396445361,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.49903666666666663,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 22.018196,
+        "revenue_growth": 0.331,
+        "margin_proxy": 0.32837
+      },
+      "technical": {
+        "score_technical": -0.265296396445361,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.10180201595878668,
+        "mom_3m": -0.06233334324200168,
+        "mom_6m": -0.00958588368558011,
+        "vol_20d": 0.02268201496829063
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 8.391856821868618e-05,
+        "ic_5d": -0.06326625847706173,
+        "ic_20d": -0.31481042964333883,
+        "ic_mean": -0.1259975898507273,
+        "residual_ic_mean": -0.12782188751830917,
+        "regime_ic": {
+          "bull": 0.037976047544432394,
+          "bear": -0.36047265103868875,
+          "high_vol": -0.0608396775638155,
+          "low_vol": -0.06705871748304043
+        },
+        "spy_corr_last": 0.6546228282862764,
+        "volume_z_last": -0.46731837806448184,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "META",
+      "idea": "breakout",
+      "idea_score": 0.25038533333333335,
+      "directional_score": -0.25038533333333335,
+      "verdict": "weak_monitor",
+      "verdict_label": "Weak idea \u2014 monitor only",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.49903666666666663,
+        "technical": -1.0,
+        "structural": -0.5
+      },
+      "fundamental": {
+        "score_fundamental": 0.49903666666666663,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 22.018196,
+        "revenue_growth": 0.331,
+        "margin_proxy": 0.32837
+      },
+      "technical": {
+        "score_technical": -1.0,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.10180201595878668,
+        "mom_3m": -0.06233334324200168,
+        "mom_6m": -0.00958588368558011,
+        "vol_20d": 0.02268201496829063
+      },
+      "structural": {
+        "score_structural": -0.5,
+        "structural_class": "MARKET_EXPOSURE",
+        "ic_1d": -0.03580044999686502,
+        "ic_5d": -0.1368480743916729,
+        "ic_20d": -0.1795116714565988,
+        "ic_mean": -0.1173867319483789,
+        "residual_ic_mean": -0.011433848126527918,
+        "regime_ic": {
+          "bull": -0.11984517293988503,
+          "bear": -0.02195582153670218,
+          "high_vol": -0.11991997646402495,
+          "low_vol": -0.09049335675173041
+        },
+        "spy_corr_last": 0.6546228282862764,
+        "volume_z_last": -0.46731837806448184,
+        "reasons": [
+          "IC collapses after SPY/sector/momentum neutralization"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "META",
+      "idea": "mean_reversion",
+      "idea_score": 0.1816212238033682,
+      "directional_score": 0.1816212238033682,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.49903666666666663,
+        "technical": -0.05997814287766151,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.49903666666666663,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 22.018196,
+        "revenue_growth": 0.331,
+        "margin_proxy": 0.32837
+      },
+      "technical": {
+        "score_technical": -0.05997814287766151,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.10180201595878668,
+        "mom_3m": -0.06233334324200168,
+        "mom_6m": -0.00958588368558011,
+        "vol_20d": 0.02268201496829063
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.03777122404591155,
+        "ic_5d": 0.10450388816419307,
+        "ic_20d": 0.1767478559218966,
+        "ic_mean": 0.10634098937733373,
+        "residual_ic_mean": 0.04271102195251605,
+        "regime_ic": {
+          "bull": 0.08945593980762548,
+          "bear": -0.12109777015437391,
+          "high_vol": 0.06586165257892013,
+          "low_vol": 0.0879788144265076
+        },
+        "spy_corr_last": 0.6546228282862764,
+        "volume_z_last": -0.46731837806448184,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "META",
+      "idea": "earnings_reaction",
+      "idea_score": 0.1322227520970098,
+      "directional_score": 0.1322227520970098,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.49903666666666663,
+        "technical": -0.22463971523218956,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.49903666666666663,
+        "quality_trend": "improving",
+        "sector": "Communication Services",
+        "style_proxy": "blend",
+        "pe": 22.018196,
+        "revenue_growth": 0.331,
+        "margin_proxy": 0.32837
+      },
+      "technical": {
+        "score_technical": -0.22463971523218956,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.10180201595878668,
+        "mom_3m": -0.06233334324200168,
+        "mom_6m": -0.00958588368558011,
+        "vol_20d": 0.02268201496829063
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.05135756956690527,
+        "ic_5d": 0.07761767430818355,
+        "ic_20d": -0.09434229260750693,
+        "ic_mean": 0.011544317089193965,
+        "residual_ic_mean": 0.06277427961910496,
+        "regime_ic": {
+          "bull": 0.06694349735131414,
+          "bear": 0.10120068610634647,
+          "high_vol": 0.10702180531402541,
+          "low_vol": 0.03732872405741211
+        },
+        "spy_corr_last": 0.6546228282862764,
+        "volume_z_last": -0.46731837806448184,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "JPM",
+      "idea": "momentum",
+      "idea_score": 0.08118090326145413,
+      "directional_score": 0.08118090326145413,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3740266666666667,
+        "technical": -0.22809921135070846,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.3740266666666667,
+        "quality_trend": "improving",
+        "sector": "Financial Services",
+        "style_proxy": "value",
+        "pe": 14.462166,
+        "revenue_growth": 0.127,
+        "margin_proxy": 0.33936
+      },
+      "technical": {
+        "score_technical": -0.22809921135070846,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.06716293473999746,
+        "mom_3m": -0.03745927740142263,
+        "mom_6m": -0.016653016819250688,
+        "vol_20d": 0.012175957795403305
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.040403760204556174,
+        "ic_5d": -0.10925886329115632,
+        "ic_20d": -0.26985840059014304,
+        "ic_mean": -0.13984034136195186,
+        "residual_ic_mean": -0.07632588822005391,
+        "regime_ic": {
+          "bull": -0.005404661610274031,
+          "bear": -0.2125786163522012,
+          "high_vol": 0.0414755933721451,
+          "low_vol": -0.16814339511778215
+        },
+        "spy_corr_last": 0.5809839479471132,
+        "volume_z_last": 0.27008999821466523,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "JPM",
+      "idea": "breakout",
+      "idea_score": 0.06515112896410111,
+      "directional_score": -0.06515112896410111,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3740266666666667,
+        "technical": -0.7158726521025592,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.3740266666666667,
+        "quality_trend": "improving",
+        "sector": "Financial Services",
+        "style_proxy": "value",
+        "pe": 14.462166,
+        "revenue_growth": 0.127,
+        "margin_proxy": 0.33936
+      },
+      "technical": {
+        "score_technical": -0.7158726521025592,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.06716293473999746,
+        "mom_3m": -0.03745927740142263,
+        "mom_6m": -0.016653016819250688,
+        "vol_20d": 0.012175957795403305
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.026122091172742418,
+        "ic_5d": -0.04433286370731637,
+        "ic_20d": -0.16971029635169288,
+        "ic_mean": -0.08005508374391722,
+        "residual_ic_mean": 0.09601147848906771,
+        "regime_ic": {
+          "bull": 0.05567566073169855,
+          "bear": -0.04663578325727386,
+          "high_vol": 0.05393744847151662,
+          "low_vol": -0.041296932575310086
+        },
+        "spy_corr_last": 0.5809839479471132,
+        "volume_z_last": 0.27008999821466523,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "JPM",
+      "idea": "mean_reversion",
+      "idea_score": 0.13418201422291312,
+      "directional_score": 0.13418201422291312,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3740266666666667,
+        "technical": -0.051428841479178505,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.3740266666666667,
+        "quality_trend": "improving",
+        "sector": "Financial Services",
+        "style_proxy": "value",
+        "pe": 14.462166,
+        "revenue_growth": 0.127,
+        "margin_proxy": 0.33936
+      },
+      "technical": {
+        "score_technical": -0.051428841479178505,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.06716293473999746,
+        "mom_3m": -0.03745927740142263,
+        "mom_6m": -0.016653016819250688,
+        "vol_20d": 0.012175957795403305
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.039065216062053966,
+        "ic_5d": 0.09022634770097247,
+        "ic_20d": 0.2669007846465947,
+        "ic_mean": 0.13206411613654037,
+        "residual_ic_mean": -0.04271307352573431,
+        "regime_ic": {
+          "bull": -0.021277834000885874,
+          "bear": 0.14473032208881262,
+          "high_vol": 0.04553613472019543,
+          "low_vol": 0.07335997968236432
+        },
+        "spy_corr_last": 0.5809839479471132,
+        "volume_z_last": 0.27008999821466523,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "JPM",
+      "idea": "earnings_reaction",
+      "idea_score": 0.14479255785904013,
+      "directional_score": 0.14479255785904013,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.3740266666666667,
+        "technical": -0.016060362692088465,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.3740266666666667,
+        "quality_trend": "improving",
+        "sector": "Financial Services",
+        "style_proxy": "value",
+        "pe": 14.462166,
+        "revenue_growth": 0.127,
+        "margin_proxy": 0.33936
+      },
+      "technical": {
+        "score_technical": -0.016060362692088465,
+        "sma_aligned_bull": false,
+        "mom_1m": -0.06716293473999746,
+        "mom_3m": -0.03745927740142263,
+        "mom_6m": -0.016653016819250688,
+        "vol_20d": 0.012175957795403305
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.006029221663612795,
+        "ic_5d": 0.0015548808331983307,
+        "ic_20d": -0.04931495182606721,
+        "ic_mean": -0.017929764218827225,
+        "residual_ic_mean": 0.014743300426584553,
+        "regime_ic": {
+          "bull": 0.005628260609030506,
+          "bear": -0.11964932342290831,
+          "high_vol": -0.008611164208887169,
+          "low_vol": -0.01564408631049983
+        },
+        "spy_corr_last": 0.5809839479471132,
+        "volume_z_last": 0.27008999821466523,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "UNH",
+      "idea": "momentum",
+      "idea_score": 0.18082159422250244,
+      "directional_score": 0.18082159422250244,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": -0.009886666666666674,
+        "technical": 0.6159208696305637,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": -0.009886666666666674,
+        "quality_trend": "stable",
+        "sector": "Healthcare",
+        "style_proxy": "blend",
+        "pe": 28.88847,
+        "revenue_growth": 0.02,
+        "margin_proxy": 0.02678
+      },
+      "technical": {
+        "score_technical": 0.6159208696305637,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.20328915857130414,
+        "mom_3m": 0.3610896557700094,
+        "mom_6m": 0.22694169970835332,
+        "vol_20d": 0.014237697873490093
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.05050685649668416,
+        "ic_5d": -0.09095582633352693,
+        "ic_20d": -0.2628294456060097,
+        "ic_mean": -0.13476404281207358,
+        "residual_ic_mean": -0.041951238154290804,
+        "regime_ic": {
+          "bull": -0.10761511336184215,
+          "bear": 0.11217838765008574,
+          "high_vol": 0.02540080609046126,
+          "low_vol": -0.17589371561348216
+        },
+        "spy_corr_last": 0.2527401737442164,
+        "volume_z_last": -1.2379877687819116,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "UNH",
+      "idea": "breakout",
+      "idea_score": 0.10950832279612509,
+      "directional_score": 0.10950832279612509,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": -0.009886666666666674,
+        "technical": 0.3782099648759726,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": -0.009886666666666674,
+        "quality_trend": "stable",
+        "sector": "Healthcare",
+        "style_proxy": "blend",
+        "pe": 28.88847,
+        "revenue_growth": 0.02,
+        "margin_proxy": 0.02678
+      },
+      "technical": {
+        "score_technical": 0.3782099648759726,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.20328915857130414,
+        "mom_3m": 0.3610896557700094,
+        "mom_6m": 0.22694169970835332,
+        "vol_20d": 0.014237697873490093
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.004325196703722917,
+        "ic_5d": -0.028428827207368938,
+        "ic_20d": -0.17522835427800673,
+        "ic_mean": -0.0693274593963662,
+        "residual_ic_mean": 0.03455627551859356,
+        "regime_ic": {
+          "bull": -0.09099300086135613,
+          "bear": 0.23830825123457436,
+          "high_vol": 0.08336245881631003,
+          "low_vol": -0.06855984718350346
+        },
+        "spy_corr_last": 0.2527401737442164,
+        "volume_z_last": -1.2379877687819116,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "UNH",
+      "idea": "mean_reversion",
+      "idea_score": 0.12414806222834872,
+      "directional_score": 0.12414806222834872,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": -0.009886666666666674,
+        "technical": 0.427009096316718,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": -0.009886666666666674,
+        "quality_trend": "stable",
+        "sector": "Healthcare",
+        "style_proxy": "blend",
+        "pe": 28.88847,
+        "revenue_growth": 0.02,
+        "margin_proxy": 0.02678
+      },
+      "technical": {
+        "score_technical": 0.427009096316718,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.20328915857130414,
+        "mom_3m": 0.3610896557700094,
+        "mom_6m": 0.22694169970835332,
+        "vol_20d": 0.014237697873490093
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.0249748866624156,
+        "ic_5d": -0.049943958929341226,
+        "ic_20d": 0.1556109104649751,
+        "ic_mean": 0.026897354957739428,
+        "residual_ic_mean": -0.06805368238635652,
+        "regime_ic": {
+          "bull": -0.017359065867433562,
+          "bear": -0.10722317514770344,
+          "high_vol": -0.11625118304435192,
+          "low_vol": -0.03749244869427136
+        },
+        "spy_corr_last": 0.2527401737442164,
+        "volume_z_last": -1.2379877687819116,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "UNH",
+      "idea": "earnings_reaction",
+      "idea_score": 0.13542555877933427,
+      "directional_score": 0.13542555877933427,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": -0.009886666666666674,
+        "technical": 0.4646007514866698,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": -0.009886666666666674,
+        "quality_trend": "stable",
+        "sector": "Healthcare",
+        "style_proxy": "blend",
+        "pe": 28.88847,
+        "revenue_growth": 0.02,
+        "margin_proxy": 0.02678
+      },
+      "technical": {
+        "score_technical": 0.4646007514866698,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.20328915857130414,
+        "mom_3m": 0.3610896557700094,
+        "mom_6m": 0.22694169970835332,
+        "vol_20d": 0.014237697873490093
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.0069052312765940605,
+        "ic_5d": -0.04603370011718469,
+        "ic_20d": -0.009965409107188093,
+        "ic_mean": -0.02096811350032228,
+        "residual_ic_mean": 0.015822600519393024,
+        "regime_ic": {
+          "bull": -0.09653240168468331,
+          "bear": 0.19374880884314843,
+          "high_vol": 0.012738182377651069,
+          "low_vol": -0.10316476764169946
+        },
+        "spy_corr_last": 0.2527401737442164,
+        "volume_z_last": -1.2379877687819116,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XOM",
+      "idea": "momentum",
+      "idea_score": 0.17124614087685117,
+      "directional_score": 0.17124614087685117,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.04498332933333332,
+        "technical": 0.5108426971450595,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.04498332933333332,
+        "quality_trend": "stable",
+        "sector": "Energy",
+        "style_proxy": "blend",
+        "pe": 26.35666,
+        "revenue_growth": 0.026,
+        "margin_proxy": 0.077649996
+      },
+      "technical": {
+        "score_technical": 0.5108426971450595,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.10816170047831575,
+        "mom_3m": 0.08609843205663714,
+        "mom_6m": 0.38103872735027555,
+        "vol_20d": 0.018353778681041863
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.006880623272530446,
+        "ic_5d": 0.008029189698365411,
+        "ic_20d": 0.03782786330680891,
+        "ic_mean": 0.012992143244214625,
+        "residual_ic_mean": -0.05458249970526938,
+        "regime_ic": {
+          "bull": 0.13229666624998423,
+          "bear": -0.49456832475700396,
+          "high_vol": -0.21890729959695476,
+          "low_vol": 0.2613742588536937
+        },
+        "spy_corr_last": -0.5259199218826539,
+        "volume_z_last": 0.8778601079145797,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XOM",
+      "idea": "breakout",
+      "idea_score": 0.17124614087685117,
+      "directional_score": 0.17124614087685117,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.04498332933333332,
+        "technical": 0.5108426971450595,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.04498332933333332,
+        "quality_trend": "stable",
+        "sector": "Energy",
+        "style_proxy": "blend",
+        "pe": 26.35666,
+        "revenue_growth": 0.026,
+        "margin_proxy": 0.077649996
+      },
+      "technical": {
+        "score_technical": 0.5108426971450595,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.10816170047831575,
+        "mom_3m": 0.08609843205663714,
+        "mom_6m": 0.38103872735027555,
+        "vol_20d": 0.018353778681041863
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.07445985928175465,
+        "ic_5d": -0.1444050215338693,
+        "ic_20d": -0.16578142313123398,
+        "ic_mean": -0.12821543464895266,
+        "residual_ic_mean": -0.07495606875432172,
+        "regime_ic": {
+          "bull": -0.08560770493259412,
+          "bear": -0.2924935022842613,
+          "high_vol": -0.2737613941195006,
+          "low_vol": 0.010628701977645875
+        },
+        "spy_corr_last": -0.5259199218826539,
+        "volume_z_last": 0.8778601079145797,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XOM",
+      "idea": "mean_reversion",
+      "idea_score": 0.05981621444071958,
+      "directional_score": 0.05981621444071958,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.04498332933333332,
+        "technical": 0.13940960902462085,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.04498332933333332,
+        "quality_trend": "stable",
+        "sector": "Energy",
+        "style_proxy": "blend",
+        "pe": 26.35666,
+        "revenue_growth": 0.026,
+        "margin_proxy": 0.077649996
+      },
+      "technical": {
+        "score_technical": 0.13940960902462085,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.10816170047831575,
+        "mom_3m": 0.08609843205663714,
+        "mom_6m": 0.38103872735027555,
+        "vol_20d": 0.018353778681041863
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": 0.07133367108952578,
+        "ic_5d": 0.1536383027561458,
+        "ic_20d": 0.16218113637160092,
+        "ic_mean": 0.12905103673909082,
+        "residual_ic_mean": 0.10567103193689542,
+        "regime_ic": {
+          "bull": 0.040198497320565164,
+          "bear": 0.529178578235182,
+          "high_vol": 0.3768967173141746,
+          "low_vol": -0.05909325153676776
+        },
+        "spy_corr_last": -0.5259199218826539,
+        "volume_z_last": 0.8778601079145797,
+        "reasons": [
+          "regime IC sign unstable"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    },
+    {
+      "ticker": "XOM",
+      "idea": "earnings_reaction",
+      "idea_score": 0.05580465028233847,
+      "directional_score": 0.05580465028233847,
+      "verdict": "noise",
+      "verdict_label": "Likely noise \u2014 discard",
+      "weights": {
+        "fundamental": 0.4,
+        "technical": 0.3,
+        "structural": 0.3
+      },
+      "components": {
+        "fundamental": 0.04498332933333332,
+        "technical": 0.12603772849668382,
+        "structural": 0.0
+      },
+      "fundamental": {
+        "score_fundamental": 0.04498332933333332,
+        "quality_trend": "stable",
+        "sector": "Energy",
+        "style_proxy": "blend",
+        "pe": 26.35666,
+        "revenue_growth": 0.026,
+        "margin_proxy": 0.077649996
+      },
+      "technical": {
+        "score_technical": 0.12603772849668382,
+        "sma_aligned_bull": true,
+        "mom_1m": 0.10816170047831575,
+        "mom_3m": 0.08609843205663714,
+        "mom_6m": 0.38103872735027555,
+        "vol_20d": 0.018353778681041863
+      },
+      "structural": {
+        "score_structural": 0.0,
+        "structural_class": "NOISE",
+        "ic_1d": -0.032847202732535934,
+        "ic_5d": -0.008618512194897376,
+        "ic_20d": -0.09147304169122615,
+        "ic_mean": -0.044312918872886485,
+        "residual_ic_mean": -0.025036271951822286,
+        "regime_ic": {
+          "bull": 0.020959244721415124,
+          "bear": 0.0814560701353154,
+          "high_vol": 0.002244404141937349,
+          "low_vol": 0.03911194178898754
+        },
+        "spy_corr_last": -0.5259199218826539,
+        "volume_z_last": 0.8778601079145797,
+        "reasons": [
+          "|IC| < 0.05"
+        ]
+      },
+      "philosophy": "Coherent hypothesis requires mechanism + stable structure; not backtest PnL."
+    }
+  ]
+}

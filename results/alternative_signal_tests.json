@@ -1,0 +1,1454 @@
+{
+  "registry": [
+    {
+      "name": "earnings_mean_SPY",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "lag_days": 1,
+      "update_frequency": "event-driven (quarterly per holding)",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+      "lag_policy": "shift(1) after event date mapping; ffill between events",
+      "mean": 2.672799858109745,
+      "std": 5.513327764950356,
+      "n_obs": 245
+    },
+    {
+      "name": "earnings_breadth_SPY",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "lag_days": 1,
+      "update_frequency": "event-driven (quarterly per holding)",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+      "lag_policy": "shift(1) after event date mapping; ffill between events",
+      "mean": 0.710204081632653,
+      "std": 0.4545962440069641,
+      "n_obs": 245
+    },
+    {
+      "name": "earnings_mean_QQQ",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "lag_days": 1,
+      "update_frequency": "event-driven (quarterly per holding)",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+      "lag_policy": "shift(1) after event date mapping; ffill between events",
+      "mean": 4.265868108721071,
+      "std": 6.854786345672729,
+      "n_obs": 245
+    },
+    {
+      "name": "earnings_breadth_QQQ",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "lag_days": 1,
+      "update_frequency": "event-driven (quarterly per holding)",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+      "lag_policy": "shift(1) after event date mapping; ffill between events",
+      "mean": 0.8918367346938776,
+      "std": 0.30288011931755887,
+      "n_obs": 245
+    },
+    {
+      "name": "daily_earnings_factor",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "lag_days": 1,
+      "update_frequency": "event-driven (quarterly per holding)",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+      "lag_policy": "shift(1) after event date mapping; ffill between events",
+      "mean": 3.450831667805475,
+      "std": 5.042808475970682,
+      "n_obs": 244
+    },
+    {
+      "name": "macro_rates_change",
+      "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "MEDIUM",
+      "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+      "lag_policy": "pct_change on lagged close, then shift(1)",
+      "mean": 0.00017446399460590922,
+      "std": 0.009937419907710365,
+      "n_obs": 249
+    },
+    {
+      "name": "macro_dollar_change",
+      "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "MEDIUM",
+      "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+      "lag_policy": "pct_change on lagged close, then shift(1)",
+      "mean": 0.00015574670181376296,
+      "std": 0.003956072705161531,
+      "n_obs": 249
+    },
+    {
+      "name": "macro_inflation_change",
+      "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "MEDIUM",
+      "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+      "lag_policy": "pct_change on lagged close, then shift(1)",
+      "mean": 0.00017978839717497163,
+      "std": 0.0022007064725986,
+      "n_obs": 249
+    },
+    {
+      "name": "macro_volatility_change",
+      "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "MEDIUM",
+      "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+      "lag_policy": "pct_change on lagged close, then shift(1)",
+      "mean": 0.002657208406335439,
+      "std": 0.07476489690277333,
+      "n_obs": 249
+    },
+    {
+      "name": "macro_regime_state",
+      "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "MEDIUM",
+      "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+      "lag_policy": "pct_change on lagged close, then shift(1)",
+      "mean": 0.01992328945256275,
+      "std": 0.39557154818649765,
+      "n_obs": 229
+    },
+    {
+      "name": "flow_abnormal_vol_SPY",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.9879448219080397,
+      "std": 0.25761729949431755,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_dv_zscore_SPY",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.03605865409217472,
+      "std": 1.0124698583921654,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_abnormal_vol_QQQ",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.9975345417850217,
+      "std": 0.2530156406401141,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_dv_zscore_QQQ",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.06846035243768482,
+      "std": 1.0098546501602146,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_abnormal_vol_IWM",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.9936211505133588,
+      "std": 0.30651716055466305,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_dv_zscore_IWM",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.03252476673732173,
+      "std": 1.018765640437717,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_abnormal_vol_XLK",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 1.0117720104258745,
+      "std": 0.3776251497204407,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_dv_zscore_XLK",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.12790480244165658,
+      "std": 1.1035413915484062,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_abnormal_vol_XLF",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 1.0028303942321233,
+      "std": 0.2946514419726832,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_dv_zscore_XLF",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.016104788170451342,
+      "std": 1.0028778432270815,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_abnormal_vol_XLE",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.9997488072537473,
+      "std": 0.3673388426472213,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_dv_zscore_XLE",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": -0.011129505531408864,
+      "std": 1.018595882839224,
+      "n_obs": 231
+    },
+    {
+      "name": "flow_breadth_thrust",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": 0.5670650730411686,
+      "std": 0.33505531313452175,
+      "n_obs": 251
+    },
+    {
+      "name": "flow_pressure_factor",
+      "source": "OHLCV volume (same framework as ETF prices)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "Volume known after session close; usable next open",
+      "lag_policy": "shift(1) on volume/close before rolling stats",
+      "mean": -0.03868919579159842,
+      "std": 1.1131840346685231,
+      "n_obs": 211
+    },
+    {
+      "name": "sentiment_fear_greed_proxy",
+      "source": "^VIX inverted z-score (Fear & Greed proxy)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "LOW",
+      "timestamp_assumption": "VIX close t-1 -> signal t",
+      "lag_policy": "shift(1) on VIX close",
+      "mean": -0.18316435674775677,
+      "std": 1.3623547649787755,
+      "n_obs": 230
+    },
+    {
+      "name": "sentiment_news_placeholder",
+      "source": "NewsSentimentPlaceholder (unwired)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "N/A until vendor wired",
+      "lag_policy": "TBD per vendor SLA",
+      "mean": NaN,
+      "std": NaN,
+      "n_obs": 0
+    },
+    {
+      "name": "sentiment_social_placeholder",
+      "source": "SocialSentimentPlaceholder (unwired)",
+      "lag_days": 1,
+      "update_frequency": "daily",
+      "leakage_risk": "HIGH",
+      "timestamp_assumption": "N/A \u2014 no scraping engine",
+      "lag_policy": "TBD",
+      "mean": NaN,
+      "std": NaN,
+      "n_obs": 0
+    }
+  ],
+  "n_tests": 162,
+  "top_neutral_ic_signals": [
+    {
+      "signal": "earnings_breadth_QQQ",
+      "mean_ic_20d": 0.24409540456198695,
+      "mean_ic_20d_neutral": 0.14225909537856443,
+      "std_ic_neutral": 0.130303051415946,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    },
+    {
+      "signal": "earnings_mean_SPY",
+      "mean_ic_20d": 0.12208061818122447,
+      "mean_ic_20d_neutral": 0.12017716673690126,
+      "std_ic_neutral": 0.14890190414986895,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    },
+    {
+      "signal": "flow_abnormal_vol_XLF",
+      "mean_ic_20d": -0.10974267915160342,
+      "mean_ic_20d_neutral": -0.1060257278266757,
+      "std_ic_neutral": 0.1754977021422918,
+      "n_targets": 6,
+      "stable_neutral_ic": false
+    },
+    {
+      "signal": "flow_dv_zscore_XLF",
+      "mean_ic_20d": -0.09819006740673557,
+      "mean_ic_20d_neutral": -0.09398257559305578,
+      "std_ic_neutral": 0.1733923251426961,
+      "n_targets": 6,
+      "stable_neutral_ic": false
+    },
+    {
+      "signal": "daily_earnings_factor",
+      "mean_ic_20d": 0.08233868774030895,
+      "mean_ic_20d_neutral": 0.08349455477258168,
+      "std_ic_neutral": 0.16933876188158414,
+      "n_targets": 6,
+      "stable_neutral_ic": false
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "mean_ic_20d": 0.07860108622263774,
+      "mean_ic_20d_neutral": 0.07566424357353561,
+      "std_ic_neutral": 0.08466581264368561,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    },
+    {
+      "signal": "flow_dv_zscore_IWM",
+      "mean_ic_20d": -0.07579595729913176,
+      "mean_ic_20d_neutral": -0.07277329960867474,
+      "std_ic_neutral": 0.07689725753092015,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    },
+    {
+      "signal": "flow_pressure_factor",
+      "mean_ic_20d": -0.07045013548268576,
+      "mean_ic_20d_neutral": -0.0681759208229999,
+      "std_ic_neutral": 0.10576648751454996,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    },
+    {
+      "signal": "flow_abnormal_vol_IWM",
+      "mean_ic_20d": -0.06820003151041334,
+      "mean_ic_20d_neutral": -0.06622339179792457,
+      "std_ic_neutral": 0.07174497669783826,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    },
+    {
+      "signal": "flow_dv_zscore_QQQ",
+      "mean_ic_20d": -0.05917229808851021,
+      "mean_ic_20d_neutral": -0.05757953185745371,
+      "std_ic_neutral": 0.0948434170426377,
+      "n_targets": 6,
+      "stable_neutral_ic": true
+    }
+  ],
+  "tests_sample": [
+    {
+      "signal": "earnings_mean_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.03467142806624795,
+          "pearson": 0.07214250679941818
+        },
+        "fwd_5d": {
+          "ic": -0.03782847062958468,
+          "pearson": 0.015151473719620332
+        },
+        "fwd_20d": {
+          "ic": 0.16964908295468856,
+          "pearson": 0.054058939204655036
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.033832695191009,
+        "fwd_5d": -0.039981596902723994,
+        "fwd_20d": 0.1654856721449642
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.011921430673401859,
+        "quantile_means": {
+          "1": 0.025450888495829785,
+          "2": -0.005564151213457172,
+          "3": 0.01462773401752193,
+          "4": 0.022234239586403737,
+          "5": 0.037372319169231644
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.45376422078467615,
+        "low_vol": -0.1113744576031616
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.007781286135369513,
+        "quantile_means": {
+          "1": 0.024902047171551957,
+          "2": -0.006021281553262104,
+          "3": 0.01295040979768032,
+          "4": 0.02960652133263828,
+          "5": 0.03268333330692147
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.1892314976560942,
+      "target_etf": "SPY"
+    },
+    {
+      "signal": "earnings_mean_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.07396615637121046,
+          "pearson": 0.11781917141878755
+        },
+        "fwd_5d": {
+          "ic": 0.02099534052686403,
+          "pearson": 0.08248957003308371
+        },
+        "fwd_20d": {
+          "ic": 0.18042040276204954,
+          "pearson": 0.09197971473047278
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.07207249627234014,
+        "fwd_5d": 0.01649420996892307,
+        "fwd_20d": 0.1764243573535609
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.02866869998394461,
+        "quantile_means": {
+          "1": 0.02680273208465782,
+          "2": -0.007283789461673959,
+          "3": 0.01391312515243771,
+          "4": 0.03398351962209904,
+          "5": 0.05547143206860243
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.3959246099881107,
+        "low_vol": -0.06573678060613068
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.022235360102190963,
+        "quantile_means": {
+          "1": 0.026240989936084095,
+          "2": -0.007930315202078415,
+          "3": 0.012192326094024318,
+          "4": 0.04390766859981799,
+          "5": 0.04847635003827506
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.1368369209938533,
+      "target_etf": "QQQ"
+    },
+    {
+      "signal": "earnings_mean_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.005319620440016282,
+          "pearson": 0.03359120750923134
+        },
+        "fwd_5d": {
+          "ic": -0.026061961588758,
+          "pearson": -0.029992250225084605
+        },
+        "fwd_20d": {
+          "ic": 0.2641356012471144,
+          "pearson": 0.1607153343886381
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.008192177903341057,
+        "fwd_5d": -0.019521172242573652,
+        "fwd_20d": 0.2597587442056469
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.029896008320353756,
+        "quantile_means": {
+          "1": 0.026573456526183068,
+          "2": -0.008531642297025096,
+          "3": 0.03318417299767642,
+          "4": 0.02889946093347917,
+          "5": 0.056469464846536824
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.38600269360952283,
+        "low_vol": 0.11677779563829302
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.024716960649353206,
+        "quantile_means": {
+          "1": 0.027147655967913922,
+          "2": -0.007745784986018037,
+          "3": 0.027743548584005136,
+          "4": 0.037584876823682244,
+          "5": 0.05186461661726713
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.3302836423623707,
+      "target_etf": "IWM"
+    },
+    {
+      "signal": "earnings_mean_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.07743113875716295,
+          "pearson": 0.12419605978476686
+        },
+        "fwd_5d": {
+          "ic": 0.022729048992276808,
+          "pearson": 0.08620248002914395
+        },
+        "fwd_20d": {
+          "ic": 0.17662672036462992,
+          "pearson": 0.07165418321110871
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.07499349466562581,
+        "fwd_5d": 0.016436049236965913,
+        "fwd_20d": 0.17000526759376322
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.038986126124621136,
+        "quantile_means": {
+          "1": 0.03580850587296668,
+          "2": -0.010981806413021869,
+          "3": 0.017231203468991017,
+          "4": 0.044922767187973466,
+          "5": 0.07479463199758782
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.423407744835621,
+        "low_vol": -0.06815103802608302
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.029693572678894005,
+        "quantile_means": {
+          "1": 0.03579183824400576,
+          "2": -0.013880151794552213,
+          "3": 0.014370443167262237,
+          "4": 0.06000776157488157,
+          "5": 0.06548541092289976
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.14024458788175417,
+      "target_etf": "XLK"
+    },
+    {
+      "signal": "earnings_mean_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.010448135374575802,
+          "pearson": 0.0035303093453117234
+        },
+        "fwd_5d": {
+          "ic": -0.018990003178457105,
+          "pearson": -0.026290752603688853
+        },
+        "fwd_20d": {
+          "ic": 0.1177484936139095,
+          "pearson": 0.04849292125193137
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.00905708507910802,
+        "fwd_5d": -0.016521988228962305,
+        "fwd_20d": 0.11847555836493892
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.011192602085485438,
+        "quantile_means": {
+          "1": 0.009363419289270144,
+          "2": -0.004564924468160431,
+          "3": -0.006623144825029824,
+          "4": -0.002793526557762206,
+          "5": 0.02055602137475558
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.14155076193059304,
+        "low_vol": 0.013808895501332803
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.008652540597380241,
+        "quantile_means": {
+          "1": 0.009749580704905217,
+          "2": -0.010562020389631898,
+          "3": -0.005683025416031416,
+          "4": 0.004031188611545904,
+          "5": 0.018402121302285458
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.18472238858315881,
+      "target_etf": "XLF"
+    },
+    {
+      "signal": "earnings_mean_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.018102678325951044,
+          "pearson": -0.07419617955592145
+        },
+        "fwd_5d": {
+          "ic": -0.10654795781279751,
+          "pearson": -0.15107479957215056
+        },
+        "fwd_20d": {
+          "ic": -0.17609659185504503,
+          "pearson": -0.06865534380993318
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.0006732510342459902,
+        "fwd_5d": -0.10303564297991283,
+        "fwd_20d": -0.16908659924146652
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": -0.026536487400881735,
+        "quantile_means": {
+          "1": 0.03431225116200158,
+          "2": 0.040623794951629696,
+          "3": 0.05808828158007116,
+          "4": 0.02020091492357129,
+          "5": 0.007775763761119846
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": -0.13934844060725332,
+        "low_vol": -0.1985734939670726
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": -0.018924361076806496,
+        "quantile_means": {
+          "1": 0.0319674929058912,
+          "2": 0.05055271192924382,
+          "3": 0.04554666165357013,
+          "4": 0.019891008060603718,
+          "5": 0.013043131829084707
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.02684444726201026,
+      "target_etf": "XLE"
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.062321093178886816,
+          "pearson": 0.09168256071724012
+        },
+        "fwd_5d": {
+          "ic": 0.048820119362809354,
+          "pearson": 0.06192922520844995
+        },
+        "fwd_20d": {
+          "ic": 0.11528813708209558,
+          "pearson": 0.15943928255090378
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.0712464220660942,
+        "fwd_5d": 0.023283390336637785,
+        "fwd_20d": 0.09346713021491784
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.008793553423379109,
+        "quantile_means": {
+          "1": 0.029176681662216427,
+          "2": -0.0030890327288944698,
+          "3": 0.022664011882970393,
+          "4": 0.007399134153642035,
+          "5": 0.037970235085595536
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.3924100259730145,
+        "low_vol": -0.12204555388021489
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.0153627877946928,
+        "quantile_means": {
+          "1": 0.008678159918912378,
+          "2": 0.02274864398933686,
+          "3": 0.018898072087910774,
+          "4": 0.019755206345764734,
+          "5": 0.02404094771360518
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.15222429799257783,
+      "target_etf": "SPY"
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.08742887172577647,
+          "pearson": 0.11367454576984402
+        },
+        "fwd_5d": {
+          "ic": 0.10310861916706697,
+          "pearson": 0.11580893155327651
+        },
+        "fwd_20d": {
+          "ic": 0.12323904308775735,
+          "pearson": 0.17309069639359406
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.08465856287870338,
+        "fwd_5d": 0.047460893418288505,
+        "fwd_20d": 0.0978581963758955
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.029910392313699602,
+        "quantile_means": {
+          "1": 0.03190006060875049,
+          "2": -0.005650634116029068,
+          "3": 0.03400040885419561,
+          "4": 0.0008267311967559242,
+          "5": 0.06181045292245009
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.29520388755939464,
+        "low_vol": -0.07275792635166657
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.02282600599576601,
+        "quantile_means": {
+          "1": 0.008893834200526331,
+          "2": 0.031655888852560675,
+          "3": 0.026154724855194857,
+          "4": 0.02446273136154884,
+          "5": 0.03171984019629234
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.12527647196790734,
+      "target_etf": "QQQ"
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.040928241049649206,
+          "pearson": 0.07663987439744911
+        },
+        "fwd_5d": {
+          "ic": 0.08110332919786546,
+          "pearson": 0.08168807804000237
+        },
+        "fwd_20d": {
+          "ic": 0.18066225312864787,
+          "pearson": 0.21481409216963343
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.05817297167804583,
+        "fwd_5d": 0.12103855969721693,
+        "fwd_20d": 0.16844289928360726
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.010555069941100496,
+        "quantile_means": {
+          "1": 0.03864076130749261,
+          "2": 0.0026721205773695485,
+          "3": 0.026771615308273138,
+          "4": 0.01931458456512198,
+          "5": 0.04919583124859311
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.2027783789038217,
+        "low_vol": 0.19621169816126854
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.029347922108848387,
+        "quantile_means": {
+          "1": 0.009427392862417679,
+          "2": 0.02875602481266743,
+          "3": 0.026658350877861423,
+          "4": 0.032977829482637784,
+          "5": 0.038775314971266066
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.16305533228391353,
+      "target_etf": "IWM"
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.08217673437668221,
+          "pearson": 0.11521884702441959
+        },
+        "fwd_5d": {
+          "ic": 0.1264315911703524,
+          "pearson": 0.1444453817214889
+        },
+        "fwd_20d": {
+          "ic": 0.12765621309090278,
+          "pearson": 0.16684683307198
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.06493025868513767,
+        "fwd_5d": 0.05954877688848764,
+        "fwd_20d": 0.0891361146228403
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.04800027443375851,
+        "quantile_means": {
+          "1": 0.040976988713344986,
+          "2": -0.012314053855059558,
+          "3": 0.04885686469046673,
+          "4": -0.0047217605813585336,
+          "5": 0.0889772631471035
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.3238876661076759,
+        "low_vol": -0.07792139209275258
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.028870005131584827,
+        "quantile_means": {
+          "1": 0.012134579716590033,
+          "2": 0.042998628676647846,
+          "3": 0.033945437075494404,
+          "4": 0.03169207179758997,
+          "5": 0.04100458484817486
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.17058269666154724,
+      "target_etf": "XLK"
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.015948576588426258,
+          "pearson": 0.05677869627762768
+        },
+        "fwd_5d": {
+          "ic": 0.04987426499007649,
+          "pearson": 0.057773138908642004
+        },
+        "fwd_20d": {
+          "ic": 0.06581583304686682,
+          "pearson": 0.099082109115426
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.04156974054641315,
+        "fwd_5d": 0.05092536328755707,
+        "fwd_20d": 0.09071217867678046
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": -0.012509473164084316,
+        "quantile_means": {
+          "1": 0.023211061502127834,
+          "2": -0.019167052278510805,
+          "3": -0.00332153142499993,
+          "4": 0.004513778676412649,
+          "5": 0.010701588338043518
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.19560743426675137,
+        "low_vol": -0.11218802837450521
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.01488145338839044,
+        "quantile_means": {
+          "1": -0.004978581447336928,
+          "2": 0.009168272182120171,
+          "3": -0.0036357489445768727,
+          "4": 0.00548103108181338,
+          "5": 0.009902871941053513
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.053176373432834136,
+      "target_etf": "XLF"
+    },
+    {
+      "signal": "earnings_breadth_SPY",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.0245313447123183,
+          "pearson": -0.043856876324480855
+        },
+        "fwd_5d": {
+          "ic": -0.12511390913626846,
+          "pearson": -0.12788440131326614
+        },
+        "fwd_20d": {
+          "ic": -0.14105496210044388,
+          "pearson": -0.13308951817070347
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.07418400322502167,
+        "fwd_5d": -0.0672494314137398,
+        "fwd_20d": -0.08563105773282766
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.016023882611596638,
+        "quantile_means": {
+          "1": 0.012142058186430554,
+          "2": 0.062115027833898454,
+          "3": 0.006701678502409044,
+          "4": 0.05187630105762834,
+          "5": 0.028165940798027193
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": -0.16373656921310553,
+        "low_vol": -0.09435060126893535
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": -0.01601934898512769,
+        "quantile_means": {
+          "1": 0.04559258100654574,
+          "2": 0.03002123552852339,
+          "3": 0.022354888930991943,
+          "4": 0.033459068890914455,
+          "5": 0.029573232021418053
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.03189046381906337,
+      "target_etf": "XLE"
+    },
+    {
+      "signal": "earnings_mean_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.08891095381573,
+          "pearson": -0.04963107142341872
+        },
+        "fwd_5d": {
+          "ic": -0.06000393143530842,
+          "pearson": -0.036666978796665986
+        },
+        "fwd_20d": {
+          "ic": -0.15159120349609315,
+          "pearson": -0.011386787851254897
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.09778901238698272,
+        "fwd_5d": -0.05679004843834093,
+        "fwd_20d": -0.15522229245680574
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.0009901307148237372,
+        "quantile_means": {
+          "1": 0.008939993954393948,
+          "2": 0.05470991624149908,
+          "3": 0.013170489332658726,
+          "4": 0.007370505857760487,
+          "5": 0.009930124669217685
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.05527112338169835,
+        "low_vol": -0.4818263680670423
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": -0.0060924310533310815,
+        "quantile_means": {
+          "1": 0.018909122442942718,
+          "2": 0.035966332773539514,
+          "3": 0.02126651316794173,
+          "4": 0.005162370281494328,
+          "5": 0.012816691389611636
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.16479509421502908,
+      "target_etf": "SPY"
+    },
+    {
+      "signal": "earnings_mean_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.09722031905507315,
+          "pearson": -0.06760030049028737
+        },
+        "fwd_5d": {
+          "ic": -0.1227492675330556,
+          "pearson": -0.09437560550701286
+        },
+        "fwd_20d": {
+          "ic": -0.24284691036771136,
+          "pearson": -0.1084608964691564
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.10302549678037577,
+        "fwd_5d": -0.11875987430337331,
+        "fwd_20d": -0.2459492203961231
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": -0.0103754999392952,
+        "quantile_means": {
+          "1": 0.017023111661349462,
+          "2": 0.08155252047007162,
+          "3": 0.015460706989677601,
+          "4": 0.0022030686229701033,
+          "5": 0.006647611722054261
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.014032032150656518,
+        "low_vol": -0.5302258601644403
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": -0.022648867934565095,
+        "quantile_means": {
+          "1": 0.03195661226929451,
+          "2": 0.05254467297750123,
+          "3": 0.0283173411153566,
+          "4": 0.0007606487692412875,
+          "5": 0.00930774433472942
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": -0.008281640454818958,
+      "target_etf": "QQQ"
+    },
+    {
+      "signal": "earnings_mean_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.06318697204740245,
+          "pearson": -0.007009088662822465
+        },
+        "fwd_5d": {
+          "ic": 0.05286391338342289,
+          "pearson": 0.09639613147092956
+        },
+        "fwd_20d": {
+          "ic": 0.19435991309350734,
+          "pearson": 0.2820407933274038
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.07432354848436035,
+        "fwd_5d": 0.04750256080834736,
+        "fwd_20d": 0.18944479561736202
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.03849452173608004,
+        "quantile_means": {
+          "1": -0.0028645369008439467,
+          "2": 0.06591586315865353,
+          "3": 0.01154914016020856,
+          "4": 0.026364461753596153,
+          "5": 0.03562998483523609
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.2785381235377877,
+        "low_vol": 0.02381821117635056
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.027835775326735396,
+        "quantile_means": {
+          "1": 0.013468127911409647,
+          "2": 0.03232735549078371,
+          "3": 0.02677145983793123,
+          "4": 0.02272406652858076,
+          "5": 0.04130390323814504
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.5211733904912128,
+      "target_etf": "IWM"
+    },
+    {
+      "signal": "earnings_mean_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.1400879597902326,
+          "pearson": -0.09825071811119584
+        },
+        "fwd_5d": {
+          "ic": -0.16037696237326723,
+          "pearson": -0.14129660094778013
+        },
+        "fwd_20d": {
+          "ic": -0.27899205130972804,
+          "pearson": -0.14970180413415254
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.14051604855664185,
+        "fwd_5d": -0.1541806281359051,
+        "fwd_20d": -0.28058364938895913
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": -0.020653086942069996,
+        "quantile_means": {
+          "1": 0.023819453984500853,
+          "2": 0.11136926841595061,
+          "3": 0.020309396089819323,
+          "4": 0.0031108165817954735,
+          "5": 0.0031663670424308585
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": -0.009609885210669487,
+        "low_vol": -0.5462698906939646
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": -0.036921503575469354,
+        "quantile_means": {
+          "1": 0.042689755277843806,
+          "2": 0.0697910174510547,
+          "3": 0.04180150482972457,
+          "4": 0.0017247728534995949,
+          "5": 0.005768251702374454
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": -0.05832543399813384,
+      "target_etf": "XLK"
+    },
+    {
+      "signal": "earnings_mean_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": -0.023401389335969986,
+          "pearson": 0.008472222919068002
+        },
+        "fwd_5d": {
+          "ic": 0.03003266283148869,
+          "pearson": 0.06688583469916642
+        },
+        "fwd_20d": {
+          "ic": 0.038270859127766135,
+          "pearson": 0.19476827843442535
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.03922781823710349,
+        "fwd_5d": 0.02803000052084237,
+        "fwd_20d": 0.009968394437420987
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.02001404856555302,
+        "quantile_means": {
+          "1": -0.00914655768210604,
+          "2": 0.026025246464761134,
+          "3": -0.0061036014406194005,
+          "4": -0.005704733412409407,
+          "5": 0.010867490883446981
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.32091988839673313,
+        "low_vol": -0.4574048752549272
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.010411427201199563,
+        "quantile_means": {
+          "1": 0.0013565537618099915,
+          "2": 0.008554774893000133,
+          "3": 0.0011657760636104475,
+          "4": -0.006907240868356864,
+          "5": 0.011767980963009555
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.2898060350413959,
+      "target_etf": "XLF"
+    },
+    {
+      "signal": "earnings_mean_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.04096807148538002,
+          "pearson": 0.006418760537560382
+        },
+        "fwd_5d": {
+          "ic": 0.08836588751810306,
+          "pearson": 0.01319885168442859
+        },
+        "fwd_20d": {
+          "ic": 0.2695320765975244,
+          "pearson": 0.11229146525280857
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": 0.0044236310286960455,
+        "fwd_5d": 0.08065851837705514,
+        "fwd_20d": 0.28421407501053525
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.005906905522681853,
+        "quantile_means": {
+          "1": 0.035684815418658256,
+          "2": -0.01131885079551575,
+          "3": 0.01953918400189101,
+          "4": 0.07550413681201995,
+          "5": 0.04159172094134011
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.02259637099179419,
+        "low_vol": 0.5452068106222928
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.021593938714258985,
+        "quantile_means": {
+          "1": 0.020389671549597595,
+          "2": 0.0074299649710746676,
+          "3": 0.01577355576433743,
+          "4": 0.0754242038295273,
+          "5": 0.04198361026385658
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.3194935616010438,
+      "target_etf": "XLE"
+    },
+    {
+      "signal": "earnings_breadth_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.03378120039544456,
+          "pearson": 0.026127025502132153
+        },
+        "fwd_5d": {
+          "ic": 0.15958824018253598,
+          "pearson": 0.1260128183424833
+        },
+        "fwd_20d": {
+          "ic": 0.3417758929421566,
+          "pearson": 0.3632444559407466
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.01272236885039383,
+        "fwd_5d": 0.12175905831698465,
+        "fwd_20d": 0.22024652338811632
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.02343244384096591,
+        "quantile_means": {
+          "1": 0.010433122428110803,
+          "2": 0.025713859766620707,
+          "3": 0.014353236491225926,
+          "4": 0.009755245100495778,
+          "5": 0.03386556626907671
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.4340417678585491,
+        "low_vol": 0.15777867386950115
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.020699960038638686,
+        "quantile_means": {
+          "1": 0.007277673885812505,
+          "2": 0.019633221011490884,
+          "3": 0.017822460483533233,
+          "4": 0.021410040750242113,
+          "5": 0.02797763392445119
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.4572962588541289,
+      "target_etf": "SPY"
+    },
+    {
+      "signal": "earnings_breadth_QQQ",
+      "leakage_risk": "HIGH",
+      "source": "yfinance earnings_dates (top holdings proxy)",
+      "horizons": {
+        "fwd_1d": {
+          "ic": 0.0015140301815720209,
+          "pearson": -0.002545608099831445
+        },
+        "fwd_5d": {
+          "ic": 0.06648985260162592,
+          "pearson": 0.042494588524356745
+        },
+        "fwd_20d": {
+          "ic": 0.2816537814596467,
+          "pearson": 0.22187342745178576
+        }
+      },
+      "ic_neutral_vs_spy": {
+        "fwd_1d": -0.021762924963549472,
+        "fwd_5d": 0.08270369277244395,
+        "fwd_20d": 0.18814264643910664
+      },
+      "quintile_fwd_20d": {
+        "spread_q5_q1": 0.03620515343550865,
+        "quantile_means": {
+          "1": 0.017692177979210546,
+          "2": 0.029362680963744146,
+          "3": 0.02043713637012327,
+          "4": 0.001497692738325883,
+          "5": 0.053897331414719196
+        },
+        "n_obs": 225
+      },
+      "regime_ic_fwd_20d": {
+        "high_vol": 0.37759495666906295,
+        "low_vol": 0.18292382404927404
+      },
+      "quintile_fwd_20d_neutral": {
+        "spread_q5_q1": 0.022146546732465272,
+        "quantile_means": {
+          "1": 0.015312023611859934,
+          "2": 0.023829253772280217,
+          "3": 0.019050214972167842,
+          "4": 0.02723695676548985,
+          "5": 0.037458570344325204
+        },
+        "n_obs": 225
+      },
+      "ic_mean_rolling_60d": 0.3411656404371558,
+      "target_etf": "QQQ"
+    }
+  ],
+  "research_goal": "Find small but stable IC after SPY neutralization"
+}

@@ -1,0 +1,513 @@
+{
+  "signals": [
+    {
+      "metadata": {
+        "name": "earnings_mean_SPY",
+        "source": "yfinance earnings_dates (top holdings proxy)",
+        "lag_days": 1,
+        "update_frequency": "event-driven (quarterly per holding)",
+        "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+        "lag_policy": "shift(1) after event date mapping; ffill between events",
+        "description": "Earnings aggregation: earnings_mean_SPY",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": 2.672799858109745,
+        "std": 5.513327764950356,
+        "min": -7.831325301204813,
+        "max": 43.31378185961367,
+        "n_obs": 245
+      }
+    },
+    {
+      "metadata": {
+        "name": "earnings_breadth_SPY",
+        "source": "yfinance earnings_dates (top holdings proxy)",
+        "lag_days": 1,
+        "update_frequency": "event-driven (quarterly per holding)",
+        "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+        "lag_policy": "shift(1) after event date mapping; ffill between events",
+        "description": "Earnings aggregation: earnings_breadth_SPY",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": 0.710204081632653,
+        "std": 0.4545962440069641,
+        "min": 0.0,
+        "max": 1.0,
+        "n_obs": 245
+      }
+    },
+    {
+      "metadata": {
+        "name": "earnings_mean_QQQ",
+        "source": "yfinance earnings_dates (top holdings proxy)",
+        "lag_days": 1,
+        "update_frequency": "event-driven (quarterly per holding)",
+        "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+        "lag_policy": "shift(1) after event date mapping; ffill between events",
+        "description": "Earnings aggregation: earnings_mean_QQQ",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": 4.265868108721071,
+        "std": 6.854786345672729,
+        "min": -15.714285714285714,
+        "max": 43.31378185961366,
+        "n_obs": 245
+      }
+    },
+    {
+      "metadata": {
+        "name": "earnings_breadth_QQQ",
+        "source": "yfinance earnings_dates (top holdings proxy)",
+        "lag_days": 1,
+        "update_frequency": "event-driven (quarterly per holding)",
+        "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+        "lag_policy": "shift(1) after event date mapping; ffill between events",
+        "description": "Earnings aggregation: earnings_breadth_QQQ",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": 0.8918367346938776,
+        "std": 0.30288011931755887,
+        "min": 0.0,
+        "max": 1.0,
+        "n_obs": 245
+      }
+    },
+    {
+      "metadata": {
+        "name": "daily_earnings_factor",
+        "source": "yfinance earnings_dates (top holdings proxy)",
+        "lag_days": 1,
+        "update_frequency": "event-driven (quarterly per holding)",
+        "timestamp_assumption": "Earnings treated as known after market close on report date; usable from next session open only",
+        "lag_policy": "shift(1) after event date mapping; ffill between events",
+        "description": "Earnings aggregation: daily_earnings_factor",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": 3.450831667805475,
+        "std": 5.042808475970682,
+        "min": -6.468129971388608,
+        "max": 43.31378185961367,
+        "n_obs": 244
+      }
+    },
+    {
+      "metadata": {
+        "name": "macro_rates_change",
+        "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+        "lag_policy": "pct_change on lagged close, then shift(1)",
+        "description": "Macro: macro_rates_change",
+        "leakage_risk": "MEDIUM"
+      },
+      "stats": {
+        "mean": 0.00017446399460590922,
+        "std": 0.009937419907710365,
+        "min": -0.03211016950357426,
+        "max": 0.030038068943107232,
+        "n_obs": 249
+      }
+    },
+    {
+      "metadata": {
+        "name": "macro_dollar_change",
+        "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+        "lag_policy": "pct_change on lagged close, then shift(1)",
+        "description": "Macro: macro_dollar_change",
+        "leakage_risk": "MEDIUM"
+      },
+      "stats": {
+        "mean": 0.00015574670181376296,
+        "std": 0.003956072705161531,
+        "min": -0.011827936996003374,
+        "max": 0.011401263960131747,
+        "n_obs": 249
+      }
+    },
+    {
+      "metadata": {
+        "name": "macro_inflation_change",
+        "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+        "lag_policy": "pct_change on lagged close, then shift(1)",
+        "description": "Macro: macro_inflation_change",
+        "leakage_risk": "MEDIUM"
+      },
+      "stats": {
+        "mean": 0.00017978839717497163,
+        "std": 0.0022007064725986,
+        "min": -0.008010048187823804,
+        "max": 0.006983219758384784,
+        "n_obs": 249
+      }
+    },
+    {
+      "metadata": {
+        "name": "macro_volatility_change",
+        "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+        "lag_policy": "pct_change on lagged close, then shift(1)",
+        "description": "Macro: macro_volatility_change",
+        "leakage_risk": "MEDIUM"
+      },
+      "stats": {
+        "mean": 0.002657208406335439,
+        "std": 0.07476489690277333,
+        "min": -0.18386344627110762,
+        "max": 0.3183201123002275,
+        "n_obs": 249
+      }
+    },
+    {
+      "metadata": {
+        "name": "macro_regime_state",
+        "source": "yfinance proxies (^TNX, UUP, TIP, ^VIX)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Macro prints assumed available after prior close; lag=1 session",
+        "lag_policy": "pct_change on lagged close, then shift(1)",
+        "description": "Macro: macro_regime_state",
+        "leakage_risk": "MEDIUM"
+      },
+      "stats": {
+        "mean": 0.01992328945256275,
+        "std": 0.39557154818649765,
+        "min": -1.4007904568209661,
+        "max": 1.0528933631073891,
+        "n_obs": 229
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_abnormal_vol_SPY",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Abnormal volume SPY",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.9879448219080397,
+        "std": 0.25761729949431755,
+        "min": 0.39823121948725815,
+        "max": 2.0356119016361687,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_dv_zscore_SPY",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Dollar volume z-score SPY",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.03605865409217472,
+        "std": 1.0124698583921654,
+        "min": -2.131974834011478,
+        "max": 3.476686893057235,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_abnormal_vol_QQQ",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Abnormal volume QQQ",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.9975345417850217,
+        "std": 0.2530156406401141,
+        "min": 0.3559864148274715,
+        "max": 1.8120000264698093,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_dv_zscore_QQQ",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Dollar volume z-score QQQ",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.06846035243768482,
+        "std": 1.0098546501602146,
+        "min": -2.101502569757655,
+        "max": 3.1263894963546304,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_abnormal_vol_IWM",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Abnormal volume IWM",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.9936211505133588,
+        "std": 0.30651716055466305,
+        "min": 0.3332168739945746,
+        "max": 2.1905988929962597,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_dv_zscore_IWM",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Dollar volume z-score IWM",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.03252476673732173,
+        "std": 1.018765640437717,
+        "min": -2.290995369501433,
+        "max": 3.2389843998500236,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_abnormal_vol_XLK",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Abnormal volume XLK",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 1.0117720104258745,
+        "std": 0.3776251497204407,
+        "min": 0.2952258876618598,
+        "max": 2.576954150814688,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_dv_zscore_XLK",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Dollar volume z-score XLK",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.12790480244165658,
+        "std": 1.1035413915484062,
+        "min": -1.9826866378535932,
+        "max": 4.016457733517285,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_abnormal_vol_XLF",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Abnormal volume XLF",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 1.0028303942321233,
+        "std": 0.2946514419726832,
+        "min": 0.3460222007377372,
+        "max": 2.239388282261166,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_dv_zscore_XLF",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Dollar volume z-score XLF",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.016104788170451342,
+        "std": 1.0028778432270815,
+        "min": -2.2796028497672784,
+        "max": 3.414996305246164,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_abnormal_vol_XLE",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Abnormal volume XLE",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.9997488072537473,
+        "std": 0.3673388426472213,
+        "min": 0.4076107012651599,
+        "max": 3.143369367830588,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_dv_zscore_XLE",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Dollar volume z-score XLE",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": -0.011129505531408864,
+        "std": 1.018595882839224,
+        "min": -2.2574266329837585,
+        "max": 3.7449230146938994,
+        "n_obs": 231
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_breadth_thrust",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Universe breadth (% positive returns)",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": 0.5670650730411686,
+        "std": 0.33505531313452175,
+        "min": 0.0,
+        "max": 1.0,
+        "n_obs": 251
+      }
+    },
+    {
+      "metadata": {
+        "name": "flow_pressure_factor",
+        "source": "OHLCV volume (same framework as ETF prices)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "Volume known after session close; usable next open",
+        "lag_policy": "shift(1) on volume/close before rolling stats",
+        "description": "Mean abnormal volume z-score across universe",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": -0.03868919579159842,
+        "std": 1.1131840346685231,
+        "min": -2.589924016683487,
+        "max": 4.432161518004712,
+        "n_obs": 211
+      }
+    },
+    {
+      "metadata": {
+        "name": "sentiment_fear_greed_proxy",
+        "source": "^VIX inverted z-score (Fear & Greed proxy)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "VIX close t-1 -> signal t",
+        "lag_policy": "shift(1) on VIX close",
+        "description": "VIX-based fear/greed proxy (no CNN API)",
+        "leakage_risk": "LOW"
+      },
+      "stats": {
+        "mean": -0.18316435674775677,
+        "std": 1.3623547649787755,
+        "min": -4.807905891357826,
+        "max": 1.662198332888405,
+        "n_obs": 230
+      }
+    },
+    {
+      "metadata": {
+        "name": "sentiment_news_placeholder",
+        "source": "NewsSentimentPlaceholder (unwired)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "N/A until vendor wired",
+        "lag_policy": "TBD per vendor SLA",
+        "description": "Extensible news sentiment hook",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": NaN,
+        "std": NaN,
+        "n_obs": 0
+      }
+    },
+    {
+      "metadata": {
+        "name": "sentiment_social_placeholder",
+        "source": "SocialSentimentPlaceholder (unwired)",
+        "lag_days": 1,
+        "update_frequency": "daily",
+        "timestamp_assumption": "N/A \u2014 no scraping engine",
+        "lag_policy": "TBD",
+        "description": "Extensible Reddit/Twitter hook",
+        "leakage_risk": "HIGH"
+      },
+      "stats": {
+        "mean": NaN,
+        "std": NaN,
+        "n_obs": 0
+      }
+    }
+  ]
+}

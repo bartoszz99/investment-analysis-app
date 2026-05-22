@@ -1,0 +1,2504 @@
+{
+  "philosophy": "Answers: is this a coherent investment decision vs market exposure? Does NOT answer: will it profit?",
+  "thresholds": {
+    "BUY": 0.65,
+    "WATCH": 0.4
+  },
+  "n_decisions": 60,
+  "skipped_missing_lab": [],
+  "decisions": [
+    {
+      "ticker": "SPY",
+      "universe": "ETF",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.4879,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6264,
+        "structural": 0.25,
+        "counterparty": 0.85
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.2528732100090815,
+        "score_structural": -0.5,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.85,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "universe": "ETF",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5448,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.5492,
+        "structural": 0.5,
+        "counterparty": 0.65
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.130). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.130).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.0984697693873234,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.65,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "universe": "ETF",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5508,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6025,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.036). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.036).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.2050840248495168,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.55,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "universe": "ETF",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5783,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6777,
+        "structural": 0.5,
+        "counterparty": 0.6
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.016). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.016).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.3554999187073472,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.6,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "QQQ",
+      "universe": "ETF",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.4633,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.691,
+        "structural": 0.1399,
+        "counterparty": 0.85
+      },
+      "reason": "Structural axis shows residual IC (-0.108) after neutralization \u2014 not pure beta proxy. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (-0.108) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.3819476274750674,
+        "score_structural": -0.7201107093858705,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.85,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "QQQ",
+      "universe": "ETF",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5569,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.5895,
+        "structural": 0.5,
+        "counterparty": 0.65
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.057). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.057).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.1790001090279563,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.65,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "QQQ",
+      "universe": "ETF",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5605,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.635,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.019). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.019).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.2700404044886936,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.55,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "QQQ",
+      "universe": "ETF",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6071,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.7738,
+        "structural": 0.5,
+        "counterparty": 0.6
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.019). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.019).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.5475855136940485,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.6,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "universe": "ETF",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "BUY",
+      "final_score": 0.7602,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6016,
+        "structural": 0.9492,
+        "counterparty": 0.85
+      },
+      "reason": "Structural axis shows residual IC (0.135) after neutralization \u2014 not pure beta proxy. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (0.135) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.203200496962906,
+        "score_structural": 0.8984828869037104,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.85,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "IWM",
+      "universe": "ETF",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.4027,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.4091,
+        "structural": 0.25,
+        "counterparty": 0.65
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": -0.181736417411874,
+        "score_structural": -0.5,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.65,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "universe": "ETF",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5672,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6572,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.099). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.099).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.3144859407642515,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.55,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "universe": "ETF",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5932,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.7272,
+        "structural": 0.5,
+        "counterparty": 0.6
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.036). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.036).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.4544820116721556,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.6,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "universe": "ETF",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6234,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.7445,
+        "structural": 0.5,
+        "counterparty": 0.85
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.156). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.156).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.4890425569823114,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.85,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "universe": "ETF",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5615,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.605,
+        "structural": 0.5,
+        "counterparty": 0.65
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.020). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.020).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.2100455873183141,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.65,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "universe": "ETF",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5675,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6583,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.016). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.016).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.3165565690691679,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.55,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "XLK",
+      "universe": "ETF",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.632,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.8568,
+        "structural": 0.5,
+        "counterparty": 0.6
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.030). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.030).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.7135864998536318,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.6,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "universe": "ETF",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.4404,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.4679,
+        "structural": 0.25,
+        "counterparty": 0.85
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": -0.0642080862342032,
+        "score_structural": -0.5,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.85,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "universe": "ETF",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.4949,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.3829,
+        "structural": 0.5,
+        "counterparty": 0.65
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.105). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.105).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": -0.2342905424404402,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.65,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "universe": "ETF",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5175,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.4917,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.100). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.100).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": -0.0165261264889383,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.55,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "universe": "ETF",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5315,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.5217,
+        "structural": 0.5,
+        "counterparty": 0.6
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.024). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.024).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.0434246081261213,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.6,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "universe": "ETF",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6278,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.7593,
+        "structural": 0.5,
+        "counterparty": 0.85
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.001). Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.001).",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.5186901217821103,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.85,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "universe": "ETF",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.5078,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.7593,
+        "structural": 0.25,
+        "counterparty": 0.65
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.5186901217821103,
+        "score_structural": -0.5,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.65,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "universe": "ETF",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "BUY",
+      "final_score": 0.721,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6213,
+        "structural": 0.9116,
+        "counterparty": 0.55
+      },
+      "reason": "Structural axis shows residual IC (0.123) after neutralization \u2014 not pure beta proxy. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (0.123) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.2425287509847482,
+        "score_structural": 0.8231247928492204,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.55,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "XLE",
+      "universe": "ETF",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.4969,
+      "breakdown": {
+        "fundamental": 0.575,
+        "technical": 0.6378,
+        "structural": 0.3263,
+        "counterparty": 0.6
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: Passive index flows, allocation mandates, ETF arbitrageurs. Forced action: Index inclusion, pension policy weights, rebalance calendars. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.15,
+        "score_technical": 0.2755833088909851,
+        "score_structural": -0.347430020345491,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "Passive index flows, allocation mandates, ETF arbitrageurs",
+        "forced_reason": "Index inclusion, pension policy weights, rebalance calendars",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.6,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.4571,
+      "breakdown": {
+        "fundamental": 0.6661,
+        "technical": 0.6841,
+        "structural": 0.1092,
+        "counterparty": 0.75
+      },
+      "reason": "Structural axis shows residual IC (-0.117) after neutralization \u2014 not pure beta proxy. Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (-0.117) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3321866866666666,
+        "score_technical": 0.3682366445791221,
+        "score_structural": -0.7816052865050934,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "AAPL",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.4337,
+      "breakdown": {
+        "fundamental": 0.6661,
+        "technical": 0.6673,
+        "structural": 0.1133,
+        "counterparty": 0.55
+      },
+      "reason": "Structural axis shows residual IC (-0.116) after neutralization \u2014 not pure beta proxy. Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (-0.116) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3321866866666666,
+        "score_technical": 0.3346621258563456,
+        "score_structural": -0.7734951293480415,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "AAPL",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "BUY",
+      "final_score": 0.7291,
+      "breakdown": {
+        "fundamental": 0.6661,
+        "technical": 0.5547,
+        "structural": 0.9612,
+        "counterparty": 0.45
+      },
+      "reason": "Structural axis shows residual IC (0.138) after neutralization \u2014 not pure beta proxy. Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (0.138) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3321866866666666,
+        "score_technical": 0.1094945529501736,
+        "score_structural": 0.9224636221134336,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "AAPL",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6049,
+      "breakdown": {
+        "fundamental": 0.6661,
+        "technical": 0.739,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.019). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.019).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3321866866666666,
+        "score_technical": 0.4779466076491481,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5566,
+      "breakdown": {
+        "fundamental": 0.7327,
+        "technical": 0.4502,
+        "structural": 0.5,
+        "counterparty": 0.75
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.001). Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.001).",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.46541998,
+        "score_technical": -0.0995101546444314,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.4937,
+      "breakdown": {
+        "fundamental": 0.7327,
+        "technical": 0.307,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.007). Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.007).",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.46541998,
+        "score_technical": -0.3859371992576021,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5265,
+      "breakdown": {
+        "fundamental": 0.7327,
+        "technical": 0.4498,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.013). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.013).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.46541998,
+        "score_technical": -0.100444803096709,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5447,
+      "breakdown": {
+        "fundamental": 0.7327,
+        "technical": 0.4938,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.009). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.009).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.46541998,
+        "score_technical": -0.0123081994490185,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.5405,
+      "breakdown": {
+        "fundamental": 0.7667,
+        "technical": 0.7071,
+        "structural": 0.25,
+        "counterparty": 0.75
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.5333333333333333,
+        "score_technical": 0.4142826350727233,
+        "score_structural": -0.5,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5435,
+      "breakdown": {
+        "fundamental": 0.7667,
+        "technical": 0.4504,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.025). Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.025).",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.5333333333333333,
+        "score_technical": -0.0991645365657358,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5813,
+      "breakdown": {
+        "fundamental": 0.7667,
+        "technical": 0.6099,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.055). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.055).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.5333333333333333,
+        "score_technical": 0.219804653846781,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6349,
+      "breakdown": {
+        "fundamental": 0.7667,
+        "technical": 0.772,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.007). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.007).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.5333333333333333,
+        "score_technical": 0.5439232045137707,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "AMZN",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.3951,
+      "breakdown": {
+        "fundamental": 0.5915,
+        "technical": 0.6726,
+        "structural": 0.0,
+        "counterparty": 0.75
+      },
+      "reason": "Structural axis shows residual IC (-0.172) after neutralization \u2014 not pure beta proxy. Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: structural score 0.00 < 0.10.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (-0.172) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [
+          "structural score 0.00 < 0.10"
+        ],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.1829066666666666,
+        "score_technical": 0.3451645032430875,
+        "score_structural": -1.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "structural score 0.00 < 0.10"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6204,
+      "breakdown": {
+        "fundamental": 0.5915,
+        "technical": 0.4449,
+        "structural": 0.784,
+        "counterparty": 0.55
+      },
+      "reason": "Structural axis shows residual IC (0.085) after neutralization \u2014 not pure beta proxy. Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: possible_independent_structure (still not confirmed alpha). Decision drivers: passed hard filters.",
+      "classification": "TRUE_SIGNAL",
+      "explanation": {
+        "structural": "Structural axis shows residual IC (0.085) after neutralization \u2014 not pure beta proxy.",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "possible_independent_structure (still not confirmed alpha)",
+        "signal_killers": [],
+        "independent_mechanism": true
+      },
+      "axis_raw": {
+        "score_fundamental": 0.1829066666666666,
+        "score_technical": -0.1101246186088263,
+        "score_structural": 0.5679905054616431,
+        "regime_stability": 1.0,
+        "neutralization_result": "TRUE_SIGNAL"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "AMZN",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5834,
+      "breakdown": {
+        "fundamental": 0.5915,
+        "technical": 0.7336,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.076). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.076).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.1829066666666666,
+        "score_technical": 0.4671891821542876,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6029,
+      "breakdown": {
+        "fundamental": 0.5915,
+        "technical": 0.7819,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.014). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.014).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.1829066666666666,
+        "score_technical": 0.5637969358720677,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "GOOGL",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6625,
+      "breakdown": {
+        "fundamental": 0.7373,
+        "technical": 0.8003,
+        "structural": 0.5,
+        "counterparty": 0.75
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.089). Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.089).",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4745233333333333,
+        "score_technical": 0.6005165453826071,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5979,
+      "breakdown": {
+        "fundamental": 0.7373,
+        "technical": 0.6516,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.077). Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.077).",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4745233333333333,
+        "score_technical": 0.3032637186674545,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6147,
+      "breakdown": {
+        "fundamental": 0.7373,
+        "technical": 0.7407,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.057). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.057).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4745233333333333,
+        "score_technical": 0.481358684218907,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6424,
+      "breakdown": {
+        "fundamental": 0.7373,
+        "technical": 0.8164,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.013). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.013).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4745233333333333,
+        "score_technical": 0.6327612956326105,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "META",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5351,
+      "breakdown": {
+        "fundamental": 0.7495,
+        "technical": 0.3674,
+        "structural": 0.5,
+        "counterparty": 0.75
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.126). Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.126).",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4990366666666666,
+        "score_technical": -0.265296396445361,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "META",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "IGNORE",
+      "final_score": 0.3049,
+      "breakdown": {
+        "fundamental": 0.7495,
+        "technical": 0.0,
+        "structural": 0.25,
+        "counterparty": 0.55
+      },
+      "reason": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism. Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: beta_sector_momentum_exposure. Decision drivers: neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates).",
+      "classification": "MARKET_EXPOSURE",
+      "explanation": {
+        "structural": "Structural signal collapses after SPY/sector/momentum neutralization \u2014 this is market exposure, not independent mechanism.",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "beta_sector_momentum_exposure",
+        "signal_killers": [
+          "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4990366666666666,
+        "score_technical": -1.0,
+        "score_structural": -0.5,
+        "regime_stability": 1.0,
+        "neutralization_result": "MARKET_EXPOSURE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "neutralization: MARKET_EXPOSURE (beta/sector/momentum dominates)"
+      ]
+    },
+    {
+      "ticker": "META",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5359,
+      "breakdown": {
+        "fundamental": 0.7495,
+        "technical": 0.47,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.106). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.106).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4990366666666666,
+        "score_technical": -0.0599781428776615,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "META",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5162,
+      "breakdown": {
+        "fundamental": 0.7495,
+        "technical": 0.3877,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.012). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.012).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.4990366666666666,
+        "score_technical": -0.2246397152321895,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "JPM",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5282,
+      "breakdown": {
+        "fundamental": 0.687,
+        "technical": 0.386,
+        "structural": 0.5,
+        "counterparty": 0.75
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.140). Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.140).",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3740266666666667,
+        "score_technical": -0.2280992113507084,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.435,
+      "breakdown": {
+        "fundamental": 0.687,
+        "technical": 0.1421,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.080). Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.080).",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3740266666666667,
+        "score_technical": -0.7158726521025592,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5247,
+      "breakdown": {
+        "fundamental": 0.687,
+        "technical": 0.4743,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.132). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.132).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3740266666666667,
+        "score_technical": -0.0514288414791785,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.535,
+      "breakdown": {
+        "fundamental": 0.687,
+        "technical": 0.492,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.018). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.018).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.3740266666666667,
+        "score_technical": -0.0160603626920884,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6164,
+      "breakdown": {
+        "fundamental": 0.4951,
+        "technical": 0.808,
+        "structural": 0.5,
+        "counterparty": 0.75
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.135). Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.135).",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": -0.0098866666666666,
+        "score_technical": 0.6159208696305637,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5607,
+      "breakdown": {
+        "fundamental": 0.4951,
+        "technical": 0.6891,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.069). Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.069).",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": -0.0098866666666666,
+        "score_technical": 0.3782099648759726,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5581,
+      "breakdown": {
+        "fundamental": 0.4951,
+        "technical": 0.7135,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.027). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.027).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": -0.0098866666666666,
+        "score_technical": 0.427009096316718,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": []
+    },
+    {
+      "ticker": "UNH",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5687,
+      "breakdown": {
+        "fundamental": 0.4951,
+        "technical": 0.7323,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.021). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.021).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": -0.0098866666666666,
+        "score_technical": 0.4646007514866698,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "universe": "EQUITY",
+      "signal_type": "momentum",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.6061,
+      "breakdown": {
+        "fundamental": 0.5225,
+        "technical": 0.7554,
+        "structural": 0.5,
+        "counterparty": 0.75
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.013). Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50; IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.013).",
+        "counterparty": "Other side: ETF rebalancers, CTAs, systematic trend followers. Forced action: Mandate to follow price trend; vol-targeting and risk-parity flows. Constraint: Capacity limits, crowding, reversal when positioning extreme.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50",
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.0449833293333333,
+        "score_technical": 0.5108426971450595,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "ETF rebalancers, CTAs, systematic trend followers",
+        "forced_reason": "Mandate to follow price trend; vol-targeting and risk-parity flows",
+        "constraint": "Capacity limits, crowding, reversal when positioning extreme",
+        "strength": 0.75,
+        "clarity": 0.85
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "universe": "EQUITY",
+      "signal_type": "breakout",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5861,
+      "breakdown": {
+        "fundamental": 0.5225,
+        "technical": 0.7554,
+        "structural": 0.5,
+        "counterparty": 0.55
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.128). Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.128).",
+        "counterparty": "Other side: Stop-loss clusters, short-gamma dealers, breakout chasers. Forced action: Technical triggers and hedging flows amplify break moves. Constraint: False breaks when liquidity thin; dealer gamma flips.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.0449833293333333,
+        "score_technical": 0.5108426971450595,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Stop-loss clusters, short-gamma dealers, breakout chasers",
+        "forced_reason": "Technical triggers and hedging flows amplify break moves",
+        "constraint": "False breaks when liquidity thin; dealer gamma flips",
+        "strength": 0.55,
+        "clarity": 0.65
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "universe": "EQUITY",
+      "signal_type": "value",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5204,
+      "breakdown": {
+        "fundamental": 0.5225,
+        "technical": 0.5697,
+        "structural": 0.5,
+        "counterparty": 0.45
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.129). Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples. Exposure type: no_clear_exposure_or_noise. Decision drivers: regime_stability 0.20 < 0.50.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.129).",
+        "counterparty": "Other side: Factor rebalancers, passive value-tilt funds, contrarian funds. Forced action: Style mandate to buy cheap / sell rich on slow metrics. Constraint: Value traps; macro regime dominates multiples.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "regime_stability 0.20 < 0.50"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.0449833293333333,
+        "score_technical": 0.1394096090246208,
+        "score_structural": 0.0,
+        "regime_stability": 0.2,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Factor rebalancers, passive value-tilt funds, contrarian funds",
+        "forced_reason": "Style mandate to buy cheap / sell rich on slow metrics",
+        "constraint": "Value traps; macro regime dominates multiples",
+        "strength": 0.45,
+        "clarity": 0.6
+      },
+      "risk_filter_reasons": [
+        "regime_stability 0.20 < 0.50"
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "universe": "EQUITY",
+      "signal_type": "earnings",
+      "time_horizon": "medium",
+      "decision": "WATCH",
+      "final_score": 0.5234,
+      "breakdown": {
+        "fundamental": 0.5225,
+        "technical": 0.563,
+        "structural": 0.5,
+        "counterparty": 0.5
+      },
+      "reason": "Structural support weak (class=NOISE, |IC|=0.044). Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced. Exposure type: no_clear_exposure_or_noise. Decision drivers: IC below 0.05 threshold.",
+      "classification": "NOISE",
+      "explanation": {
+        "structural": "Structural support weak (class=NOISE, |IC|=0.044).",
+        "counterparty": "Other side: Algo reactors, retail repricers, slow institutional allocators. Forced action: Mandate to adjust after information shock; reporting windows. Constraint: Timestamps, spread widening, consensus already priced.",
+        "exposure_type": "no_clear_exposure_or_noise",
+        "signal_killers": [
+          "IC below 0.05 threshold"
+        ],
+        "independent_mechanism": false
+      },
+      "axis_raw": {
+        "score_fundamental": 0.0449833293333333,
+        "score_technical": 0.1260377284966838,
+        "score_structural": 0.0,
+        "regime_stability": 1.0,
+        "neutralization_result": "NOISE"
+      },
+      "counterparty": {
+        "who": "Algo reactors, retail repricers, slow institutional allocators",
+        "forced_reason": "Mandate to adjust after information shock; reporting windows",
+        "constraint": "Timestamps, spread widening, consensus already priced",
+        "strength": 0.5,
+        "clarity": 0.55
+      },
+      "risk_filter_reasons": []
+    }
+  ]
+}

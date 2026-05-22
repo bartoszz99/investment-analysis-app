@@ -1,0 +1,49 @@
+signal,target,source_module,classification,ic_raw_20d,ic_neutral_20d,leakage_risk,reason,tech_concentration,production_candidate,pruned,kept,prune_reasons
+momentum_etf_rotation_system,multi_asset_portfolio,multi_asset_runner,STRUCTURAL_EXPOSURE,,-0.03557497441536944,LOW,Market alpha 12.6% but sector-neutral alpha -3.6% — sector/momentum tilt not independent edge,True,False,True,False,sector-neutral alpha -3.6% <= 0; robustness: production_candidate=false
+daily_earnings_factor,IWM,alternative_data,NOISE,0.3582490286493173,0.3604740550928892,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,HIGH leakage risk; classified NOISE
+earnings_breadth_QQQ,SPY,alternative_data,NOISE,0.3417758929421566,0.2202465233881163,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,HIGH leakage risk; classified NOISE
+earnings_breadth_SPY,IWM,alternative_data,NOISE,0.1806622531286478,0.1684428992836072,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,HIGH leakage risk; classified NOISE
+earnings_mean_QQQ,XLE,alternative_data,NOISE,0.2695320765975244,0.2842140750105352,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,HIGH leakage risk; classified NOISE
+earnings_mean_SPY,IWM,alternative_data,NOISE,0.2641356012471144,0.2597587442056469,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,HIGH leakage risk; classified NOISE
+flow_abnormal_vol_IWM,QQQ,alternative_data,TRUE_EDGE,-0.1355348041031668,-0.1366001967271752,LOW,Neutral IC -0.137 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_abnormal_vol_QQQ,XLE,alternative_data,TRUE_EDGE,0.1035244823137159,0.1104635863108545,LOW,Neutral IC 0.110 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_abnormal_vol_SPY,XLF,alternative_data,TRUE_EDGE,0.088442917182969,0.1020528608474598,LOW,Neutral IC 0.102 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_abnormal_vol_XLE,XLE,alternative_data,TRUE_EDGE,0.1963988707349165,0.2031910680752673,LOW,Neutral IC 0.203 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_abnormal_vol_XLF,XLE,alternative_data,TRUE_EDGE,0.2299101953219811,0.233883062301197,LOW,Neutral IC 0.234 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_abnormal_vol_XLK,XLE,alternative_data,TRUE_EDGE,0.0872944903616458,0.1040827276095093,LOW,Neutral IC 0.104 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_breadth_thrust,IWM,alternative_data,TRUE_EDGE,-0.0566441951243258,-0.0677884105641842,LOW,Neutral IC -0.068 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_dv_zscore_IWM,QQQ,alternative_data,TRUE_EDGE,-0.1465055377422363,-0.1440094020260344,LOW,Neutral IC -0.144 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_dv_zscore_QQQ,XLE,alternative_data,TRUE_EDGE,0.1248399994890203,0.1275980122890612,LOW,Neutral IC 0.128 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_dv_zscore_SPY,IWM,alternative_data,TRUE_EDGE,0.0963120041900333,0.1043957026609266,LOW,Neutral IC 0.104 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_dv_zscore_XLE,XLE,alternative_data,TRUE_EDGE,0.133297990572425,0.13739093777545,LOW,Neutral IC 0.137 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_dv_zscore_XLF,XLE,alternative_data,TRUE_EDGE,0.2427958252960488,0.2458093279339814,LOW,Neutral IC 0.246 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_dv_zscore_XLK,XLE,alternative_data,TRUE_EDGE,0.1134949732374394,0.1257329364724518,LOW,Neutral IC 0.126 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+flow_pressure_factor,XLE,alternative_data,TRUE_EDGE,0.1368627721135299,0.143820611738771,LOW,Neutral IC 0.144 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+macro_dollar_change,SPY,alternative_data,TRUE_EDGE,-0.0735978775258428,-0.0777662306516243,MEDIUM,Neutral IC -0.078 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+macro_inflation_change,XLE,alternative_data,TRUE_EDGE,0.0438999969022801,0.0637674497616739,MEDIUM,Neutral IC 0.064 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+macro_rates_change,QQQ,alternative_data,TRUE_EDGE,-0.0923548969918482,-0.0967943401317038,MEDIUM,Neutral IC -0.097 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+macro_regime_state,XLE,alternative_data,NOISE,-0.0247463063252536,-0.0239865397760134,MEDIUM,Neutral IC -0.024 below threshold — likely noise,,,True,False,|neutral IC| < 0.05; classified NOISE
+macro_volatility_change,XLE,alternative_data,TRUE_EDGE,0.0393003107731356,0.0532111558562249,MEDIUM,Neutral IC 0.053 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+sentiment_fear_greed_proxy,XLF,alternative_data,TRUE_EDGE,-0.2109351362032828,-0.2162621115477189,LOW,Neutral IC -0.216 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+sentiment_news_placeholder,SPY,alternative_data,NOISE,0.0,0.0,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,|neutral IC| < 0.05; HIGH leakage risk; classified NOISE
+sentiment_social_placeholder,SPY,alternative_data,NOISE,0.0,0.0,HIGH,HIGH leakage risk — cannot trust timing,,,True,False,|neutral IC| < 0.05; HIGH leakage risk; classified NOISE
+advance_decline_ratio,XLE,breadth,TRUE_EDGE,-0.1432888247494334,-0.0928546194737904,LOW,Neutral IC -0.093 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+breadth_divergence,QQQ,breadth,TRUE_EDGE,-0.0304660288765161,-0.1232030552108251,LOW,Neutral IC -0.123 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+breadth_thrust,XLK,breadth,TRUE_EDGE,-0.0348958948775161,-0.1384240279667023,LOW,Neutral IC -0.138 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+equal_weight_vs_cap_weight,XLF,breadth,TRUE_EDGE,0.05784879150252,0.0852306712703719,LOW,Neutral IC 0.085 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+median_component_return,XLF,breadth,TRUE_EDGE,-0.0026078563255037,0.0914445463420406,LOW,Neutral IC 0.091 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+pct_above_sma20,XLE,breadth,TRUE_EDGE,-0.242165337099643,-0.176021570359351,LOW,Neutral IC -0.176 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+pct_above_sma50,SPY,breadth,TRUE_EDGE,0.0225052996225664,0.4203489407156845,LOW,Neutral IC 0.420 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+pct_new_20d_high,IWM,breadth,TRUE_EDGE,-0.0155162796995065,0.09961316479377,LOW,Neutral IC 0.100 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+pct_positive_5d_return,XLE,breadth,TRUE_EDGE,-0.2088731619769044,-0.143079298399832,LOW,Neutral IC -0.143 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+return_dispersion,XLK,breadth,TRUE_EDGE,-0.0942267712546186,-0.0578455279398982,LOW,Neutral IC -0.058 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+distance_from_sma20,XLE,liquidity,TRUE_EDGE,-0.2378300187033565,-0.1928543958482129,LOW,Neutral IC -0.193 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+dollar_volume_zscore,IWM,liquidity,TRUE_EDGE,0.0188563393599704,0.1003885256732637,LOW,Neutral IC 0.100 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+exhaustion_composite,IWM,liquidity,TRUE_EDGE,0.0425701532290319,0.1773087201333215,LOW,Neutral IC 0.177 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+gap_extension,XLF,liquidity,TRUE_EDGE,0.048174207711031,0.2263783293396049,LOW,Neutral IC 0.226 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+intraday_range_expansion,QQQ,liquidity,TRUE_EDGE,-0.0287936151371028,0.0824188611041848,LOW,Neutral IC 0.082 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+realized_volatility_10d,SPY,liquidity,TRUE_EDGE,0.2575365289210348,0.0798318830534906,LOW,Neutral IC 0.080 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+return_3d_extension,XLK,liquidity,TRUE_EDGE,0.0158735318553094,-0.1412496495802711,LOW,Neutral IC -0.141 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+volatility_of_volume,XLE,liquidity,TRUE_EDGE,0.1351404430488596,0.2320837964508644,LOW,Neutral IC 0.232 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+volume_zscore_20d,IWM,liquidity,TRUE_EDGE,0.029874049368532,0.1015752335309771,LOW,Neutral IC 0.102 >= threshold (needs regime/bootstrap confirm),,,True,False,unstable in 5+ regimes
+passive_flow_narrow_rally_fragility,SPY/QQQ/XLK,passive_flow,STRUCTURAL_EXPOSURE,-0.0053789839071707035,,MEDIUM,"Event study: MIXED — NEEDS LONGER SAMPLE — structural tail asymmetry, not tradable alpha",,,False,True,

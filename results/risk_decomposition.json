@@ -1,0 +1,24 @@
+{
+  "formulas": {
+    "beta": "Cov(R_p, R_SPY) / Var(R_SPY)",
+    "tracking_error": "std(R_p - R_SPY) annualized over rolling window"
+  },
+  "rolling_window": 60,
+  "full_sample": {
+    "beta": 0.7770937753016806,
+    "correlation": 0.6321946909535067,
+    "tracking_error_annual": 0.11877243009543834,
+    "active_return_mean_daily": 0.0002938606959522478
+  },
+  "rolling_summary": {
+    "beta_mean": 0.7778097132419014,
+    "beta_std": 0.3748871766892668,
+    "correlation_mean": 0.6107994425612823,
+    "tracking_error_mean": 0.1119676640768112
+  },
+  "last_observation": {
+    "beta_60d": 0.6281708134202534,
+    "correlation_60d": 0.5649065634212995,
+    "tracking_error_60d": 0.14618143153567625
+  }
+}

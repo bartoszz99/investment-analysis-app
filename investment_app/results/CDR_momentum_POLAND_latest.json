@@ -1,0 +1,97 @@
+{
+  "ticker": "CDR.WA",
+  "display_ticker": "CDR",
+  "market_region": "POLAND",
+  "asset_type": "Stock",
+  "idea_type": "momentum",
+  "horizon": "medium",
+  "decision": "WATCH",
+  "final_score": 0.626,
+  "breakdown": {
+    "fundamental": 0.642,
+    "technical": 0.577,
+    "structural": 0.644
+  },
+  "fundamental": {
+    "score_fundamental": 0.2833333333333333,
+    "summary": "Business fundamentals look supportive.",
+    "detail": "Profit margin: 69% P/E 45 \u2014 elevated expectations Debt/equity 1 \u2014 moderate leverage",
+    "metrics": {
+      "pe": 45.282684,
+      "revenue_growth": null,
+      "margin": 0.68595004,
+      "debt_to_equity": 0.791,
+      "earnings_trend": null
+    }
+  },
+  "technical": {
+    "score_technical": 0.1543965506059132,
+    "trend": "uptrend",
+    "vol_regime": "normal",
+    "relative_strength_3m": null,
+    "mom_3m": 0.05409841068455434,
+    "summary": "Technicals are mixed \u2014 price is not giving a clear edge."
+  },
+  "structural": {
+    "score_structural": 0.2875,
+    "classification": "ACCEPTABLE",
+    "regime_stability": 0.7,
+    "liquidity": {
+      "liquidity_risk": "LOW",
+      "avg_daily_volume": 330904.73333333334,
+      "avg_turnover_pln": 84656060.42727381,
+      "missing_volume_days_60d": 0,
+      "liquidity_stability": 0.45,
+      "liquidity_score": 0.4,
+      "summary": "Liquidity risk: LOW. Avg daily volume ~330,905 shares; turnover stability 45%."
+    },
+    "speculation": {
+      "speculation_risk": "LOW",
+      "volatility_20d": 0.018152566457590447,
+      "volume_vs_avg": 0.01508956031363029,
+      "return_20d": -0.08858964889646836,
+      "speculation_score": 0.25,
+      "summary": "Speculation risk: LOW. No extreme short-term speculation pattern detected."
+    },
+    "narrative": {
+      "narrative_dependence": "LOW",
+      "narrative_score": 0.2,
+      "summary": "Price behavior not obviously detached from fundamentals."
+    },
+    "ownership_flags": [],
+    "summary": "Liquidity risk: LOW. Avg daily volume ~330,905 shares; turnover stability 45%. Speculation risk: LOW. No extreme short-term speculation pattern detected. Price behavior not obviously detached from fundamentals.",
+    "market": "POLAND"
+  },
+  "explanation": {
+    "headline": "Worth monitoring \u2014 narrative or liquidity may dominate.",
+    "market_region": "POLAND",
+    "fundamental_blurb": "Business fundamentals look supportive.",
+    "technical_blurb": "Technicals are mixed \u2014 price is not giving a clear edge.",
+    "structural_blurb": "Liquidity risk: LOW. Avg daily volume ~330,905 shares; turnover stability 45%. Speculation risk: LOW. No extreme short-term speculation pattern detected. Price behavior not obviously detached from fundamentals.",
+    "counterparty": "Who's on the other side? Often local retail and thematic traders on the WSE.",
+    "likely_driver": "What usually drives it? Stories and flow \u2014 GPW moves can run ahead of fundamentals.",
+    "what_is_driving_this": "Uptrend on GPW \u2014 check whether liquidity supports your momentum thesis.",
+    "key_risks": [
+      "State ownership or policy sensitivity",
+      "Low float \u2014 price can gap on small volume",
+      "Retail-led speculation and narrative rallies"
+    ],
+    "structural_class": "ACCEPTABLE",
+    "gpw_warnings": [],
+    "gpw_diagnostics": {
+      "liquidity_risk": "LOW",
+      "speculation_risk": "LOW",
+      "narrative_dependence": "LOW",
+      "ownership_flags": []
+    },
+    "gpw_structural_risks": [
+      "State ownership or policy sensitivity",
+      "Low float \u2014 price can gap on small volume",
+      "Retail-led speculation and narrative rallies",
+      "Cyclical commodity / rates exposure",
+      "Political and regulatory headlines"
+    ]
+  },
+  "as_of": "2026-05-21T12:12:37.990197+00:00",
+  "price_at_analysis": 256.29998779296875
+}

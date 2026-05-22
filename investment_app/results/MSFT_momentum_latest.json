@@ -1,0 +1,59 @@
+{
+  "ticker": "MSFT",
+  "asset_type": "Stock",
+  "idea_type": "momentum",
+  "horizon": "medium",
+  "decision": "IGNORE",
+  "final_score": 0.337,
+  "breakdown": {
+    "fundamental": 0.68,
+    "technical": 0.444,
+    "structural": 0.0
+  },
+  "fundamental": {
+    "score_fundamental": 0.35945198800000006,
+    "summary": "Business fundamentals look supportive.",
+    "detail": "Revenue growth: 18% Profit margin: 39% Earnings trend: 23% P/E 25 \u2014 within a typical range",
+    "metrics": {
+      "pe": 25.063097,
+      "revenue_growth": 0.183,
+      "margin": 0.39341998,
+      "debt_to_equity": 30.271,
+      "earnings_trend": 0.234
+    }
+  },
+  "technical": {
+    "score_technical": -0.1114346410836391,
+    "trend": "mixed",
+    "vol_regime": "normal",
+    "relative_strength_3m": -0.023381648652276543,
+    "mom_3m": 0.046978883020977635,
+    "summary": "Technicals are mixed \u2014 price is not giving a clear edge."
+  },
+  "structural": {
+    "score_structural": 0.0,
+    "classification": "NOISE",
+    "ic_raw": 0.013613864962248723,
+    "ic_residual": 0.013820666192670984,
+    "regime_stability": 0.85,
+    "spy_correlation": 0.39263060911173603,
+    "drivers": "Signal has little predictive relationship with near-term returns.",
+    "summary": "Signal has little predictive relationship with near-term returns."
+  },
+  "explanation": {
+    "headline": "Weak or mostly market exposure \u2014 low priority.",
+    "decision_note": "",
+    "fundamental_blurb": "Business fundamentals look supportive.",
+    "technical_blurb": "Technicals are mixed \u2014 price is not giving a clear edge.",
+    "structural_blurb": "Signal has little predictive relationship with near-term returns.",
+    "counterparty": "Who's on the other side? Often systematic trend funds, ETF flows, and CTAs that must follow price direction.",
+    "likely_driver": "What usually drives it? Market drift, sector rotation, and crowded positioning \u2014 not a secret edge.",
+    "what_is_driving_this": "Mixed forces \u2014 no single driver dominates.",
+    "key_risks": [
+      "No stable link between your idea and forward returns."
+    ],
+    "structural_class": "NOISE"
+  },
+  "as_of": "2026-05-21T11:37:03.819163+00:00",
+  "price_at_analysis": 421.05999755859375
+}

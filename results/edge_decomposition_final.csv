@@ -1,0 +1,7 @@
+component,value,fraction_of_total,annualized_alpha_equiv,notes
+total_return,0.3421531255707246,1.0,0.3421531255707246,Momentum ETF rotation system (~1y sample)
+spy_beta_exposure,0.2518193995981339,0.7359845074572662,0.1261771767577445,"Beta ~0.78, R² market 0.40"
+sector_tilt_increment,0.029590553847499153,0.19664962597330848,-0.16175215117311395,XLK/XLF/XLE factor exposure after SPY removed
+momentum_tilt,0.014586376316433948,0.08073604935137838,0.08587227979618421,Mean momentum beta 0.65
+residual_alpha,-0.03557497441536944,0.40368024675689185,-0.03557497441536944,Sector-neutral OLS intercept — KEY metric for true edge
+tech_concentration_pnl,0.9999999999999997,0.9999999999999997,,QQQ+XLK share of absolute PnL

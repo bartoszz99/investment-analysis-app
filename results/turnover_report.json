@@ -1,0 +1,22 @@
+{
+  "turnover": {
+    "mean_daily_turnover": 0.12749003984063745,
+    "total_turnover": 32.0,
+    "max_daily_turnover": 0.5,
+    "annualized_turnover": 32.12749003984064
+  },
+  "ranking_stability": {
+    "mean_rank_corr": -0.02367346938775511,
+    "window": 20,
+    "n_obs": 210
+  },
+  "deflated_sharpe": {
+    "dsr": 1.0,
+    "sharpe": 2.0669465585217464,
+    "threshold": 0.21461111209350767,
+    "prob_overfit": 0.0
+  },
+  "trades": 521,
+  "return_pct": 34.215312557072465,
+  "max_drawdown": 6.70778188449378
+}
