@@ -17,8 +17,6 @@ class InvestmentMemo:
     id: str
     created_at: str
     ticker: str
-    market_region: str = "USA"
-    display_ticker: str = ""
     thesis_title: str
     thesis_summary: str
     expected_driver: str
@@ -28,6 +26,8 @@ class InvestmentMemo:
     time_horizon: str
     valuation_case: str
     why_now: str
+    market_region: str = "USA"
+    display_ticker: str = ""
     confidence_0_100: int = 50
     linked_analysis_score: float | None = None
     linked_decision: str | None = None
