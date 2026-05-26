@@ -9,7 +9,10 @@ Strony w pasku bocznym: Analiza, Lista obserwowanych, Dziennik, Tezy, Notatki in
 
 from __future__ import annotations
 
-import ui_common as ui
+import path_setup  # noqa: F401
+
+import investment_app.ui_common as ui
+
 ui.setup_page()
 
 import streamlit as st
