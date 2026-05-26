@@ -9,7 +9,14 @@ Strony w pasku bocznym: Analiza, Lista obserwowanych, Dziennik, Tezy, Notatki in
 
 from __future__ import annotations
 
-import path_setup  # noqa: F401
+import sys
+from pathlib import Path
+
+_root = Path(__file__).resolve().parent.parent
+if str(_root) not in sys.path:
+    sys.path.insert(0, str(_root))
+
+import investment_app.utils.path_setup  # noqa: F401
 
 import investment_app.ui_common as ui
 
